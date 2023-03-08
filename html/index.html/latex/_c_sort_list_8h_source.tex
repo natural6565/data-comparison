@@ -1,0 +1,44 @@
+\hypertarget{_c_sort_list_8h_source}{}\doxysection{CSort\+List.\+h}
+\label{_c_sort_list_8h_source}\index{CompareTool2/CSortList.h@{CompareTool2/CSortList.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <afxcmn.h>}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <afxwin.h>}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{struct_s_o_r_t___p_a_r_a_m_s}{SORT\_PARAMS}} \{}
+\DoxyCodeLine{8     \textcolor{comment}{// HWND hWnd;       // 리스트컨트롤 핸들}}
+\DoxyCodeLine{9     \textcolor{keywordtype}{int} nCol;       \textcolor{comment}{// 정렬기준인 컬럼}}
+\DoxyCodeLine{10     BOOL bAscend;   \textcolor{comment}{// 오름차순인가 내림차순인가...}}
+\DoxyCodeLine{11     CListCtrl *pList;}
+\DoxyCodeLine{12 \}\mbox{\hyperlink{struct_s_o_r_t___p_a_r_a_m_s}{SORT\_PARAMS}};}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{comment}{// int IsDigit(CString str);}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_sort_list}{CSortList}} : \textcolor{keyword}{public} CListCtrl}
+\DoxyCodeLine{18 \{}
+\DoxyCodeLine{19     DECLARE\_DYNAMIC(\mbox{\hyperlink{class_c_sort_list}{CSortList}})}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 \textcolor{keyword}{public}:}
+\DoxyCodeLine{22     \mbox{\hyperlink{class_c_sort_list}{CSortList}}();}
+\DoxyCodeLine{23     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_c_sort_list}{\string~CSortList}}();}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25 \textcolor{keyword}{private}:}
+\DoxyCodeLine{26     \textcolor{comment}{// CSortList *pThis;}}
+\DoxyCodeLine{27     \textcolor{comment}{// int IsDigit(CString str);}}
+\DoxyCodeLine{28 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{29     DECLARE\_MESSAGE\_MAP()}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31 \textcolor{keyword}{public}:}
+\DoxyCodeLine{32     CListCtrl m\_IsRealtime;}
+\DoxyCodeLine{33     BOOL m\_bAscend;}
+\DoxyCodeLine{34     afx\_msg \textcolor{keywordtype}{void} OnLvnColumnclick(NMHDR *pNMHDR, LRESULT *pResult);}
+\DoxyCodeLine{35     \textcolor{keyword}{static} \textcolor{keywordtype}{int} CALLBACK SortFunc(LPARAM lParam1, LPARAM lParam2, LPARAM lParamSort);}
+\DoxyCodeLine{36 \};}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38 }
+
+\end{DoxyCode}

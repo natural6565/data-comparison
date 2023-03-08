@@ -1,0 +1,153 @@
+\hypertarget{_c_borders_8h_source}{}\doxysection{CBorders.\+h}
+\label{_c_borders_8h_source}\index{CompareTool2/CBorders.h@{CompareTool2/CBorders.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{// 컴퓨터에서 형식 라이브러리 마법사의 [클래스 추가]를 사용하여 생성한 IDispatch 래퍼 클래스입니다.}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{comment}{// \#import "{}C:\(\backslash\)\(\backslash\)Program Files\(\backslash\)\(\backslash\)Microsoft Office\(\backslash\)\(\backslash\)Office14\(\backslash\)\(\backslash\)EXCEL.EXE"{} no\_namespace}}
+\DoxyCodeLine{4 \textcolor{comment}{// CBorders 래퍼 클래스}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_borders}{CBorders}} : \textcolor{keyword}{public} COleDispatchDriver}
+\DoxyCodeLine{7 \{}
+\DoxyCodeLine{8 \textcolor{keyword}{public}:}
+\DoxyCodeLine{9     \mbox{\hyperlink{class_c_borders}{CBorders}}() \{\} \textcolor{comment}{// COleDispatchDriver 기본 생성자를 호출합니다.}}
+\DoxyCodeLine{10     \mbox{\hyperlink{class_c_borders}{CBorders}}(LPDISPATCH pDispatch) : COleDispatchDriver(pDispatch) \{\}}
+\DoxyCodeLine{11     \mbox{\hyperlink{class_c_borders}{CBorders}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_c_borders}{CBorders}}\& dispatchSrc) : COleDispatchDriver(dispatchSrc) \{\}}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13     \textcolor{comment}{// 특성}}
+\DoxyCodeLine{14 \textcolor{keyword}{public}:}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16     \textcolor{comment}{// 작업}}
+\DoxyCodeLine{17 \textcolor{keyword}{public}:}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20     \textcolor{comment}{// Borders 메서드}}
+\DoxyCodeLine{21 \textcolor{keyword}{public}:}
+\DoxyCodeLine{22     LPDISPATCH get\_Application()}
+\DoxyCodeLine{23     \{}
+\DoxyCodeLine{24         LPDISPATCH result;}
+\DoxyCodeLine{25         InvokeHelper(0x94, DISPATCH\_PROPERTYGET, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{26         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{27     \}}
+\DoxyCodeLine{28     \textcolor{keywordtype}{long} get\_Creator()}
+\DoxyCodeLine{29     \{}
+\DoxyCodeLine{30         \textcolor{keywordtype}{long} result;}
+\DoxyCodeLine{31         InvokeHelper(0x95, DISPATCH\_PROPERTYGET, VT\_I4, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{32         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{33     \}}
+\DoxyCodeLine{34     LPDISPATCH get\_Parent()}
+\DoxyCodeLine{35     \{}
+\DoxyCodeLine{36         LPDISPATCH result;}
+\DoxyCodeLine{37         InvokeHelper(0x96, DISPATCH\_PROPERTYGET, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{38         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{39     \}}
+\DoxyCodeLine{40     VARIANT get\_Color()}
+\DoxyCodeLine{41     \{}
+\DoxyCodeLine{42         VARIANT result;}
+\DoxyCodeLine{43         InvokeHelper(0x63, DISPATCH\_PROPERTYGET, VT\_VARIANT, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{44         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{45     \}}
+\DoxyCodeLine{46     \textcolor{keywordtype}{void} put\_Color(VARIANT\& newValue)}
+\DoxyCodeLine{47     \{}
+\DoxyCodeLine{48         \textcolor{keyword}{static} BYTE parms[] = VTS\_VARIANT;}
+\DoxyCodeLine{49         InvokeHelper(0x63, DISPATCH\_PROPERTYPUT, VT\_EMPTY, \textcolor{keyword}{nullptr}, parms, \&newValue);}
+\DoxyCodeLine{50     \}}
+\DoxyCodeLine{51     VARIANT get\_ColorIndex()}
+\DoxyCodeLine{52     \{}
+\DoxyCodeLine{53         VARIANT result;}
+\DoxyCodeLine{54         InvokeHelper(0x61, DISPATCH\_PROPERTYGET, VT\_VARIANT, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{55         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{56     \}}
+\DoxyCodeLine{57     \textcolor{keywordtype}{void} put\_ColorIndex(VARIANT\& newValue)}
+\DoxyCodeLine{58     \{}
+\DoxyCodeLine{59         \textcolor{keyword}{static} BYTE parms[] = VTS\_VARIANT;}
+\DoxyCodeLine{60         InvokeHelper(0x61, DISPATCH\_PROPERTYPUT, VT\_EMPTY, \textcolor{keyword}{nullptr}, parms, \&newValue);}
+\DoxyCodeLine{61     \}}
+\DoxyCodeLine{62     \textcolor{keywordtype}{long} get\_Count()}
+\DoxyCodeLine{63     \{}
+\DoxyCodeLine{64         \textcolor{keywordtype}{long} result;}
+\DoxyCodeLine{65         InvokeHelper(0x76, DISPATCH\_PROPERTYGET, VT\_I4, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{66         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{67     \}}
+\DoxyCodeLine{68     LPDISPATCH get\_Item(\textcolor{keywordtype}{long} Index)}
+\DoxyCodeLine{69     \{}
+\DoxyCodeLine{70         LPDISPATCH result;}
+\DoxyCodeLine{71         \textcolor{keyword}{static} BYTE parms[] = VTS\_I4;}
+\DoxyCodeLine{72         InvokeHelper(0xaa, DISPATCH\_PROPERTYGET, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, parms, Index);}
+\DoxyCodeLine{73         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{74     \}}
+\DoxyCodeLine{75     VARIANT get\_LineStyle()}
+\DoxyCodeLine{76     \{}
+\DoxyCodeLine{77         VARIANT result;}
+\DoxyCodeLine{78         InvokeHelper(0x77, DISPATCH\_PROPERTYGET, VT\_VARIANT, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{79         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{80     \}}
+\DoxyCodeLine{81     \textcolor{keywordtype}{void} put\_LineStyle(VARIANT\& newValue)}
+\DoxyCodeLine{82     \{}
+\DoxyCodeLine{83         \textcolor{keyword}{static} BYTE parms[] = VTS\_VARIANT;}
+\DoxyCodeLine{84         InvokeHelper(0x77, DISPATCH\_PROPERTYPUT, VT\_EMPTY, \textcolor{keyword}{nullptr}, parms, \&newValue);}
+\DoxyCodeLine{85     \}}
+\DoxyCodeLine{86     LPUNKNOWN get\_\_NewEnum()}
+\DoxyCodeLine{87     \{}
+\DoxyCodeLine{88         LPUNKNOWN result;}
+\DoxyCodeLine{89         InvokeHelper(0xfffffffc, DISPATCH\_PROPERTYGET, VT\_UNKNOWN, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{90         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{91     \}}
+\DoxyCodeLine{92     VARIANT get\_Value()}
+\DoxyCodeLine{93     \{}
+\DoxyCodeLine{94         VARIANT result;}
+\DoxyCodeLine{95         InvokeHelper(0x6, DISPATCH\_PROPERTYGET, VT\_VARIANT, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{96         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{97     \}}
+\DoxyCodeLine{98     \textcolor{keywordtype}{void} put\_Value(VARIANT\& newValue)}
+\DoxyCodeLine{99     \{}
+\DoxyCodeLine{100         \textcolor{keyword}{static} BYTE parms[] = VTS\_VARIANT;}
+\DoxyCodeLine{101         InvokeHelper(0x6, DISPATCH\_PROPERTYPUT, VT\_EMPTY, \textcolor{keyword}{nullptr}, parms, \&newValue);}
+\DoxyCodeLine{102     \}}
+\DoxyCodeLine{103     VARIANT get\_Weight()}
+\DoxyCodeLine{104     \{}
+\DoxyCodeLine{105         VARIANT result;}
+\DoxyCodeLine{106         InvokeHelper(0x78, DISPATCH\_PROPERTYGET, VT\_VARIANT, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{107         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{108     \}}
+\DoxyCodeLine{109     \textcolor{keywordtype}{void} put\_Weight(VARIANT\& newValue)}
+\DoxyCodeLine{110     \{}
+\DoxyCodeLine{111         \textcolor{keyword}{static} BYTE parms[] = VTS\_VARIANT;}
+\DoxyCodeLine{112         InvokeHelper(0x78, DISPATCH\_PROPERTYPUT, VT\_EMPTY, \textcolor{keyword}{nullptr}, parms, \&newValue);}
+\DoxyCodeLine{113     \}}
+\DoxyCodeLine{114     LPDISPATCH get\_\_Default(\textcolor{keywordtype}{long} Index)}
+\DoxyCodeLine{115     \{}
+\DoxyCodeLine{116         LPDISPATCH result;}
+\DoxyCodeLine{117         \textcolor{keyword}{static} BYTE parms[] = VTS\_I4;}
+\DoxyCodeLine{118         InvokeHelper(0x0, DISPATCH\_PROPERTYGET, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, parms, Index);}
+\DoxyCodeLine{119         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{120     \}}
+\DoxyCodeLine{121     VARIANT get\_ThemeColor()}
+\DoxyCodeLine{122     \{}
+\DoxyCodeLine{123         VARIANT result;}
+\DoxyCodeLine{124         InvokeHelper(0x93d, DISPATCH\_PROPERTYGET, VT\_VARIANT, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{125         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{126     \}}
+\DoxyCodeLine{127     \textcolor{keywordtype}{void} put\_ThemeColor(VARIANT\& newValue)}
+\DoxyCodeLine{128     \{}
+\DoxyCodeLine{129         \textcolor{keyword}{static} BYTE parms[] = VTS\_VARIANT;}
+\DoxyCodeLine{130         InvokeHelper(0x93d, DISPATCH\_PROPERTYPUT, VT\_EMPTY, \textcolor{keyword}{nullptr}, parms, \&newValue);}
+\DoxyCodeLine{131     \}}
+\DoxyCodeLine{132     VARIANT get\_TintAndShade()}
+\DoxyCodeLine{133     \{}
+\DoxyCodeLine{134         VARIANT result;}
+\DoxyCodeLine{135         InvokeHelper(0x93e, DISPATCH\_PROPERTYGET, VT\_VARIANT, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{136         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{137     \}}
+\DoxyCodeLine{138     \textcolor{keywordtype}{void} put\_TintAndShade(VARIANT\& newValue)}
+\DoxyCodeLine{139     \{}
+\DoxyCodeLine{140         \textcolor{keyword}{static} BYTE parms[] = VTS\_VARIANT;}
+\DoxyCodeLine{141         InvokeHelper(0x93e, DISPATCH\_PROPERTYPUT, VT\_EMPTY, \textcolor{keyword}{nullptr}, parms, \&newValue);}
+\DoxyCodeLine{142     \}}
+\DoxyCodeLine{143 }
+\DoxyCodeLine{144     \textcolor{comment}{// Borders 속성}}
+\DoxyCodeLine{145 \textcolor{keyword}{public}:}
+\DoxyCodeLine{146 }
+\DoxyCodeLine{147 \};}
+
+\end{DoxyCode}

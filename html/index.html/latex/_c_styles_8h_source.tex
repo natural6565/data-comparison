@@ -1,0 +1,90 @@
+\hypertarget{_c_styles_8h_source}{}\doxysection{CStyles.\+h}
+\label{_c_styles_8h_source}\index{CompareTool2/CStyles.h@{CompareTool2/CStyles.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{// 컴퓨터에서 형식 라이브러리 마법사의 [클래스 추가]를 사용하여 생성한 IDispatch 래퍼 클래스입니다.}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{comment}{// \#import "{}C:\(\backslash\)\(\backslash\)Program Files\(\backslash\)\(\backslash\)Microsoft Office\(\backslash\)\(\backslash\)Office14\(\backslash\)\(\backslash\)EXCEL.EXE"{} no\_namespace}}
+\DoxyCodeLine{4 \textcolor{comment}{// CStyles 래퍼 클래스}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_styles}{CStyles}} : \textcolor{keyword}{public} COleDispatchDriver}
+\DoxyCodeLine{7 \{}
+\DoxyCodeLine{8 \textcolor{keyword}{public}:}
+\DoxyCodeLine{9     \mbox{\hyperlink{class_c_styles}{CStyles}}() \{\} \textcolor{comment}{// COleDispatchDriver 기본 생성자를 호출합니다.}}
+\DoxyCodeLine{10     \mbox{\hyperlink{class_c_styles}{CStyles}}(LPDISPATCH pDispatch) : COleDispatchDriver(pDispatch) \{\}}
+\DoxyCodeLine{11     \mbox{\hyperlink{class_c_styles}{CStyles}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_c_styles}{CStyles}}\& dispatchSrc) : COleDispatchDriver(dispatchSrc) \{\}}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13     \textcolor{comment}{// 특성}}
+\DoxyCodeLine{14 \textcolor{keyword}{public}:}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16     \textcolor{comment}{// 작업}}
+\DoxyCodeLine{17 \textcolor{keyword}{public}:}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20     \textcolor{comment}{// Styles 메서드}}
+\DoxyCodeLine{21 \textcolor{keyword}{public}:}
+\DoxyCodeLine{22     LPDISPATCH get\_Application()}
+\DoxyCodeLine{23     \{}
+\DoxyCodeLine{24         LPDISPATCH result;}
+\DoxyCodeLine{25         InvokeHelper(0x94, DISPATCH\_PROPERTYGET, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{26         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{27     \}}
+\DoxyCodeLine{28     \textcolor{keywordtype}{long} get\_Creator()}
+\DoxyCodeLine{29     \{}
+\DoxyCodeLine{30         \textcolor{keywordtype}{long} result;}
+\DoxyCodeLine{31         InvokeHelper(0x95, DISPATCH\_PROPERTYGET, VT\_I4, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{32         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{33     \}}
+\DoxyCodeLine{34     LPDISPATCH get\_Parent()}
+\DoxyCodeLine{35     \{}
+\DoxyCodeLine{36         LPDISPATCH result;}
+\DoxyCodeLine{37         InvokeHelper(0x96, DISPATCH\_PROPERTYGET, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{38         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{39     \}}
+\DoxyCodeLine{40     LPDISPATCH Add(LPCTSTR Name, VARIANT\& BasedOn)}
+\DoxyCodeLine{41     \{}
+\DoxyCodeLine{42         LPDISPATCH result;}
+\DoxyCodeLine{43         \textcolor{keyword}{static} BYTE parms[] = VTS\_BSTR VTS\_VARIANT;}
+\DoxyCodeLine{44         InvokeHelper(0xb5, DISPATCH\_METHOD, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, parms, Name, \&BasedOn);}
+\DoxyCodeLine{45         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{46     \}}
+\DoxyCodeLine{47     \textcolor{keywordtype}{long} get\_Count()}
+\DoxyCodeLine{48     \{}
+\DoxyCodeLine{49         \textcolor{keywordtype}{long} result;}
+\DoxyCodeLine{50         InvokeHelper(0x76, DISPATCH\_PROPERTYGET, VT\_I4, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{51         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{52     \}}
+\DoxyCodeLine{53     LPDISPATCH get\_Item(VARIANT\& Index)}
+\DoxyCodeLine{54     \{}
+\DoxyCodeLine{55         LPDISPATCH result;}
+\DoxyCodeLine{56         \textcolor{keyword}{static} BYTE parms[] = VTS\_VARIANT;}
+\DoxyCodeLine{57         InvokeHelper(0xaa, DISPATCH\_PROPERTYGET, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, parms, \&Index);}
+\DoxyCodeLine{58         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{59     \}}
+\DoxyCodeLine{60     VARIANT Merge(VARIANT\& Workbook)}
+\DoxyCodeLine{61     \{}
+\DoxyCodeLine{62         VARIANT result;}
+\DoxyCodeLine{63         \textcolor{keyword}{static} BYTE parms[] = VTS\_VARIANT;}
+\DoxyCodeLine{64         InvokeHelper(0x234, DISPATCH\_METHOD, VT\_VARIANT, (\textcolor{keywordtype}{void}*)\&result, parms, \&Workbook);}
+\DoxyCodeLine{65         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{66     \}}
+\DoxyCodeLine{67     LPUNKNOWN get\_\_NewEnum()}
+\DoxyCodeLine{68     \{}
+\DoxyCodeLine{69         LPUNKNOWN result;}
+\DoxyCodeLine{70         InvokeHelper(0xfffffffc, DISPATCH\_PROPERTYGET, VT\_UNKNOWN, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{71         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{72     \}}
+\DoxyCodeLine{73     LPDISPATCH get\_\_Default(VARIANT\& Index)}
+\DoxyCodeLine{74     \{}
+\DoxyCodeLine{75         LPDISPATCH result;}
+\DoxyCodeLine{76         \textcolor{keyword}{static} BYTE parms[] = VTS\_VARIANT;}
+\DoxyCodeLine{77         InvokeHelper(0x0, DISPATCH\_PROPERTYGET, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, parms, \&Index);}
+\DoxyCodeLine{78         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{79     \}}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{81     \textcolor{comment}{// Styles 속성}}
+\DoxyCodeLine{82 \textcolor{keyword}{public}:}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{84 \};}
+
+\end{DoxyCode}

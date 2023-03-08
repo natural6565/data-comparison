@@ -1,0 +1,869 @@
+\hypertarget{_c_worksheet_8h_source}{}\doxysection{CWorksheet.\+h}
+\label{_c_worksheet_8h_source}\index{CompareTool2/CWorksheet.h@{CompareTool2/CWorksheet.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{// 컴퓨터에서 형식 라이브러리 마법사의 [클래스 추가]를 사용하여 생성한 IDispatch 래퍼 클래스입니다.}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{comment}{// \#import "{}C:\(\backslash\)\(\backslash\)Program Files\(\backslash\)\(\backslash\)Microsoft Office\(\backslash\)\(\backslash\)Office14\(\backslash\)\(\backslash\)EXCEL.EXE"{} no\_namespace}}
+\DoxyCodeLine{4 \textcolor{comment}{// CWorksheet 래퍼 클래스}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_worksheet}{CWorksheet}} : \textcolor{keyword}{public} COleDispatchDriver}
+\DoxyCodeLine{7 \{}
+\DoxyCodeLine{8 \textcolor{keyword}{public}:}
+\DoxyCodeLine{9     \mbox{\hyperlink{class_c_worksheet}{CWorksheet}}() \{\} \textcolor{comment}{// COleDispatchDriver 기본 생성자를 호출합니다.}}
+\DoxyCodeLine{10     \mbox{\hyperlink{class_c_worksheet}{CWorksheet}}(LPDISPATCH pDispatch) : COleDispatchDriver(pDispatch) \{\}}
+\DoxyCodeLine{11     \mbox{\hyperlink{class_c_worksheet}{CWorksheet}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_c_worksheet}{CWorksheet}}\& dispatchSrc) : COleDispatchDriver(dispatchSrc) \{\}}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13     \textcolor{comment}{// 특성}}
+\DoxyCodeLine{14 \textcolor{keyword}{public}:}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16     \textcolor{comment}{// 작업}}
+\DoxyCodeLine{17 \textcolor{keyword}{public}:}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20     \textcolor{comment}{// \_Worksheet 메서드}}
+\DoxyCodeLine{21 \textcolor{keyword}{public}:}
+\DoxyCodeLine{22     LPDISPATCH get\_Application()}
+\DoxyCodeLine{23     \{}
+\DoxyCodeLine{24         LPDISPATCH result;}
+\DoxyCodeLine{25         InvokeHelper(0x94, DISPATCH\_PROPERTYGET, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{26         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{27     \}}
+\DoxyCodeLine{28     \textcolor{keywordtype}{long} get\_Creator()}
+\DoxyCodeLine{29     \{}
+\DoxyCodeLine{30         \textcolor{keywordtype}{long} result;}
+\DoxyCodeLine{31         InvokeHelper(0x95, DISPATCH\_PROPERTYGET, VT\_I4, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{32         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{33     \}}
+\DoxyCodeLine{34     LPDISPATCH get\_Parent()}
+\DoxyCodeLine{35     \{}
+\DoxyCodeLine{36         LPDISPATCH result;}
+\DoxyCodeLine{37         InvokeHelper(0x96, DISPATCH\_PROPERTYGET, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{38         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{39     \}}
+\DoxyCodeLine{40     \textcolor{keywordtype}{void} Activate()}
+\DoxyCodeLine{41     \{}
+\DoxyCodeLine{42         InvokeHelper(0x130, DISPATCH\_METHOD, VT\_EMPTY, \textcolor{keyword}{nullptr}, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{43     \}}
+\DoxyCodeLine{44     \textcolor{keywordtype}{void} Copy(VARIANT\& Before, VARIANT\& After)}
+\DoxyCodeLine{45     \{}
+\DoxyCodeLine{46         \textcolor{keyword}{static} BYTE parms[] = VTS\_VARIANT VTS\_VARIANT;}
+\DoxyCodeLine{47         InvokeHelper(0x227, DISPATCH\_METHOD, VT\_EMPTY, \textcolor{keyword}{nullptr}, parms, \&Before, \&After);}
+\DoxyCodeLine{48     \}}
+\DoxyCodeLine{49     \textcolor{keywordtype}{void} Delete()}
+\DoxyCodeLine{50     \{}
+\DoxyCodeLine{51         InvokeHelper(0x75, DISPATCH\_METHOD, VT\_EMPTY, \textcolor{keyword}{nullptr}, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{52     \}}
+\DoxyCodeLine{53     CString get\_CodeName()}
+\DoxyCodeLine{54     \{}
+\DoxyCodeLine{55         CString result;}
+\DoxyCodeLine{56         InvokeHelper(0x55d, DISPATCH\_PROPERTYGET, VT\_BSTR, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{57         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{58     \}}
+\DoxyCodeLine{59     CString get\_\_CodeName()}
+\DoxyCodeLine{60     \{}
+\DoxyCodeLine{61         CString result;}
+\DoxyCodeLine{62         InvokeHelper(0x80010000, DISPATCH\_PROPERTYGET, VT\_BSTR, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{63         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{64     \}}
+\DoxyCodeLine{65     \textcolor{keywordtype}{void} put\_\_CodeName(LPCTSTR newValue)}
+\DoxyCodeLine{66     \{}
+\DoxyCodeLine{67         \textcolor{keyword}{static} BYTE parms[] = VTS\_BSTR;}
+\DoxyCodeLine{68         InvokeHelper(0x80010000, DISPATCH\_PROPERTYPUT, VT\_EMPTY, \textcolor{keyword}{nullptr}, parms, newValue);}
+\DoxyCodeLine{69     \}}
+\DoxyCodeLine{70     \textcolor{keywordtype}{long} get\_Index()}
+\DoxyCodeLine{71     \{}
+\DoxyCodeLine{72         \textcolor{keywordtype}{long} result;}
+\DoxyCodeLine{73         InvokeHelper(0x1e6, DISPATCH\_PROPERTYGET, VT\_I4, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{74         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{75     \}}
+\DoxyCodeLine{76     \textcolor{keywordtype}{void} Move(VARIANT\& Before, VARIANT\& After)}
+\DoxyCodeLine{77     \{}
+\DoxyCodeLine{78         \textcolor{keyword}{static} BYTE parms[] = VTS\_VARIANT VTS\_VARIANT;}
+\DoxyCodeLine{79         InvokeHelper(0x27d, DISPATCH\_METHOD, VT\_EMPTY, \textcolor{keyword}{nullptr}, parms, \&Before, \&After);}
+\DoxyCodeLine{80     \}}
+\DoxyCodeLine{81     CString get\_Name()}
+\DoxyCodeLine{82     \{}
+\DoxyCodeLine{83         CString result;}
+\DoxyCodeLine{84         InvokeHelper(0x6e, DISPATCH\_PROPERTYGET, VT\_BSTR, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{85         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{86     \}}
+\DoxyCodeLine{87     \textcolor{keywordtype}{void} put\_Name(LPCTSTR newValue)}
+\DoxyCodeLine{88     \{}
+\DoxyCodeLine{89         \textcolor{keyword}{static} BYTE parms[] = VTS\_BSTR;}
+\DoxyCodeLine{90         InvokeHelper(0x6e, DISPATCH\_PROPERTYPUT, VT\_EMPTY, \textcolor{keyword}{nullptr}, parms, newValue);}
+\DoxyCodeLine{91     \}}
+\DoxyCodeLine{92     LPDISPATCH get\_Next()}
+\DoxyCodeLine{93     \{}
+\DoxyCodeLine{94         LPDISPATCH result;}
+\DoxyCodeLine{95         InvokeHelper(0x1f6, DISPATCH\_PROPERTYGET, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{96         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{97     \}}
+\DoxyCodeLine{98     CString get\_OnDoubleClick()}
+\DoxyCodeLine{99     \{}
+\DoxyCodeLine{100         CString result;}
+\DoxyCodeLine{101         InvokeHelper(0x274, DISPATCH\_PROPERTYGET, VT\_BSTR, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{102         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{103     \}}
+\DoxyCodeLine{104     \textcolor{keywordtype}{void} put\_OnDoubleClick(LPCTSTR newValue)}
+\DoxyCodeLine{105     \{}
+\DoxyCodeLine{106         \textcolor{keyword}{static} BYTE parms[] = VTS\_BSTR;}
+\DoxyCodeLine{107         InvokeHelper(0x274, DISPATCH\_PROPERTYPUT, VT\_EMPTY, \textcolor{keyword}{nullptr}, parms, newValue);}
+\DoxyCodeLine{108     \}}
+\DoxyCodeLine{109     CString get\_OnSheetActivate()}
+\DoxyCodeLine{110     \{}
+\DoxyCodeLine{111         CString result;}
+\DoxyCodeLine{112         InvokeHelper(0x407, DISPATCH\_PROPERTYGET, VT\_BSTR, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{113         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{114     \}}
+\DoxyCodeLine{115     \textcolor{keywordtype}{void} put\_OnSheetActivate(LPCTSTR newValue)}
+\DoxyCodeLine{116     \{}
+\DoxyCodeLine{117         \textcolor{keyword}{static} BYTE parms[] = VTS\_BSTR;}
+\DoxyCodeLine{118         InvokeHelper(0x407, DISPATCH\_PROPERTYPUT, VT\_EMPTY, \textcolor{keyword}{nullptr}, parms, newValue);}
+\DoxyCodeLine{119     \}}
+\DoxyCodeLine{120     CString get\_OnSheetDeactivate()}
+\DoxyCodeLine{121     \{}
+\DoxyCodeLine{122         CString result;}
+\DoxyCodeLine{123         InvokeHelper(0x439, DISPATCH\_PROPERTYGET, VT\_BSTR, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{124         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{125     \}}
+\DoxyCodeLine{126     \textcolor{keywordtype}{void} put\_OnSheetDeactivate(LPCTSTR newValue)}
+\DoxyCodeLine{127     \{}
+\DoxyCodeLine{128         \textcolor{keyword}{static} BYTE parms[] = VTS\_BSTR;}
+\DoxyCodeLine{129         InvokeHelper(0x439, DISPATCH\_PROPERTYPUT, VT\_EMPTY, \textcolor{keyword}{nullptr}, parms, newValue);}
+\DoxyCodeLine{130     \}}
+\DoxyCodeLine{131     LPDISPATCH get\_PageSetup()}
+\DoxyCodeLine{132     \{}
+\DoxyCodeLine{133         LPDISPATCH result;}
+\DoxyCodeLine{134         InvokeHelper(0x3e6, DISPATCH\_PROPERTYGET, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{135         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{136     \}}
+\DoxyCodeLine{137     LPDISPATCH get\_Previous()}
+\DoxyCodeLine{138     \{}
+\DoxyCodeLine{139         LPDISPATCH result;}
+\DoxyCodeLine{140         InvokeHelper(0x1f7, DISPATCH\_PROPERTYGET, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{141         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{142     \}}
+\DoxyCodeLine{143     \textcolor{keywordtype}{void} \_\_PrintOut(VARIANT\& From, VARIANT\& To, VARIANT\& Copies, VARIANT\& Preview, VARIANT\& ActivePrinter, VARIANT\& PrintToFile, VARIANT\& Collate)}
+\DoxyCodeLine{144     \{}
+\DoxyCodeLine{145         \textcolor{keyword}{static} BYTE parms[] = VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT;}
+\DoxyCodeLine{146         InvokeHelper(0x389, DISPATCH\_METHOD, VT\_EMPTY, \textcolor{keyword}{nullptr}, parms, \&From, \&To, \&Copies, \&Preview, \&ActivePrinter, \&PrintToFile, \&Collate);}
+\DoxyCodeLine{147     \}}
+\DoxyCodeLine{148     \textcolor{keywordtype}{void} PrintPreview(VARIANT\& EnableChanges)}
+\DoxyCodeLine{149     \{}
+\DoxyCodeLine{150         \textcolor{keyword}{static} BYTE parms[] = VTS\_VARIANT;}
+\DoxyCodeLine{151         InvokeHelper(0x119, DISPATCH\_METHOD, VT\_EMPTY, \textcolor{keyword}{nullptr}, parms, \&EnableChanges);}
+\DoxyCodeLine{152     \}}
+\DoxyCodeLine{153     \textcolor{keywordtype}{void} \_Protect(VARIANT\& Password, VARIANT\& DrawingObjects, VARIANT\& Contents, VARIANT\& Scenarios, VARIANT\& UserInterfaceOnly)}
+\DoxyCodeLine{154     \{}
+\DoxyCodeLine{155         \textcolor{keyword}{static} BYTE parms[] = VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT;}
+\DoxyCodeLine{156         InvokeHelper(0x11a, DISPATCH\_METHOD, VT\_EMPTY, \textcolor{keyword}{nullptr}, parms, \&Password, \&DrawingObjects, \&Contents, \&Scenarios, \&UserInterfaceOnly);}
+\DoxyCodeLine{157     \}}
+\DoxyCodeLine{158     BOOL get\_ProtectContents()}
+\DoxyCodeLine{159     \{}
+\DoxyCodeLine{160         BOOL result;}
+\DoxyCodeLine{161         InvokeHelper(0x124, DISPATCH\_PROPERTYGET, VT\_BOOL, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{162         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{163     \}}
+\DoxyCodeLine{164     BOOL get\_ProtectDrawingObjects()}
+\DoxyCodeLine{165     \{}
+\DoxyCodeLine{166         BOOL result;}
+\DoxyCodeLine{167         InvokeHelper(0x125, DISPATCH\_PROPERTYGET, VT\_BOOL, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{168         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{169     \}}
+\DoxyCodeLine{170     BOOL get\_ProtectionMode()}
+\DoxyCodeLine{171     \{}
+\DoxyCodeLine{172         BOOL result;}
+\DoxyCodeLine{173         InvokeHelper(0x487, DISPATCH\_PROPERTYGET, VT\_BOOL, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{174         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{175     \}}
+\DoxyCodeLine{176     BOOL get\_ProtectScenarios()}
+\DoxyCodeLine{177     \{}
+\DoxyCodeLine{178         BOOL result;}
+\DoxyCodeLine{179         InvokeHelper(0x126, DISPATCH\_PROPERTYGET, VT\_BOOL, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{180         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{181     \}}
+\DoxyCodeLine{182     \textcolor{keywordtype}{void} \_SaveAs(LPCTSTR Filename, VARIANT\& FileFormat, VARIANT\& Password, VARIANT\& WriteResPassword, VARIANT\& ReadOnlyRecommended, VARIANT\& CreateBackup, VARIANT\& AddToMru, VARIANT\& TextCodepage, VARIANT\& TextVisualLayout)}
+\DoxyCodeLine{183     \{}
+\DoxyCodeLine{184         \textcolor{keyword}{static} BYTE parms[] = VTS\_BSTR VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT;}
+\DoxyCodeLine{185         InvokeHelper(0x11c, DISPATCH\_METHOD, VT\_EMPTY, \textcolor{keyword}{nullptr}, parms, Filename, \&FileFormat, \&Password, \&WriteResPassword, \&ReadOnlyRecommended, \&CreateBackup, \&AddToMru, \&TextCodepage, \&TextVisualLayout);}
+\DoxyCodeLine{186     \}}
+\DoxyCodeLine{187     \textcolor{keywordtype}{void} Select(VARIANT\& Replace)}
+\DoxyCodeLine{188     \{}
+\DoxyCodeLine{189         \textcolor{keyword}{static} BYTE parms[] = VTS\_VARIANT;}
+\DoxyCodeLine{190         InvokeHelper(0xeb, DISPATCH\_METHOD, VT\_EMPTY, \textcolor{keyword}{nullptr}, parms, \&Replace);}
+\DoxyCodeLine{191     \}}
+\DoxyCodeLine{192     \textcolor{keywordtype}{void} Unprotect(VARIANT\& Password)}
+\DoxyCodeLine{193     \{}
+\DoxyCodeLine{194         \textcolor{keyword}{static} BYTE parms[] = VTS\_VARIANT;}
+\DoxyCodeLine{195         InvokeHelper(0x11d, DISPATCH\_METHOD, VT\_EMPTY, \textcolor{keyword}{nullptr}, parms, \&Password);}
+\DoxyCodeLine{196     \}}
+\DoxyCodeLine{197     \textcolor{keywordtype}{long} get\_Visible()}
+\DoxyCodeLine{198     \{}
+\DoxyCodeLine{199         \textcolor{keywordtype}{long} result;}
+\DoxyCodeLine{200         InvokeHelper(0x22e, DISPATCH\_PROPERTYGET, VT\_I4, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{201         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{202     \}}
+\DoxyCodeLine{203     \textcolor{keywordtype}{void} put\_Visible(\textcolor{keywordtype}{long} newValue)}
+\DoxyCodeLine{204     \{}
+\DoxyCodeLine{205         \textcolor{keyword}{static} BYTE parms[] = VTS\_I4;}
+\DoxyCodeLine{206         InvokeHelper(0x22e, DISPATCH\_PROPERTYPUT, VT\_EMPTY, \textcolor{keyword}{nullptr}, parms, newValue);}
+\DoxyCodeLine{207     \}}
+\DoxyCodeLine{208     LPDISPATCH get\_Shapes()}
+\DoxyCodeLine{209     \{}
+\DoxyCodeLine{210         LPDISPATCH result;}
+\DoxyCodeLine{211         InvokeHelper(0x561, DISPATCH\_PROPERTYGET, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{212         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{213     \}}
+\DoxyCodeLine{214     BOOL get\_TransitionExpEval()}
+\DoxyCodeLine{215     \{}
+\DoxyCodeLine{216         BOOL result;}
+\DoxyCodeLine{217         InvokeHelper(0x191, DISPATCH\_PROPERTYGET, VT\_BOOL, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{218         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{219     \}}
+\DoxyCodeLine{220     \textcolor{keywordtype}{void} put\_TransitionExpEval(BOOL newValue)}
+\DoxyCodeLine{221     \{}
+\DoxyCodeLine{222         \textcolor{keyword}{static} BYTE parms[] = VTS\_BOOL;}
+\DoxyCodeLine{223         InvokeHelper(0x191, DISPATCH\_PROPERTYPUT, VT\_EMPTY, \textcolor{keyword}{nullptr}, parms, newValue);}
+\DoxyCodeLine{224     \}}
+\DoxyCodeLine{225     LPDISPATCH Arcs(VARIANT\& Index)}
+\DoxyCodeLine{226     \{}
+\DoxyCodeLine{227         LPDISPATCH result;}
+\DoxyCodeLine{228         \textcolor{keyword}{static} BYTE parms[] = VTS\_VARIANT;}
+\DoxyCodeLine{229         InvokeHelper(0x2f8, DISPATCH\_METHOD, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, parms, \&Index);}
+\DoxyCodeLine{230         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{231     \}}
+\DoxyCodeLine{232     BOOL get\_AutoFilterMode()}
+\DoxyCodeLine{233     \{}
+\DoxyCodeLine{234         BOOL result;}
+\DoxyCodeLine{235         InvokeHelper(0x318, DISPATCH\_PROPERTYGET, VT\_BOOL, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{236         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{237     \}}
+\DoxyCodeLine{238     \textcolor{keywordtype}{void} put\_AutoFilterMode(BOOL newValue)}
+\DoxyCodeLine{239     \{}
+\DoxyCodeLine{240         \textcolor{keyword}{static} BYTE parms[] = VTS\_BOOL;}
+\DoxyCodeLine{241         InvokeHelper(0x318, DISPATCH\_PROPERTYPUT, VT\_EMPTY, \textcolor{keyword}{nullptr}, parms, newValue);}
+\DoxyCodeLine{242     \}}
+\DoxyCodeLine{243     \textcolor{keywordtype}{void} SetBackgroundPicture(LPCTSTR Filename)}
+\DoxyCodeLine{244     \{}
+\DoxyCodeLine{245         \textcolor{keyword}{static} BYTE parms[] = VTS\_BSTR;}
+\DoxyCodeLine{246         InvokeHelper(0x4a4, DISPATCH\_METHOD, VT\_EMPTY, \textcolor{keyword}{nullptr}, parms, Filename);}
+\DoxyCodeLine{247     \}}
+\DoxyCodeLine{248     LPDISPATCH Buttons(VARIANT\& Index)}
+\DoxyCodeLine{249     \{}
+\DoxyCodeLine{250         LPDISPATCH result;}
+\DoxyCodeLine{251         \textcolor{keyword}{static} BYTE parms[] = VTS\_VARIANT;}
+\DoxyCodeLine{252         InvokeHelper(0x22d, DISPATCH\_METHOD, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, parms, \&Index);}
+\DoxyCodeLine{253         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{254     \}}
+\DoxyCodeLine{255     \textcolor{keywordtype}{void} Calculate()}
+\DoxyCodeLine{256     \{}
+\DoxyCodeLine{257         InvokeHelper(0x117, DISPATCH\_METHOD, VT\_EMPTY, \textcolor{keyword}{nullptr}, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{258     \}}
+\DoxyCodeLine{259     BOOL get\_EnableCalculation()}
+\DoxyCodeLine{260     \{}
+\DoxyCodeLine{261         BOOL result;}
+\DoxyCodeLine{262         InvokeHelper(0x590, DISPATCH\_PROPERTYGET, VT\_BOOL, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{263         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{264     \}}
+\DoxyCodeLine{265     \textcolor{keywordtype}{void} put\_EnableCalculation(BOOL newValue)}
+\DoxyCodeLine{266     \{}
+\DoxyCodeLine{267         \textcolor{keyword}{static} BYTE parms[] = VTS\_BOOL;}
+\DoxyCodeLine{268         InvokeHelper(0x590, DISPATCH\_PROPERTYPUT, VT\_EMPTY, \textcolor{keyword}{nullptr}, parms, newValue);}
+\DoxyCodeLine{269     \}}
+\DoxyCodeLine{270     LPDISPATCH get\_Cells()}
+\DoxyCodeLine{271     \{}
+\DoxyCodeLine{272         LPDISPATCH result;}
+\DoxyCodeLine{273         InvokeHelper(0xee, DISPATCH\_PROPERTYGET, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{274         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{275     \}}
+\DoxyCodeLine{276     LPDISPATCH ChartObjects(VARIANT\& Index)}
+\DoxyCodeLine{277     \{}
+\DoxyCodeLine{278         LPDISPATCH result;}
+\DoxyCodeLine{279         \textcolor{keyword}{static} BYTE parms[] = VTS\_VARIANT;}
+\DoxyCodeLine{280         InvokeHelper(0x424, DISPATCH\_METHOD, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, parms, \&Index);}
+\DoxyCodeLine{281         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{282     \}}
+\DoxyCodeLine{283     LPDISPATCH CheckBoxes(VARIANT\& Index)}
+\DoxyCodeLine{284     \{}
+\DoxyCodeLine{285         LPDISPATCH result;}
+\DoxyCodeLine{286         \textcolor{keyword}{static} BYTE parms[] = VTS\_VARIANT;}
+\DoxyCodeLine{287         InvokeHelper(0x338, DISPATCH\_METHOD, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, parms, \&Index);}
+\DoxyCodeLine{288         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{289     \}}
+\DoxyCodeLine{290     \textcolor{keywordtype}{void} CheckSpelling(VARIANT\& CustomDictionary, VARIANT\& IgnoreUppercase, VARIANT\& AlwaysSuggest, VARIANT\& SpellLang)}
+\DoxyCodeLine{291     \{}
+\DoxyCodeLine{292         \textcolor{keyword}{static} BYTE parms[] = VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT;}
+\DoxyCodeLine{293         InvokeHelper(0x1f9, DISPATCH\_METHOD, VT\_EMPTY, \textcolor{keyword}{nullptr}, parms, \&CustomDictionary, \&IgnoreUppercase, \&AlwaysSuggest, \&SpellLang);}
+\DoxyCodeLine{294     \}}
+\DoxyCodeLine{295     LPDISPATCH get\_CircularReference()}
+\DoxyCodeLine{296     \{}
+\DoxyCodeLine{297         LPDISPATCH result;}
+\DoxyCodeLine{298         InvokeHelper(0x42d, DISPATCH\_PROPERTYGET, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{299         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{300     \}}
+\DoxyCodeLine{301     \textcolor{keywordtype}{void} ClearArrows()}
+\DoxyCodeLine{302     \{}
+\DoxyCodeLine{303         InvokeHelper(0x3ca, DISPATCH\_METHOD, VT\_EMPTY, \textcolor{keyword}{nullptr}, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{304     \}}
+\DoxyCodeLine{305     LPDISPATCH get\_Columns()}
+\DoxyCodeLine{306     \{}
+\DoxyCodeLine{307         LPDISPATCH result;}
+\DoxyCodeLine{308         InvokeHelper(0xf1, DISPATCH\_PROPERTYGET, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{309         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{310     \}}
+\DoxyCodeLine{311     \textcolor{keywordtype}{long} get\_ConsolidationFunction()}
+\DoxyCodeLine{312     \{}
+\DoxyCodeLine{313         \textcolor{keywordtype}{long} result;}
+\DoxyCodeLine{314         InvokeHelper(0x315, DISPATCH\_PROPERTYGET, VT\_I4, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{315         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{316     \}}
+\DoxyCodeLine{317     VARIANT get\_ConsolidationOptions()}
+\DoxyCodeLine{318     \{}
+\DoxyCodeLine{319         VARIANT result;}
+\DoxyCodeLine{320         InvokeHelper(0x316, DISPATCH\_PROPERTYGET, VT\_VARIANT, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{321         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{322     \}}
+\DoxyCodeLine{323     VARIANT get\_ConsolidationSources()}
+\DoxyCodeLine{324     \{}
+\DoxyCodeLine{325         VARIANT result;}
+\DoxyCodeLine{326         InvokeHelper(0x317, DISPATCH\_PROPERTYGET, VT\_VARIANT, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{327         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{328     \}}
+\DoxyCodeLine{329     BOOL get\_DisplayAutomaticPageBreaks()}
+\DoxyCodeLine{330     \{}
+\DoxyCodeLine{331         BOOL result;}
+\DoxyCodeLine{332         InvokeHelper(0x283, DISPATCH\_PROPERTYGET, VT\_BOOL, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{333         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{334     \}}
+\DoxyCodeLine{335     \textcolor{keywordtype}{void} put\_DisplayAutomaticPageBreaks(BOOL newValue)}
+\DoxyCodeLine{336     \{}
+\DoxyCodeLine{337         \textcolor{keyword}{static} BYTE parms[] = VTS\_BOOL;}
+\DoxyCodeLine{338         InvokeHelper(0x283, DISPATCH\_PROPERTYPUT, VT\_EMPTY, \textcolor{keyword}{nullptr}, parms, newValue);}
+\DoxyCodeLine{339     \}}
+\DoxyCodeLine{340     LPDISPATCH Drawings(VARIANT\& Index)}
+\DoxyCodeLine{341     \{}
+\DoxyCodeLine{342         LPDISPATCH result;}
+\DoxyCodeLine{343         \textcolor{keyword}{static} BYTE parms[] = VTS\_VARIANT;}
+\DoxyCodeLine{344         InvokeHelper(0x304, DISPATCH\_METHOD, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, parms, \&Index);}
+\DoxyCodeLine{345         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{346     \}}
+\DoxyCodeLine{347     LPDISPATCH DrawingObjects(VARIANT\& Index)}
+\DoxyCodeLine{348     \{}
+\DoxyCodeLine{349         LPDISPATCH result;}
+\DoxyCodeLine{350         \textcolor{keyword}{static} BYTE parms[] = VTS\_VARIANT;}
+\DoxyCodeLine{351         InvokeHelper(0x58, DISPATCH\_METHOD, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, parms, \&Index);}
+\DoxyCodeLine{352         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{353     \}}
+\DoxyCodeLine{354     LPDISPATCH DropDowns(VARIANT\& Index)}
+\DoxyCodeLine{355     \{}
+\DoxyCodeLine{356         LPDISPATCH result;}
+\DoxyCodeLine{357         \textcolor{keyword}{static} BYTE parms[] = VTS\_VARIANT;}
+\DoxyCodeLine{358         InvokeHelper(0x344, DISPATCH\_METHOD, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, parms, \&Index);}
+\DoxyCodeLine{359         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{360     \}}
+\DoxyCodeLine{361     BOOL get\_EnableAutoFilter()}
+\DoxyCodeLine{362     \{}
+\DoxyCodeLine{363         BOOL result;}
+\DoxyCodeLine{364         InvokeHelper(0x484, DISPATCH\_PROPERTYGET, VT\_BOOL, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{365         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{366     \}}
+\DoxyCodeLine{367     \textcolor{keywordtype}{void} put\_EnableAutoFilter(BOOL newValue)}
+\DoxyCodeLine{368     \{}
+\DoxyCodeLine{369         \textcolor{keyword}{static} BYTE parms[] = VTS\_BOOL;}
+\DoxyCodeLine{370         InvokeHelper(0x484, DISPATCH\_PROPERTYPUT, VT\_EMPTY, \textcolor{keyword}{nullptr}, parms, newValue);}
+\DoxyCodeLine{371     \}}
+\DoxyCodeLine{372     \textcolor{keywordtype}{long} get\_EnableSelection()}
+\DoxyCodeLine{373     \{}
+\DoxyCodeLine{374         \textcolor{keywordtype}{long} result;}
+\DoxyCodeLine{375         InvokeHelper(0x591, DISPATCH\_PROPERTYGET, VT\_I4, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{376         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{377     \}}
+\DoxyCodeLine{378     \textcolor{keywordtype}{void} put\_EnableSelection(\textcolor{keywordtype}{long} newValue)}
+\DoxyCodeLine{379     \{}
+\DoxyCodeLine{380         \textcolor{keyword}{static} BYTE parms[] = VTS\_I4;}
+\DoxyCodeLine{381         InvokeHelper(0x591, DISPATCH\_PROPERTYPUT, VT\_EMPTY, \textcolor{keyword}{nullptr}, parms, newValue);}
+\DoxyCodeLine{382     \}}
+\DoxyCodeLine{383     BOOL get\_EnableOutlining()}
+\DoxyCodeLine{384     \{}
+\DoxyCodeLine{385         BOOL result;}
+\DoxyCodeLine{386         InvokeHelper(0x485, DISPATCH\_PROPERTYGET, VT\_BOOL, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{387         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{388     \}}
+\DoxyCodeLine{389     \textcolor{keywordtype}{void} put\_EnableOutlining(BOOL newValue)}
+\DoxyCodeLine{390     \{}
+\DoxyCodeLine{391         \textcolor{keyword}{static} BYTE parms[] = VTS\_BOOL;}
+\DoxyCodeLine{392         InvokeHelper(0x485, DISPATCH\_PROPERTYPUT, VT\_EMPTY, \textcolor{keyword}{nullptr}, parms, newValue);}
+\DoxyCodeLine{393     \}}
+\DoxyCodeLine{394     BOOL get\_EnablePivotTable()}
+\DoxyCodeLine{395     \{}
+\DoxyCodeLine{396         BOOL result;}
+\DoxyCodeLine{397         InvokeHelper(0x486, DISPATCH\_PROPERTYGET, VT\_BOOL, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{398         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{399     \}}
+\DoxyCodeLine{400     \textcolor{keywordtype}{void} put\_EnablePivotTable(BOOL newValue)}
+\DoxyCodeLine{401     \{}
+\DoxyCodeLine{402         \textcolor{keyword}{static} BYTE parms[] = VTS\_BOOL;}
+\DoxyCodeLine{403         InvokeHelper(0x486, DISPATCH\_PROPERTYPUT, VT\_EMPTY, \textcolor{keyword}{nullptr}, parms, newValue);}
+\DoxyCodeLine{404     \}}
+\DoxyCodeLine{405     VARIANT Evaluate(VARIANT\& Name)}
+\DoxyCodeLine{406     \{}
+\DoxyCodeLine{407         VARIANT result;}
+\DoxyCodeLine{408         \textcolor{keyword}{static} BYTE parms[] = VTS\_VARIANT;}
+\DoxyCodeLine{409         InvokeHelper(0x1, DISPATCH\_METHOD, VT\_VARIANT, (\textcolor{keywordtype}{void}*)\&result, parms, \&Name);}
+\DoxyCodeLine{410         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{411     \}}
+\DoxyCodeLine{412     VARIANT \_Evaluate(VARIANT\& Name)}
+\DoxyCodeLine{413     \{}
+\DoxyCodeLine{414         VARIANT result;}
+\DoxyCodeLine{415         \textcolor{keyword}{static} BYTE parms[] = VTS\_VARIANT;}
+\DoxyCodeLine{416         InvokeHelper(0xfffffffb, DISPATCH\_METHOD, VT\_VARIANT, (\textcolor{keywordtype}{void}*)\&result, parms, \&Name);}
+\DoxyCodeLine{417         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{418     \}}
+\DoxyCodeLine{419     BOOL get\_FilterMode()}
+\DoxyCodeLine{420     \{}
+\DoxyCodeLine{421         BOOL result;}
+\DoxyCodeLine{422         InvokeHelper(0x320, DISPATCH\_PROPERTYGET, VT\_BOOL, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{423         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{424     \}}
+\DoxyCodeLine{425     \textcolor{keywordtype}{void} ResetAllPageBreaks()}
+\DoxyCodeLine{426     \{}
+\DoxyCodeLine{427         InvokeHelper(0x592, DISPATCH\_METHOD, VT\_EMPTY, \textcolor{keyword}{nullptr}, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{428     \}}
+\DoxyCodeLine{429     LPDISPATCH GroupBoxes(VARIANT\& Index)}
+\DoxyCodeLine{430     \{}
+\DoxyCodeLine{431         LPDISPATCH result;}
+\DoxyCodeLine{432         \textcolor{keyword}{static} BYTE parms[] = VTS\_VARIANT;}
+\DoxyCodeLine{433         InvokeHelper(0x342, DISPATCH\_METHOD, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, parms, \&Index);}
+\DoxyCodeLine{434         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{435     \}}
+\DoxyCodeLine{436     LPDISPATCH GroupObjects(VARIANT\& Index)}
+\DoxyCodeLine{437     \{}
+\DoxyCodeLine{438         LPDISPATCH result;}
+\DoxyCodeLine{439         \textcolor{keyword}{static} BYTE parms[] = VTS\_VARIANT;}
+\DoxyCodeLine{440         InvokeHelper(0x459, DISPATCH\_METHOD, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, parms, \&Index);}
+\DoxyCodeLine{441         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{442     \}}
+\DoxyCodeLine{443     LPDISPATCH Labels(VARIANT\& Index)}
+\DoxyCodeLine{444     \{}
+\DoxyCodeLine{445         LPDISPATCH result;}
+\DoxyCodeLine{446         \textcolor{keyword}{static} BYTE parms[] = VTS\_VARIANT;}
+\DoxyCodeLine{447         InvokeHelper(0x349, DISPATCH\_METHOD, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, parms, \&Index);}
+\DoxyCodeLine{448         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{449     \}}
+\DoxyCodeLine{450     LPDISPATCH Lines(VARIANT\& Index)}
+\DoxyCodeLine{451     \{}
+\DoxyCodeLine{452         LPDISPATCH result;}
+\DoxyCodeLine{453         \textcolor{keyword}{static} BYTE parms[] = VTS\_VARIANT;}
+\DoxyCodeLine{454         InvokeHelper(0x2ff, DISPATCH\_METHOD, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, parms, \&Index);}
+\DoxyCodeLine{455         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{456     \}}
+\DoxyCodeLine{457     LPDISPATCH ListBoxes(VARIANT\& Index)}
+\DoxyCodeLine{458     \{}
+\DoxyCodeLine{459         LPDISPATCH result;}
+\DoxyCodeLine{460         \textcolor{keyword}{static} BYTE parms[] = VTS\_VARIANT;}
+\DoxyCodeLine{461         InvokeHelper(0x340, DISPATCH\_METHOD, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, parms, \&Index);}
+\DoxyCodeLine{462         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{463     \}}
+\DoxyCodeLine{464     LPDISPATCH get\_Names()}
+\DoxyCodeLine{465     \{}
+\DoxyCodeLine{466         LPDISPATCH result;}
+\DoxyCodeLine{467         InvokeHelper(0x1ba, DISPATCH\_PROPERTYGET, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{468         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{469     \}}
+\DoxyCodeLine{470     LPDISPATCH OLEObjects(VARIANT\& Index)}
+\DoxyCodeLine{471     \{}
+\DoxyCodeLine{472         LPDISPATCH result;}
+\DoxyCodeLine{473         \textcolor{keyword}{static} BYTE parms[] = VTS\_VARIANT;}
+\DoxyCodeLine{474         InvokeHelper(0x31f, DISPATCH\_METHOD, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, parms, \&Index);}
+\DoxyCodeLine{475         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{476     \}}
+\DoxyCodeLine{477     CString get\_OnCalculate()}
+\DoxyCodeLine{478     \{}
+\DoxyCodeLine{479         CString result;}
+\DoxyCodeLine{480         InvokeHelper(0x271, DISPATCH\_PROPERTYGET, VT\_BSTR, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{481         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{482     \}}
+\DoxyCodeLine{483     \textcolor{keywordtype}{void} put\_OnCalculate(LPCTSTR newValue)}
+\DoxyCodeLine{484     \{}
+\DoxyCodeLine{485         \textcolor{keyword}{static} BYTE parms[] = VTS\_BSTR;}
+\DoxyCodeLine{486         InvokeHelper(0x271, DISPATCH\_PROPERTYPUT, VT\_EMPTY, \textcolor{keyword}{nullptr}, parms, newValue);}
+\DoxyCodeLine{487     \}}
+\DoxyCodeLine{488     CString get\_OnData()}
+\DoxyCodeLine{489     \{}
+\DoxyCodeLine{490         CString result;}
+\DoxyCodeLine{491         InvokeHelper(0x275, DISPATCH\_PROPERTYGET, VT\_BSTR, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{492         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{493     \}}
+\DoxyCodeLine{494     \textcolor{keywordtype}{void} put\_OnData(LPCTSTR newValue)}
+\DoxyCodeLine{495     \{}
+\DoxyCodeLine{496         \textcolor{keyword}{static} BYTE parms[] = VTS\_BSTR;}
+\DoxyCodeLine{497         InvokeHelper(0x275, DISPATCH\_PROPERTYPUT, VT\_EMPTY, \textcolor{keyword}{nullptr}, parms, newValue);}
+\DoxyCodeLine{498     \}}
+\DoxyCodeLine{499     CString get\_OnEntry()}
+\DoxyCodeLine{500     \{}
+\DoxyCodeLine{501         CString result;}
+\DoxyCodeLine{502         InvokeHelper(0x273, DISPATCH\_PROPERTYGET, VT\_BSTR, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{503         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{504     \}}
+\DoxyCodeLine{505     \textcolor{keywordtype}{void} put\_OnEntry(LPCTSTR newValue)}
+\DoxyCodeLine{506     \{}
+\DoxyCodeLine{507         \textcolor{keyword}{static} BYTE parms[] = VTS\_BSTR;}
+\DoxyCodeLine{508         InvokeHelper(0x273, DISPATCH\_PROPERTYPUT, VT\_EMPTY, \textcolor{keyword}{nullptr}, parms, newValue);}
+\DoxyCodeLine{509     \}}
+\DoxyCodeLine{510     LPDISPATCH OptionButtons(VARIANT\& Index)}
+\DoxyCodeLine{511     \{}
+\DoxyCodeLine{512         LPDISPATCH result;}
+\DoxyCodeLine{513         \textcolor{keyword}{static} BYTE parms[] = VTS\_VARIANT;}
+\DoxyCodeLine{514         InvokeHelper(0x33a, DISPATCH\_METHOD, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, parms, \&Index);}
+\DoxyCodeLine{515         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{516     \}}
+\DoxyCodeLine{517     LPDISPATCH get\_Outline()}
+\DoxyCodeLine{518     \{}
+\DoxyCodeLine{519         LPDISPATCH result;}
+\DoxyCodeLine{520         InvokeHelper(0x66, DISPATCH\_PROPERTYGET, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{521         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{522     \}}
+\DoxyCodeLine{523     LPDISPATCH Ovals(VARIANT\& Index)}
+\DoxyCodeLine{524     \{}
+\DoxyCodeLine{525         LPDISPATCH result;}
+\DoxyCodeLine{526         \textcolor{keyword}{static} BYTE parms[] = VTS\_VARIANT;}
+\DoxyCodeLine{527         InvokeHelper(0x321, DISPATCH\_METHOD, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, parms, \&Index);}
+\DoxyCodeLine{528         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{529     \}}
+\DoxyCodeLine{530     \textcolor{keywordtype}{void} Paste(VARIANT\& Destination, VARIANT\& Link)}
+\DoxyCodeLine{531     \{}
+\DoxyCodeLine{532         \textcolor{keyword}{static} BYTE parms[] = VTS\_VARIANT VTS\_VARIANT;}
+\DoxyCodeLine{533         InvokeHelper(0xd3, DISPATCH\_METHOD, VT\_EMPTY, \textcolor{keyword}{nullptr}, parms, \&Destination, \&Link);}
+\DoxyCodeLine{534     \}}
+\DoxyCodeLine{535     \textcolor{keywordtype}{void} \_PasteSpecial(VARIANT\& Format, VARIANT\& Link, VARIANT\& DisplayAsIcon, VARIANT\& IconFileName, VARIANT\& IconIndex, VARIANT\& IconLabel)}
+\DoxyCodeLine{536     \{}
+\DoxyCodeLine{537         \textcolor{keyword}{static} BYTE parms[] = VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT;}
+\DoxyCodeLine{538         InvokeHelper(0x403, DISPATCH\_METHOD, VT\_EMPTY, \textcolor{keyword}{nullptr}, parms, \&Format, \&Link, \&DisplayAsIcon, \&IconFileName, \&IconIndex, \&IconLabel);}
+\DoxyCodeLine{539     \}}
+\DoxyCodeLine{540     LPDISPATCH Pictures(VARIANT\& Index)}
+\DoxyCodeLine{541     \{}
+\DoxyCodeLine{542         LPDISPATCH result;}
+\DoxyCodeLine{543         \textcolor{keyword}{static} BYTE parms[] = VTS\_VARIANT;}
+\DoxyCodeLine{544         InvokeHelper(0x303, DISPATCH\_METHOD, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, parms, \&Index);}
+\DoxyCodeLine{545         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{546     \}}
+\DoxyCodeLine{547     LPDISPATCH PivotTables(VARIANT\& Index)}
+\DoxyCodeLine{548     \{}
+\DoxyCodeLine{549         LPDISPATCH result;}
+\DoxyCodeLine{550         \textcolor{keyword}{static} BYTE parms[] = VTS\_VARIANT;}
+\DoxyCodeLine{551         InvokeHelper(0x2b2, DISPATCH\_METHOD, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, parms, \&Index);}
+\DoxyCodeLine{552         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{553     \}}
+\DoxyCodeLine{554     LPDISPATCH PivotTableWizard(VARIANT\& SourceType, VARIANT\& SourceData, VARIANT\& TableDestination, VARIANT\& TableName, VARIANT\& RowGrand, VARIANT\& ColumnGrand, VARIANT\& SaveData, VARIANT\& HasAutoFormat, VARIANT\& AutoPage, VARIANT\& Reserved, VARIANT\& BackgroundQuery, VARIANT\& OptimizeCache, VARIANT\& PageFieldOrder, VARIANT\& PageFieldWrapCount, VARIANT\& ReadData, VARIANT\& Connection)}
+\DoxyCodeLine{555     \{}
+\DoxyCodeLine{556         LPDISPATCH result;}
+\DoxyCodeLine{557         \textcolor{keyword}{static} BYTE parms[] = VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT;}
+\DoxyCodeLine{558         InvokeHelper(0x2ac, DISPATCH\_METHOD, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, parms, \&SourceType, \&SourceData, \&TableDestination, \&TableName, \&RowGrand, \&ColumnGrand, \&SaveData, \&HasAutoFormat, \&AutoPage, \&Reserved, \&BackgroundQuery, \&OptimizeCache, \&PageFieldOrder, \&PageFieldWrapCount, \&ReadData, \&Connection);}
+\DoxyCodeLine{559         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{560     \}}
+\DoxyCodeLine{561     LPDISPATCH get\_Range(VARIANT\& Cell1, VARIANT\& Cell2)}
+\DoxyCodeLine{562     \{}
+\DoxyCodeLine{563         LPDISPATCH result;}
+\DoxyCodeLine{564         \textcolor{keyword}{static} BYTE parms[] = VTS\_VARIANT VTS\_VARIANT;}
+\DoxyCodeLine{565         InvokeHelper(0xc5, DISPATCH\_PROPERTYGET, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, parms, \&Cell1, \&Cell2);}
+\DoxyCodeLine{566         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{567     \}}
+\DoxyCodeLine{568     LPDISPATCH Rectangles(VARIANT\& Index)}
+\DoxyCodeLine{569     \{}
+\DoxyCodeLine{570         LPDISPATCH result;}
+\DoxyCodeLine{571         \textcolor{keyword}{static} BYTE parms[] = VTS\_VARIANT;}
+\DoxyCodeLine{572         InvokeHelper(0x306, DISPATCH\_METHOD, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, parms, \&Index);}
+\DoxyCodeLine{573         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{574     \}}
+\DoxyCodeLine{575     LPDISPATCH get\_Rows()}
+\DoxyCodeLine{576     \{}
+\DoxyCodeLine{577         LPDISPATCH result;}
+\DoxyCodeLine{578         InvokeHelper(0x102, DISPATCH\_PROPERTYGET, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{579         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{580     \}}
+\DoxyCodeLine{581     LPDISPATCH Scenarios(VARIANT\& Index)}
+\DoxyCodeLine{582     \{}
+\DoxyCodeLine{583         LPDISPATCH result;}
+\DoxyCodeLine{584         \textcolor{keyword}{static} BYTE parms[] = VTS\_VARIANT;}
+\DoxyCodeLine{585         InvokeHelper(0x38c, DISPATCH\_METHOD, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, parms, \&Index);}
+\DoxyCodeLine{586         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{587     \}}
+\DoxyCodeLine{588     CString get\_ScrollArea()}
+\DoxyCodeLine{589     \{}
+\DoxyCodeLine{590         CString result;}
+\DoxyCodeLine{591         InvokeHelper(0x599, DISPATCH\_PROPERTYGET, VT\_BSTR, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{592         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{593     \}}
+\DoxyCodeLine{594     \textcolor{keywordtype}{void} put\_ScrollArea(LPCTSTR newValue)}
+\DoxyCodeLine{595     \{}
+\DoxyCodeLine{596         \textcolor{keyword}{static} BYTE parms[] = VTS\_BSTR;}
+\DoxyCodeLine{597         InvokeHelper(0x599, DISPATCH\_PROPERTYPUT, VT\_EMPTY, \textcolor{keyword}{nullptr}, parms, newValue);}
+\DoxyCodeLine{598     \}}
+\DoxyCodeLine{599     LPDISPATCH ScrollBars(VARIANT\& Index)}
+\DoxyCodeLine{600     \{}
+\DoxyCodeLine{601         LPDISPATCH result;}
+\DoxyCodeLine{602         \textcolor{keyword}{static} BYTE parms[] = VTS\_VARIANT;}
+\DoxyCodeLine{603         InvokeHelper(0x33e, DISPATCH\_METHOD, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, parms, \&Index);}
+\DoxyCodeLine{604         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{605     \}}
+\DoxyCodeLine{606     \textcolor{keywordtype}{void} ShowAllData()}
+\DoxyCodeLine{607     \{}
+\DoxyCodeLine{608         InvokeHelper(0x31a, DISPATCH\_METHOD, VT\_EMPTY, \textcolor{keyword}{nullptr}, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{609     \}}
+\DoxyCodeLine{610     \textcolor{keywordtype}{void} ShowDataForm()}
+\DoxyCodeLine{611     \{}
+\DoxyCodeLine{612         InvokeHelper(0x199, DISPATCH\_METHOD, VT\_EMPTY, \textcolor{keyword}{nullptr}, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{613     \}}
+\DoxyCodeLine{614     LPDISPATCH Spinners(VARIANT\& Index)}
+\DoxyCodeLine{615     \{}
+\DoxyCodeLine{616         LPDISPATCH result;}
+\DoxyCodeLine{617         \textcolor{keyword}{static} BYTE parms[] = VTS\_VARIANT;}
+\DoxyCodeLine{618         InvokeHelper(0x346, DISPATCH\_METHOD, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, parms, \&Index);}
+\DoxyCodeLine{619         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{620     \}}
+\DoxyCodeLine{621     \textcolor{keywordtype}{double} get\_StandardHeight()}
+\DoxyCodeLine{622     \{}
+\DoxyCodeLine{623         \textcolor{keywordtype}{double} result;}
+\DoxyCodeLine{624         InvokeHelper(0x197, DISPATCH\_PROPERTYGET, VT\_R8, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{625         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{626     \}}
+\DoxyCodeLine{627     \textcolor{keywordtype}{double} get\_StandardWidth()}
+\DoxyCodeLine{628     \{}
+\DoxyCodeLine{629         \textcolor{keywordtype}{double} result;}
+\DoxyCodeLine{630         InvokeHelper(0x198, DISPATCH\_PROPERTYGET, VT\_R8, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{631         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{632     \}}
+\DoxyCodeLine{633     \textcolor{keywordtype}{void} put\_StandardWidth(\textcolor{keywordtype}{double} newValue)}
+\DoxyCodeLine{634     \{}
+\DoxyCodeLine{635         \textcolor{keyword}{static} BYTE parms[] = VTS\_R8;}
+\DoxyCodeLine{636         InvokeHelper(0x198, DISPATCH\_PROPERTYPUT, VT\_EMPTY, \textcolor{keyword}{nullptr}, parms, newValue);}
+\DoxyCodeLine{637     \}}
+\DoxyCodeLine{638     LPDISPATCH TextBoxes(VARIANT\& Index)}
+\DoxyCodeLine{639     \{}
+\DoxyCodeLine{640         LPDISPATCH result;}
+\DoxyCodeLine{641         \textcolor{keyword}{static} BYTE parms[] = VTS\_VARIANT;}
+\DoxyCodeLine{642         InvokeHelper(0x309, DISPATCH\_METHOD, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, parms, \&Index);}
+\DoxyCodeLine{643         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{644     \}}
+\DoxyCodeLine{645     BOOL get\_TransitionFormEntry()}
+\DoxyCodeLine{646     \{}
+\DoxyCodeLine{647         BOOL result;}
+\DoxyCodeLine{648         InvokeHelper(0x192, DISPATCH\_PROPERTYGET, VT\_BOOL, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{649         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{650     \}}
+\DoxyCodeLine{651     \textcolor{keywordtype}{void} put\_TransitionFormEntry(BOOL newValue)}
+\DoxyCodeLine{652     \{}
+\DoxyCodeLine{653         \textcolor{keyword}{static} BYTE parms[] = VTS\_BOOL;}
+\DoxyCodeLine{654         InvokeHelper(0x192, DISPATCH\_PROPERTYPUT, VT\_EMPTY, \textcolor{keyword}{nullptr}, parms, newValue);}
+\DoxyCodeLine{655     \}}
+\DoxyCodeLine{656     \textcolor{keywordtype}{long} get\_Type()}
+\DoxyCodeLine{657     \{}
+\DoxyCodeLine{658         \textcolor{keywordtype}{long} result;}
+\DoxyCodeLine{659         InvokeHelper(0x6c, DISPATCH\_PROPERTYGET, VT\_I4, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{660         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{661     \}}
+\DoxyCodeLine{662     LPDISPATCH get\_UsedRange()}
+\DoxyCodeLine{663     \{}
+\DoxyCodeLine{664         LPDISPATCH result;}
+\DoxyCodeLine{665         InvokeHelper(0x19c, DISPATCH\_PROPERTYGET, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{666         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{667     \}}
+\DoxyCodeLine{668     LPDISPATCH get\_HPageBreaks()}
+\DoxyCodeLine{669     \{}
+\DoxyCodeLine{670         LPDISPATCH result;}
+\DoxyCodeLine{671         InvokeHelper(0x58a, DISPATCH\_PROPERTYGET, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{672         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{673     \}}
+\DoxyCodeLine{674     LPDISPATCH get\_VPageBreaks()}
+\DoxyCodeLine{675     \{}
+\DoxyCodeLine{676         LPDISPATCH result;}
+\DoxyCodeLine{677         InvokeHelper(0x58b, DISPATCH\_PROPERTYGET, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{678         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{679     \}}
+\DoxyCodeLine{680     LPDISPATCH get\_QueryTables()}
+\DoxyCodeLine{681     \{}
+\DoxyCodeLine{682         LPDISPATCH result;}
+\DoxyCodeLine{683         InvokeHelper(0x59a, DISPATCH\_PROPERTYGET, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{684         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{685     \}}
+\DoxyCodeLine{686     BOOL get\_DisplayPageBreaks()}
+\DoxyCodeLine{687     \{}
+\DoxyCodeLine{688         BOOL result;}
+\DoxyCodeLine{689         InvokeHelper(0x59b, DISPATCH\_PROPERTYGET, VT\_BOOL, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{690         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{691     \}}
+\DoxyCodeLine{692     \textcolor{keywordtype}{void} put\_DisplayPageBreaks(BOOL newValue)}
+\DoxyCodeLine{693     \{}
+\DoxyCodeLine{694         \textcolor{keyword}{static} BYTE parms[] = VTS\_BOOL;}
+\DoxyCodeLine{695         InvokeHelper(0x59b, DISPATCH\_PROPERTYPUT, VT\_EMPTY, \textcolor{keyword}{nullptr}, parms, newValue);}
+\DoxyCodeLine{696     \}}
+\DoxyCodeLine{697     LPDISPATCH get\_Comments()}
+\DoxyCodeLine{698     \{}
+\DoxyCodeLine{699         LPDISPATCH result;}
+\DoxyCodeLine{700         InvokeHelper(0x23f, DISPATCH\_PROPERTYGET, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{701         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{702     \}}
+\DoxyCodeLine{703     LPDISPATCH get\_Hyperlinks()}
+\DoxyCodeLine{704     \{}
+\DoxyCodeLine{705         LPDISPATCH result;}
+\DoxyCodeLine{706         InvokeHelper(0x571, DISPATCH\_PROPERTYGET, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{707         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{708     \}}
+\DoxyCodeLine{709     \textcolor{keywordtype}{void} ClearCircles()}
+\DoxyCodeLine{710     \{}
+\DoxyCodeLine{711         InvokeHelper(0x59c, DISPATCH\_METHOD, VT\_EMPTY, \textcolor{keyword}{nullptr}, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{712     \}}
+\DoxyCodeLine{713     \textcolor{keywordtype}{void} CircleInvalid()}
+\DoxyCodeLine{714     \{}
+\DoxyCodeLine{715         InvokeHelper(0x59d, DISPATCH\_METHOD, VT\_EMPTY, \textcolor{keyword}{nullptr}, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{716     \}}
+\DoxyCodeLine{717     \textcolor{keywordtype}{long} get\_\_DisplayRightToLeft()}
+\DoxyCodeLine{718     \{}
+\DoxyCodeLine{719         \textcolor{keywordtype}{long} result;}
+\DoxyCodeLine{720         InvokeHelper(0x288, DISPATCH\_PROPERTYGET, VT\_I4, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{721         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{722     \}}
+\DoxyCodeLine{723     \textcolor{keywordtype}{void} put\_\_DisplayRightToLeft(\textcolor{keywordtype}{long} newValue)}
+\DoxyCodeLine{724     \{}
+\DoxyCodeLine{725         \textcolor{keyword}{static} BYTE parms[] = VTS\_I4;}
+\DoxyCodeLine{726         InvokeHelper(0x288, DISPATCH\_PROPERTYPUT, VT\_EMPTY, \textcolor{keyword}{nullptr}, parms, newValue);}
+\DoxyCodeLine{727     \}}
+\DoxyCodeLine{728     LPDISPATCH get\_AutoFilter()}
+\DoxyCodeLine{729     \{}
+\DoxyCodeLine{730         LPDISPATCH result;}
+\DoxyCodeLine{731         InvokeHelper(0x319, DISPATCH\_PROPERTYGET, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{732         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{733     \}}
+\DoxyCodeLine{734     BOOL get\_DisplayRightToLeft()}
+\DoxyCodeLine{735     \{}
+\DoxyCodeLine{736         BOOL result;}
+\DoxyCodeLine{737         InvokeHelper(0x6ee, DISPATCH\_PROPERTYGET, VT\_BOOL, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{738         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{739     \}}
+\DoxyCodeLine{740     \textcolor{keywordtype}{void} put\_DisplayRightToLeft(BOOL newValue)}
+\DoxyCodeLine{741     \{}
+\DoxyCodeLine{742         \textcolor{keyword}{static} BYTE parms[] = VTS\_BOOL;}
+\DoxyCodeLine{743         InvokeHelper(0x6ee, DISPATCH\_PROPERTYPUT, VT\_EMPTY, \textcolor{keyword}{nullptr}, parms, newValue);}
+\DoxyCodeLine{744     \}}
+\DoxyCodeLine{745     LPDISPATCH get\_Scripts()}
+\DoxyCodeLine{746     \{}
+\DoxyCodeLine{747         LPDISPATCH result;}
+\DoxyCodeLine{748         InvokeHelper(0x718, DISPATCH\_PROPERTYGET, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{749         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{750     \}}
+\DoxyCodeLine{751     \textcolor{keywordtype}{void} \_PrintOut(VARIANT\& From, VARIANT\& To, VARIANT\& Copies, VARIANT\& Preview, VARIANT\& ActivePrinter, VARIANT\& PrintToFile, VARIANT\& Collate, VARIANT\& PrToFileName)}
+\DoxyCodeLine{752     \{}
+\DoxyCodeLine{753         \textcolor{keyword}{static} BYTE parms[] = VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT;}
+\DoxyCodeLine{754         InvokeHelper(0x6ec, DISPATCH\_METHOD, VT\_EMPTY, \textcolor{keyword}{nullptr}, parms, \&From, \&To, \&Copies, \&Preview, \&ActivePrinter, \&PrintToFile, \&Collate, \&PrToFileName);}
+\DoxyCodeLine{755     \}}
+\DoxyCodeLine{756     \textcolor{keywordtype}{void} \_CheckSpelling(VARIANT\& CustomDictionary, VARIANT\& IgnoreUppercase, VARIANT\& AlwaysSuggest, VARIANT\& SpellLang, VARIANT\& IgnoreFinalYaa, VARIANT\& SpellScript)}
+\DoxyCodeLine{757     \{}
+\DoxyCodeLine{758         \textcolor{keyword}{static} BYTE parms[] = VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT;}
+\DoxyCodeLine{759         InvokeHelper(0x719, DISPATCH\_METHOD, VT\_EMPTY, \textcolor{keyword}{nullptr}, parms, \&CustomDictionary, \&IgnoreUppercase, \&AlwaysSuggest, \&SpellLang, \&IgnoreFinalYaa, \&SpellScript);}
+\DoxyCodeLine{760     \}}
+\DoxyCodeLine{761     LPDISPATCH get\_Tab()}
+\DoxyCodeLine{762     \{}
+\DoxyCodeLine{763         LPDISPATCH result;}
+\DoxyCodeLine{764         InvokeHelper(0x411, DISPATCH\_PROPERTYGET, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{765         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{766     \}}
+\DoxyCodeLine{767     LPDISPATCH get\_MailEnvelope()}
+\DoxyCodeLine{768     \{}
+\DoxyCodeLine{769         LPDISPATCH result;}
+\DoxyCodeLine{770         InvokeHelper(0x7e5, DISPATCH\_PROPERTYGET, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{771         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{772     \}}
+\DoxyCodeLine{773     \textcolor{keywordtype}{void} SaveAs(LPCTSTR Filename, VARIANT\& FileFormat, VARIANT\& Password, VARIANT\& WriteResPassword, VARIANT\& ReadOnlyRecommended, VARIANT\& CreateBackup, VARIANT\& AddToMru, VARIANT\& TextCodepage, VARIANT\& TextVisualLayout, VARIANT\& Local)}
+\DoxyCodeLine{774     \{}
+\DoxyCodeLine{775         \textcolor{keyword}{static} BYTE parms[] = VTS\_BSTR VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT;}
+\DoxyCodeLine{776         InvokeHelper(0x785, DISPATCH\_METHOD, VT\_EMPTY, \textcolor{keyword}{nullptr}, parms, Filename, \&FileFormat, \&Password, \&WriteResPassword, \&ReadOnlyRecommended, \&CreateBackup, \&AddToMru, \&TextCodepage, \&TextVisualLayout, \&Local);}
+\DoxyCodeLine{777     \}}
+\DoxyCodeLine{778     LPDISPATCH get\_CustomProperties()}
+\DoxyCodeLine{779     \{}
+\DoxyCodeLine{780         LPDISPATCH result;}
+\DoxyCodeLine{781         InvokeHelper(0x7ee, DISPATCH\_PROPERTYGET, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{782         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{783     \}}
+\DoxyCodeLine{784     LPDISPATCH get\_SmartTags()}
+\DoxyCodeLine{785     \{}
+\DoxyCodeLine{786         LPDISPATCH result;}
+\DoxyCodeLine{787         InvokeHelper(0x7e0, DISPATCH\_PROPERTYGET, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{788         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{789     \}}
+\DoxyCodeLine{790     LPDISPATCH get\_Protection()}
+\DoxyCodeLine{791     \{}
+\DoxyCodeLine{792         LPDISPATCH result;}
+\DoxyCodeLine{793         InvokeHelper(0xb0, DISPATCH\_PROPERTYGET, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{794         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{795     \}}
+\DoxyCodeLine{796     \textcolor{keywordtype}{void} PasteSpecial(VARIANT\& Format, VARIANT\& Link, VARIANT\& DisplayAsIcon, VARIANT\& IconFileName, VARIANT\& IconIndex, VARIANT\& IconLabel, VARIANT\& NoHTMLFormatting)}
+\DoxyCodeLine{797     \{}
+\DoxyCodeLine{798         \textcolor{keyword}{static} BYTE parms[] = VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT;}
+\DoxyCodeLine{799         InvokeHelper(0x788, DISPATCH\_METHOD, VT\_EMPTY, \textcolor{keyword}{nullptr}, parms, \&Format, \&Link, \&DisplayAsIcon, \&IconFileName, \&IconIndex, \&IconLabel, \&NoHTMLFormatting);}
+\DoxyCodeLine{800     \}}
+\DoxyCodeLine{801     \textcolor{keywordtype}{void} Protect(VARIANT\& Password, VARIANT\& DrawingObjects, VARIANT\& Contents, VARIANT\& Scenarios, VARIANT\& UserInterfaceOnly, VARIANT\& AllowFormattingCells, VARIANT\& AllowFormattingColumns, VARIANT\& AllowFormattingRows, VARIANT\& AllowInsertingColumns, VARIANT\& AllowInsertingRows, VARIANT\& AllowInsertingHyperlinks, VARIANT\& AllowDeletingColumns, VARIANT\& AllowDeletingRows, VARIANT\& AllowSorting, VARIANT\& AllowFiltering, VARIANT\& AllowUsingPivotTables)}
+\DoxyCodeLine{802     \{}
+\DoxyCodeLine{803         \textcolor{keyword}{static} BYTE parms[] = VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT;}
+\DoxyCodeLine{804         InvokeHelper(0x7ed, DISPATCH\_METHOD, VT\_EMPTY, \textcolor{keyword}{nullptr}, parms, \&Password, \&DrawingObjects, \&Contents, \&Scenarios, \&UserInterfaceOnly, \&AllowFormattingCells, \&AllowFormattingColumns, \&AllowFormattingRows, \&AllowInsertingColumns, \&AllowInsertingRows, \&AllowInsertingHyperlinks, \&AllowDeletingColumns, \&AllowDeletingRows, \&AllowSorting, \&AllowFiltering, \&AllowUsingPivotTables);}
+\DoxyCodeLine{805     \}}
+\DoxyCodeLine{806     LPDISPATCH get\_ListObjects()}
+\DoxyCodeLine{807     \{}
+\DoxyCodeLine{808         LPDISPATCH result;}
+\DoxyCodeLine{809         InvokeHelper(0x8d3, DISPATCH\_PROPERTYGET, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{810         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{811     \}}
+\DoxyCodeLine{812     LPDISPATCH XmlDataQuery(LPCTSTR XPath, VARIANT\& SelectionNamespaces, VARIANT\& Map)}
+\DoxyCodeLine{813     \{}
+\DoxyCodeLine{814         LPDISPATCH result;}
+\DoxyCodeLine{815         \textcolor{keyword}{static} BYTE parms[] = VTS\_BSTR VTS\_VARIANT VTS\_VARIANT;}
+\DoxyCodeLine{816         InvokeHelper(0x8d4, DISPATCH\_METHOD, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, parms, XPath, \&SelectionNamespaces, \&Map);}
+\DoxyCodeLine{817         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{818     \}}
+\DoxyCodeLine{819     LPDISPATCH XmlMapQuery(LPCTSTR XPath, VARIANT\& SelectionNamespaces, VARIANT\& Map)}
+\DoxyCodeLine{820     \{}
+\DoxyCodeLine{821         LPDISPATCH result;}
+\DoxyCodeLine{822         \textcolor{keyword}{static} BYTE parms[] = VTS\_BSTR VTS\_VARIANT VTS\_VARIANT;}
+\DoxyCodeLine{823         InvokeHelper(0x8d7, DISPATCH\_METHOD, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, parms, XPath, \&SelectionNamespaces, \&Map);}
+\DoxyCodeLine{824         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{825     \}}
+\DoxyCodeLine{826     \textcolor{keywordtype}{void} PrintOut(VARIANT\& From, VARIANT\& To, VARIANT\& Copies, VARIANT\& Preview, VARIANT\& ActivePrinter, VARIANT\& PrintToFile, VARIANT\& Collate, VARIANT\& PrToFileName, VARIANT\& IgnorePrintAreas)}
+\DoxyCodeLine{827     \{}
+\DoxyCodeLine{828         \textcolor{keyword}{static} BYTE parms[] = VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT;}
+\DoxyCodeLine{829         InvokeHelper(0x939, DISPATCH\_METHOD, VT\_EMPTY, \textcolor{keyword}{nullptr}, parms, \&From, \&To, \&Copies, \&Preview, \&ActivePrinter, \&PrintToFile, \&Collate, \&PrToFileName, \&IgnorePrintAreas);}
+\DoxyCodeLine{830     \}}
+\DoxyCodeLine{831     BOOL get\_EnableFormatConditionsCalculation()}
+\DoxyCodeLine{832     \{}
+\DoxyCodeLine{833         BOOL result;}
+\DoxyCodeLine{834         InvokeHelper(0x9cf, DISPATCH\_PROPERTYGET, VT\_BOOL, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{835         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{836     \}}
+\DoxyCodeLine{837     \textcolor{keywordtype}{void} put\_EnableFormatConditionsCalculation(BOOL newValue)}
+\DoxyCodeLine{838     \{}
+\DoxyCodeLine{839         \textcolor{keyword}{static} BYTE parms[] = VTS\_BOOL;}
+\DoxyCodeLine{840         InvokeHelper(0x9cf, DISPATCH\_PROPERTYPUT, VT\_EMPTY, \textcolor{keyword}{nullptr}, parms, newValue);}
+\DoxyCodeLine{841     \}}
+\DoxyCodeLine{842     LPDISPATCH get\_Sort()}
+\DoxyCodeLine{843     \{}
+\DoxyCodeLine{844         LPDISPATCH result;}
+\DoxyCodeLine{845         InvokeHelper(0x370, DISPATCH\_PROPERTYGET, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{846         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{847     \}}
+\DoxyCodeLine{848     \textcolor{keywordtype}{void} ExportAsFixedFormat(\textcolor{keywordtype}{long} Type, VARIANT\& Filename, VARIANT\& Quality, VARIANT\& IncludeDocProperties, VARIANT\& IgnorePrintAreas, VARIANT\& From, VARIANT\& To, VARIANT\& OpenAfterPublish, VARIANT\& FixedFormatExtClassPtr)}
+\DoxyCodeLine{849     \{}
+\DoxyCodeLine{850         \textcolor{keyword}{static} BYTE parms[] = VTS\_I4 VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT;}
+\DoxyCodeLine{851         InvokeHelper(0x9bd, DISPATCH\_METHOD, VT\_EMPTY, \textcolor{keyword}{nullptr}, parms, Type, \&Filename, \&Quality, \&IncludeDocProperties, \&IgnorePrintAreas, \&From, \&To, \&OpenAfterPublish, \&FixedFormatExtClassPtr);}
+\DoxyCodeLine{852     \}}
+\DoxyCodeLine{853     \textcolor{keywordtype}{long} get\_PrintedCommentPages()}
+\DoxyCodeLine{854     \{}
+\DoxyCodeLine{855         \textcolor{keywordtype}{long} result;}
+\DoxyCodeLine{856         InvokeHelper(0xb29, DISPATCH\_PROPERTYGET, VT\_I4, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{857         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{858     \}}
+\DoxyCodeLine{859 }
+\DoxyCodeLine{860     \textcolor{comment}{// \_Worksheet 속성}}
+\DoxyCodeLine{861 \textcolor{keyword}{public}:}
+\DoxyCodeLine{862 }
+\DoxyCodeLine{863 \};}
+
+\end{DoxyCode}

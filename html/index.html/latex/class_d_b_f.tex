@@ -1,0 +1,56 @@
+\hypertarget{class_d_b_f}{}\doxysection{DBF Class Reference}
+\label{class_d_b_f}\index{DBF@{DBF}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_d_b_f_a6645a4461c01e64aa2e2ddd13c016d9e}\label{class_d_b_f_a6645a4461c01e64aa2e2ddd13c016d9e}} 
+{\bfseries DBF} (CString s\+Filename)
+\item 
+\mbox{\Hypertarget{class_d_b_f_a66eea13316057717bcba089967652355}\label{class_d_b_f_a66eea13316057717bcba089967652355}} 
+void {\bfseries load\+File} (CString s\+File\+Name)
+\item 
+\mbox{\Hypertarget{class_d_b_f_aa2c0131ca20ff085ede11d9d40a10b98}\label{class_d_b_f_aa2c0131ca20ff085ede11d9d40a10b98}} 
+void {\bfseries read\+File\+\_\+} (CString s\+File\+Name)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_d_b_f_a4d9031b07cefee2dd992d7ed3081f65e}\label{class_d_b_f_a4d9031b07cefee2dd992d7ed3081f65e}} 
+int {\bfseries \+\_\+i\+Rec\+Count}
+\item 
+\mbox{\Hypertarget{class_d_b_f_a9d2344366393a6ee8f57e3fc7ff321fe}\label{class_d_b_f_a9d2344366393a6ee8f57e3fc7ff321fe}} 
+int {\bfseries \+\_\+i\+Field\+Count}
+\item 
+\mbox{\Hypertarget{class_d_b_f_aa4d5e4b040b0496d04634e4564b5afb3}\label{class_d_b_f_aa4d5e4b040b0496d04634e4564b5afb3}} 
+short {\bfseries \+\_\+\+Bytes\+Of\+File\+Head}
+\item 
+\mbox{\Hypertarget{class_d_b_f_ae999b4fb4bd55f3829e7f659bb695e60}\label{class_d_b_f_ae999b4fb4bd55f3829e7f659bb695e60}} 
+short {\bfseries \+\_\+\+Bytes\+Of\+Each\+Record}
+\item 
+\mbox{\Hypertarget{class_d_b_f_a170b3931ac3abfa0a36645b31444f282}\label{class_d_b_f_a170b3931ac3abfa0a36645b31444f282}} 
+\mbox{\hyperlink{class_field}{Field}} $\ast$ {\bfseries \+\_\+p\+Field}
+\item 
+\mbox{\Hypertarget{class_d_b_f_ae67dd3c2cf44bb066971c8982957b892}\label{class_d_b_f_ae67dd3c2cf44bb066971c8982957b892}} 
+CString {\bfseries \+\_\+s\+Filename}
+\item 
+\mbox{\Hypertarget{class_d_b_f_a8fdb506eec9c11f438288abaaa9fbfdf}\label{class_d_b_f_a8fdb506eec9c11f438288abaaa9fbfdf}} 
+vector$<$ \mbox{\hyperlink{class_field}{Field}} $\ast$ $>$ {\bfseries \+\_\+v\+Table}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_d_b_f_aa613a710fc40440c08e2be324bbe1147}\label{class_d_b_f_aa613a710fc40440c08e2be324bbe1147}} 
+void {\bfseries read\+File\+Head} (ifstream \&in\+File)
+\item 
+\mbox{\Hypertarget{class_d_b_f_ab9a4a6f6538acc0080f877347005f239}\label{class_d_b_f_ab9a4a6f6538acc0080f877347005f239}} 
+void {\bfseries read\+File\+Record} (ifstream \&in\+File)
+\item 
+\mbox{\Hypertarget{class_d_b_f_aaf5cfabe7f43cc89c42dc5f946452ece}\label{class_d_b_f_aaf5cfabe7f43cc89c42dc5f946452ece}} 
+bool {\bfseries is\+Read\+File\+OK} (CString s\+Filename)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Compare\+Tool2/Compare\+Tool2\+Dlg.\+h\item 
+Compare\+Tool2/Compare\+Tool2\+Dlg.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,149 @@
+\hypertarget{_c_workbooks_8h_source}{}\doxysection{CWorkbooks.\+h}
+\label{_c_workbooks_8h_source}\index{CompareTool2/CWorkbooks.h@{CompareTool2/CWorkbooks.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{// 컴퓨터에서 형식 라이브러리 마법사의 [클래스 추가]를 사용하여 생성한 IDispatch 래퍼 클래스입니다.}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{comment}{// \#import "{}C:\(\backslash\)\(\backslash\)Program Files\(\backslash\)\(\backslash\)Microsoft Office\(\backslash\)\(\backslash\)Office14\(\backslash\)\(\backslash\)EXCEL.EXE"{} no\_namespace}}
+\DoxyCodeLine{4 \textcolor{comment}{// CWorkbooks 래퍼 클래스}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_workbooks}{CWorkbooks}} : \textcolor{keyword}{public} COleDispatchDriver}
+\DoxyCodeLine{7 \{}
+\DoxyCodeLine{8 \textcolor{keyword}{public}:}
+\DoxyCodeLine{9     \mbox{\hyperlink{class_c_workbooks}{CWorkbooks}}() \{\} \textcolor{comment}{// COleDispatchDriver 기본 생성자를 호출합니다.}}
+\DoxyCodeLine{10     \mbox{\hyperlink{class_c_workbooks}{CWorkbooks}}(LPDISPATCH pDispatch) : COleDispatchDriver(pDispatch) \{\}}
+\DoxyCodeLine{11     \mbox{\hyperlink{class_c_workbooks}{CWorkbooks}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_c_workbooks}{CWorkbooks}}\& dispatchSrc) : COleDispatchDriver(dispatchSrc) \{\}}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13     \textcolor{comment}{// 특성}}
+\DoxyCodeLine{14 \textcolor{keyword}{public}:}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16     \textcolor{comment}{// 작업}}
+\DoxyCodeLine{17 \textcolor{keyword}{public}:}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20     \textcolor{comment}{// Workbooks 메서드}}
+\DoxyCodeLine{21 \textcolor{keyword}{public}:}
+\DoxyCodeLine{22     LPDISPATCH get\_Application()}
+\DoxyCodeLine{23     \{}
+\DoxyCodeLine{24         LPDISPATCH result;}
+\DoxyCodeLine{25         InvokeHelper(0x94, DISPATCH\_PROPERTYGET, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{26         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{27     \}}
+\DoxyCodeLine{28     \textcolor{keywordtype}{long} get\_Creator()}
+\DoxyCodeLine{29     \{}
+\DoxyCodeLine{30         \textcolor{keywordtype}{long} result;}
+\DoxyCodeLine{31         InvokeHelper(0x95, DISPATCH\_PROPERTYGET, VT\_I4, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{32         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{33     \}}
+\DoxyCodeLine{34     LPDISPATCH get\_Parent()}
+\DoxyCodeLine{35     \{}
+\DoxyCodeLine{36         LPDISPATCH result;}
+\DoxyCodeLine{37         InvokeHelper(0x96, DISPATCH\_PROPERTYGET, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{38         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{39     \}}
+\DoxyCodeLine{40     LPDISPATCH Add(VARIANT\& Template)}
+\DoxyCodeLine{41     \{}
+\DoxyCodeLine{42         LPDISPATCH result;}
+\DoxyCodeLine{43         \textcolor{keyword}{static} BYTE parms[] = VTS\_VARIANT;}
+\DoxyCodeLine{44         InvokeHelper(0xb5, DISPATCH\_METHOD, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, parms, \&Template);}
+\DoxyCodeLine{45         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{46     \}}
+\DoxyCodeLine{47     \textcolor{keywordtype}{void} Close()}
+\DoxyCodeLine{48     \{}
+\DoxyCodeLine{49         InvokeHelper(0x115, DISPATCH\_METHOD, VT\_EMPTY, \textcolor{keyword}{nullptr}, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{50     \}}
+\DoxyCodeLine{51     \textcolor{keywordtype}{long} get\_Count()}
+\DoxyCodeLine{52     \{}
+\DoxyCodeLine{53         \textcolor{keywordtype}{long} result;}
+\DoxyCodeLine{54         InvokeHelper(0x76, DISPATCH\_PROPERTYGET, VT\_I4, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{55         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{56     \}}
+\DoxyCodeLine{57     LPDISPATCH get\_Item(VARIANT\& Index)}
+\DoxyCodeLine{58     \{}
+\DoxyCodeLine{59         LPDISPATCH result;}
+\DoxyCodeLine{60         \textcolor{keyword}{static} BYTE parms[] = VTS\_VARIANT;}
+\DoxyCodeLine{61         InvokeHelper(0xaa, DISPATCH\_PROPERTYGET, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, parms, \&Index);}
+\DoxyCodeLine{62         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{63     \}}
+\DoxyCodeLine{64     LPUNKNOWN get\_\_NewEnum()}
+\DoxyCodeLine{65     \{}
+\DoxyCodeLine{66         LPUNKNOWN result;}
+\DoxyCodeLine{67         InvokeHelper(0xfffffffc, DISPATCH\_PROPERTYGET, VT\_UNKNOWN, (\textcolor{keywordtype}{void}*)\&result, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{68         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{69     \}}
+\DoxyCodeLine{70     LPDISPATCH \_Open(LPCTSTR Filename, VARIANT\& UpdateLinks, VARIANT\& ReadOnly, VARIANT\& Format, VARIANT\& Password, VARIANT\& WriteResPassword, VARIANT\& IgnoreReadOnlyRecommended, VARIANT\& Origin, VARIANT\& Delimiter, VARIANT\& Editable, VARIANT\& Notify, VARIANT\& Converter, VARIANT\& AddToMru)}
+\DoxyCodeLine{71     \{}
+\DoxyCodeLine{72         LPDISPATCH result;}
+\DoxyCodeLine{73         \textcolor{keyword}{static} BYTE parms[] = VTS\_BSTR VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT;}
+\DoxyCodeLine{74         InvokeHelper(0x2aa, DISPATCH\_METHOD, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, parms, Filename, \&UpdateLinks, \&ReadOnly, \&Format, \&Password, \&WriteResPassword, \&IgnoreReadOnlyRecommended, \&Origin, \&Delimiter, \&Editable, \&Notify, \&Converter, \&AddToMru);}
+\DoxyCodeLine{75         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{76     \}}
+\DoxyCodeLine{77     \textcolor{keywordtype}{void} \_\_OpenText(LPCTSTR Filename, VARIANT\& Origin, VARIANT\& StartRow, VARIANT\& DataType, \textcolor{keywordtype}{long} TextQualifier, VARIANT\& ConsecutiveDelimiter, VARIANT\& Tab, VARIANT\& Semicolon, VARIANT\& Comma, VARIANT\& Space, VARIANT\& Other, VARIANT\& OtherChar, VARIANT\& FieldInfo, VARIANT\& TextVisualLayout)}
+\DoxyCodeLine{78     \{}
+\DoxyCodeLine{79         \textcolor{keyword}{static} BYTE parms[] = VTS\_BSTR VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_I4 VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT;}
+\DoxyCodeLine{80         InvokeHelper(0x2ab, DISPATCH\_METHOD, VT\_EMPTY, \textcolor{keyword}{nullptr}, parms, Filename, \&Origin, \&StartRow, \&DataType, TextQualifier, \&ConsecutiveDelimiter, \&Tab, \&Semicolon, \&Comma, \&Space, \&Other, \&OtherChar, \&FieldInfo, \&TextVisualLayout);}
+\DoxyCodeLine{81     \}}
+\DoxyCodeLine{82     LPDISPATCH get\_\_Default(VARIANT\& Index)}
+\DoxyCodeLine{83     \{}
+\DoxyCodeLine{84         LPDISPATCH result;}
+\DoxyCodeLine{85         \textcolor{keyword}{static} BYTE parms[] = VTS\_VARIANT;}
+\DoxyCodeLine{86         InvokeHelper(0x0, DISPATCH\_PROPERTYGET, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, parms, \&Index);}
+\DoxyCodeLine{87         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{88     \}}
+\DoxyCodeLine{89     \textcolor{keywordtype}{void} \_OpenText(LPCTSTR Filename, VARIANT\& Origin, VARIANT\& StartRow, VARIANT\& DataType, \textcolor{keywordtype}{long} TextQualifier, VARIANT\& ConsecutiveDelimiter, VARIANT\& Tab, VARIANT\& Semicolon, VARIANT\& Comma, VARIANT\& Space, VARIANT\& Other, VARIANT\& OtherChar, VARIANT\& FieldInfo, VARIANT\& TextVisualLayout, VARIANT\& DecimalSeparator, VARIANT\& ThousandsSeparator)}
+\DoxyCodeLine{90     \{}
+\DoxyCodeLine{91         \textcolor{keyword}{static} BYTE parms[] = VTS\_BSTR VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_I4 VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT;}
+\DoxyCodeLine{92         InvokeHelper(0x6ed, DISPATCH\_METHOD, VT\_EMPTY, \textcolor{keyword}{nullptr}, parms, Filename, \&Origin, \&StartRow, \&DataType, TextQualifier, \&ConsecutiveDelimiter, \&Tab, \&Semicolon, \&Comma, \&Space, \&Other, \&OtherChar, \&FieldInfo, \&TextVisualLayout, \&DecimalSeparator, \&ThousandsSeparator);}
+\DoxyCodeLine{93     \}}
+\DoxyCodeLine{94     LPDISPATCH Open(LPCTSTR Filename, VARIANT\& UpdateLinks, VARIANT\& ReadOnly, VARIANT\& Format, VARIANT\& Password, VARIANT\& WriteResPassword, VARIANT\& IgnoreReadOnlyRecommended, VARIANT\& Origin, VARIANT\& Delimiter, VARIANT\& Editable, VARIANT\& Notify, VARIANT\& Converter, VARIANT\& AddToMru, VARIANT\& Local, VARIANT\& CorruptLoad)}
+\DoxyCodeLine{95     \{}
+\DoxyCodeLine{96         LPDISPATCH result;}
+\DoxyCodeLine{97         \textcolor{keyword}{static} BYTE parms[] = VTS\_BSTR VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT;}
+\DoxyCodeLine{98         InvokeHelper(0x783, DISPATCH\_METHOD, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, parms, Filename, \&UpdateLinks, \&ReadOnly, \&Format, \&Password, \&WriteResPassword, \&IgnoreReadOnlyRecommended, \&Origin, \&Delimiter, \&Editable, \&Notify, \&Converter, \&AddToMru, \&Local, \&CorruptLoad);}
+\DoxyCodeLine{99         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{100     \}}
+\DoxyCodeLine{101     \textcolor{keywordtype}{void} OpenText(LPCTSTR Filename, VARIANT\& Origin, VARIANT\& StartRow, VARIANT\& DataType, \textcolor{keywordtype}{long} TextQualifier, VARIANT\& ConsecutiveDelimiter, VARIANT\& Tab, VARIANT\& Semicolon, VARIANT\& Comma, VARIANT\& Space, VARIANT\& Other, VARIANT\& OtherChar, VARIANT\& FieldInfo, VARIANT\& TextVisualLayout, VARIANT\& DecimalSeparator, VARIANT\& ThousandsSeparator, VARIANT\& TrailingMinusNumbers, VARIANT\& Local)}
+\DoxyCodeLine{102     \{}
+\DoxyCodeLine{103         \textcolor{keyword}{static} BYTE parms[] = VTS\_BSTR VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_I4 VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT;}
+\DoxyCodeLine{104         InvokeHelper(0x784, DISPATCH\_METHOD, VT\_EMPTY, \textcolor{keyword}{nullptr}, parms, Filename, \&Origin, \&StartRow, \&DataType, TextQualifier, \&ConsecutiveDelimiter, \&Tab, \&Semicolon, \&Comma, \&Space, \&Other, \&OtherChar, \&FieldInfo, \&TextVisualLayout, \&DecimalSeparator, \&ThousandsSeparator, \&TrailingMinusNumbers, \&Local);}
+\DoxyCodeLine{105     \}}
+\DoxyCodeLine{106     LPDISPATCH OpenDatabase(LPCTSTR Filename, VARIANT\& CommandText, VARIANT\& CommandType, VARIANT\& BackgroundQuery, VARIANT\& ImportDataAs)}
+\DoxyCodeLine{107     \{}
+\DoxyCodeLine{108         LPDISPATCH result;}
+\DoxyCodeLine{109         \textcolor{keyword}{static} BYTE parms[] = VTS\_BSTR VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT VTS\_VARIANT;}
+\DoxyCodeLine{110         InvokeHelper(0x813, DISPATCH\_METHOD, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, parms, Filename, \&CommandText, \&CommandType, \&BackgroundQuery, \&ImportDataAs);}
+\DoxyCodeLine{111         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{112     \}}
+\DoxyCodeLine{113     \textcolor{keywordtype}{void} CheckOut(LPCTSTR Filename)}
+\DoxyCodeLine{114     \{}
+\DoxyCodeLine{115         \textcolor{keyword}{static} BYTE parms[] = VTS\_BSTR;}
+\DoxyCodeLine{116         InvokeHelper(0x815, DISPATCH\_METHOD, VT\_EMPTY, \textcolor{keyword}{nullptr}, parms, Filename);}
+\DoxyCodeLine{117     \}}
+\DoxyCodeLine{118     BOOL CanCheckOut(LPCTSTR Filename)}
+\DoxyCodeLine{119     \{}
+\DoxyCodeLine{120         BOOL result;}
+\DoxyCodeLine{121         \textcolor{keyword}{static} BYTE parms[] = VTS\_BSTR;}
+\DoxyCodeLine{122         InvokeHelper(0x816, DISPATCH\_METHOD, VT\_BOOL, (\textcolor{keywordtype}{void}*)\&result, parms, Filename);}
+\DoxyCodeLine{123         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{124     \}}
+\DoxyCodeLine{125     LPDISPATCH \_OpenXML(LPCTSTR Filename, VARIANT\& Stylesheets)}
+\DoxyCodeLine{126     \{}
+\DoxyCodeLine{127         LPDISPATCH result;}
+\DoxyCodeLine{128         \textcolor{keyword}{static} BYTE parms[] = VTS\_BSTR VTS\_VARIANT;}
+\DoxyCodeLine{129         InvokeHelper(0x817, DISPATCH\_METHOD, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, parms, Filename, \&Stylesheets);}
+\DoxyCodeLine{130         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{131     \}}
+\DoxyCodeLine{132     LPDISPATCH OpenXML(LPCTSTR Filename, VARIANT\& Stylesheets, VARIANT\& LoadOption)}
+\DoxyCodeLine{133     \{}
+\DoxyCodeLine{134         LPDISPATCH result;}
+\DoxyCodeLine{135         \textcolor{keyword}{static} BYTE parms[] = VTS\_BSTR VTS\_VARIANT VTS\_VARIANT;}
+\DoxyCodeLine{136         InvokeHelper(0x8e8, DISPATCH\_METHOD, VT\_DISPATCH, (\textcolor{keywordtype}{void}*)\&result, parms, Filename, \&Stylesheets, \&LoadOption);}
+\DoxyCodeLine{137         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{138     \}}
+\DoxyCodeLine{139 }
+\DoxyCodeLine{140     \textcolor{comment}{// Workbooks 속성}}
+\DoxyCodeLine{141 \textcolor{keyword}{public}:}
+\DoxyCodeLine{142 }
+\DoxyCodeLine{143 \};}
+
+\end{DoxyCode}

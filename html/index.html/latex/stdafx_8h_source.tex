@@ -1,0 +1,128 @@
+\hypertarget{stdafx_8h_source}{}\doxysection{stdafx.\+h}
+\label{stdafx_8h_source}\index{CompareTool2/stdafx.h@{CompareTool2/stdafx.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 ﻿}
+\DoxyCodeLine{2 \textcolor{comment}{// stdafx.h : 자주 사용하지만 자주 변경되지는 않는}}
+\DoxyCodeLine{3 \textcolor{comment}{// 표준 시스템 포함 파일 및 프로젝트 관련 포함 파일이 }}
+\DoxyCodeLine{4 \textcolor{comment}{// 들어 있는 포함 파일입니다.}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#ifndef VC\_EXTRALEAN}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#define VC\_EXTRALEAN            }\textcolor{comment}{// 거의 사용되지 않는 내용은 Windows 헤더에서 제외합니다.}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include "{}targetver.h"{}}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#define \_ATL\_CSTRING\_EXPLICIT\_CONSTRUCTORS      }\textcolor{comment}{// 일부 CString 생성자는 명시적으로 선언됩니다.}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{comment}{// MFC의 공통 부분과 무시 가능한 경고 메시지에 대한 숨기기를 해제합니다.}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#define \_AFX\_ALL\_WARNINGS}}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#include <afxwin.h>}         \textcolor{comment}{// MFC 핵심 및 표준 구성 요소입니다.}}
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#include <afxext.h>}         \textcolor{comment}{// MFC 확장입니다.}}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24 \textcolor{preprocessor}{\#include <afxdisp.h>}        \textcolor{comment}{// MFC 자동화 클래스입니다.}}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28 \textcolor{preprocessor}{\#ifndef \_AFX\_NO\_OLE\_SUPPORT}}
+\DoxyCodeLine{29 \textcolor{preprocessor}{\#include <afxdtctl.h>}           \textcolor{comment}{// Internet Explorer 4 공용 컨트롤에 대한 MFC 지원입니다.}}
+\DoxyCodeLine{30 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{31 \textcolor{preprocessor}{\#ifndef \_AFX\_NO\_AFXCMN\_SUPPORT}}
+\DoxyCodeLine{32 \textcolor{preprocessor}{\#include <afxcmn.h>}             \textcolor{comment}{// Windows 공용 컨트롤에 대한 MFC 지원입니다.}}
+\DoxyCodeLine{33 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// \_AFX\_NO\_AFXCMN\_SUPPORT}}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35 \textcolor{preprocessor}{\#include <afxcontrolbars.h>}     \textcolor{comment}{// MFC의 리본 및 컨트롤 막대 지원}}
+\DoxyCodeLine{36 \textcolor{preprocessor}{\#include <afxwin.h>}}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40 \textcolor{comment}{// mdb}}
+\DoxyCodeLine{41 \textcolor{preprocessor}{\#include <afxdb.h>}}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49 \textcolor{comment}{// 이 매크로는 COleObjectFactory 생성자에 대한 bMultiInstance 매개 변수에 TRUE를}}
+\DoxyCodeLine{50 \textcolor{comment}{// 전달하는 점만 제외하면 IMPLEMENT\_OLECREATE와 같습니다.}}
+\DoxyCodeLine{51 \textcolor{comment}{// 자동화 컨트롤러에서 요청한 각 자동화 프록시 개체에 대해}}
+\DoxyCodeLine{52 \textcolor{comment}{// 이 응용 프로그램에 대한 별도의 인스턴스가 시작되도록 합니다.}}
+\DoxyCodeLine{53 \textcolor{preprocessor}{\#ifndef IMPLEMENT\_OLECREATE2}}
+\DoxyCodeLine{54 \textcolor{preprocessor}{\#define IMPLEMENT\_OLECREATE2(class\_name, external\_name, l, w1, w2, b1, b2, b3, b4, b5, b6, b7, b8) \(\backslash\)}}
+\DoxyCodeLine{55 \textcolor{preprocessor}{        AFX\_DATADEF COleObjectFactory class\_name::factory(class\_name::guid, \(\backslash\)}}
+\DoxyCodeLine{56 \textcolor{preprocessor}{                RUNTIME\_CLASS(class\_name), TRUE, \_T(external\_name)); \(\backslash\)}}
+\DoxyCodeLine{57 \textcolor{preprocessor}{        const AFX\_DATADEF GUID class\_name::guid = \(\backslash\)}}
+\DoxyCodeLine{58 \textcolor{preprocessor}{                \{ l, w1, w2, \{ b1, b2, b3, b4, b5, b6, b7, b8 \} \};}}
+\DoxyCodeLine{59 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// IMPLEMENT\_OLECREATE2}}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61 \textcolor{comment}{//\#ifdef \_UNICODE}}
+\DoxyCodeLine{62 \textcolor{preprocessor}{\#if defined \_M\_IX86}}
+\DoxyCodeLine{63 \textcolor{preprocessor}{\#pragma comment(linker,"{}/manifestdependency:\(\backslash\)"{}type='win32' name='Microsoft.Windows.Common-\/Controls' version='6.0.0.0' processorArchitecture='x86' publicKeyToken='6595b64144ccf1df' language='*'\(\backslash\)"{}"{}})}
+\DoxyCodeLine{64 \textcolor{preprocessor}{\#elif defined \_M\_X64}}
+\DoxyCodeLine{65 \textcolor{preprocessor}{\#pragma comment(linker,"{}/manifestdependency:\(\backslash\)"{}type='win32' name='Microsoft.Windows.Common-\/Controls' version='6.0.0.0' processorArchitecture='amd64' publicKeyToken='6595b64144ccf1df' language='*'\(\backslash\)"{}"{}})}
+\DoxyCodeLine{66 \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{67 \textcolor{preprocessor}{\#pragma comment(linker,"{}/manifestdependency:\(\backslash\)"{}type='win32' name='Microsoft.Windows.Common-\/Controls' version='6.0.0.0' processorArchitecture='*' publicKeyToken='6595b64144ccf1df' language='*'\(\backslash\)"{}"{}})}
+\DoxyCodeLine{68 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{69 \textcolor{comment}{//\#endif}}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71 }
+\DoxyCodeLine{72 }
+\DoxyCodeLine{73 }
+\DoxyCodeLine{74 \textcolor{preprocessor}{\#include <stdlib.h>}}
+\DoxyCodeLine{75 \textcolor{preprocessor}{\#include <string.h>}}
+\DoxyCodeLine{76 \textcolor{comment}{// \#include <string>}}
+\DoxyCodeLine{77 \textcolor{preprocessor}{\#include <io.h>}}
+\DoxyCodeLine{78 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{79 \textcolor{preprocessor}{\#include <math.h>}}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{81 \textcolor{preprocessor}{\#include <fstream>}}
+\DoxyCodeLine{82 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{84 \textcolor{preprocessor}{\#include <Windows.h>}}
+\DoxyCodeLine{85 }
+\DoxyCodeLine{86 \textcolor{keyword}{using} std::vector;}
+\DoxyCodeLine{87 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{88 }
+\DoxyCodeLine{89 \textcolor{keyword}{extern} \textcolor{keywordtype}{char} gv\_strFormat1;}
+\DoxyCodeLine{90 \textcolor{keyword}{extern} \textcolor{keywordtype}{char} gv\_strFormat2;}
+\DoxyCodeLine{91 \textcolor{keyword}{extern} \textcolor{keywordtype}{bool} gv\_bDropFile;}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{93 \textcolor{comment}{// 글로벌변수로 값 저장하기 위한 struct}}
+\DoxyCodeLine{94 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{structgv__save}{gv\_save}} \{}
+\DoxyCodeLine{95     std::vector<vector<CString>> v;}
+\DoxyCodeLine{96     CString folder\_name;}
+\DoxyCodeLine{97 \}\mbox{\hyperlink{structgv__save}{GV}};}
+\DoxyCodeLine{98 }
+\DoxyCodeLine{99 \textcolor{keyword}{extern} \mbox{\hyperlink{structgv__save}{GV}} Old;}
+\DoxyCodeLine{100 \textcolor{keyword}{extern} \mbox{\hyperlink{structgv__save}{GV}} New;}
+\DoxyCodeLine{101 }
+\DoxyCodeLine{102 \textcolor{comment}{// shp folder 안에 있는 파일 각각의 비교 정보 결과를 저장하기 위한 구조체}}
+\DoxyCodeLine{103 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{structshp__result__save}{shp\_result\_save}} \{}
+\DoxyCodeLine{104     CString oldFileName;}
+\DoxyCodeLine{105     CString oldFileSize;}
+\DoxyCodeLine{106     CString oldFileDate;}
+\DoxyCodeLine{107     CString compare;}
+\DoxyCodeLine{108     CString newFileName;}
+\DoxyCodeLine{109     CString newFileSize;}
+\DoxyCodeLine{110     CString newFileDate;}
+\DoxyCodeLine{111     CString rate;}
+\DoxyCodeLine{112     CString gap;}
+\DoxyCodeLine{113 \}\mbox{\hyperlink{structshp__result__save}{SHPRESULT}};}
+\DoxyCodeLine{114 }
+\DoxyCodeLine{115 }
+\DoxyCodeLine{116 \textcolor{comment}{// extern SHPRESULT shpResult; // 지역으로 쓸 것. -\/-\/ class 멤버변수로 만들어서 씀}}
+\DoxyCodeLine{117 }
+\DoxyCodeLine{118 }
+\DoxyCodeLine{119 \textcolor{comment}{// extern std::vector<vector<CString>> v\_old;}}
+\DoxyCodeLine{120 \textcolor{comment}{// extern std::vector<vector<CString>> v\_new;}}
+\DoxyCodeLine{121 }
+\DoxyCodeLine{122 }
+
+\end{DoxyCode}

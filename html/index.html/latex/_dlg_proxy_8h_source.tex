@@ -1,0 +1,49 @@
+\hypertarget{_dlg_proxy_8h_source}{}\doxysection{Dlg\+Proxy.\+h}
+\label{_dlg_proxy_8h_source}\index{CompareTool2/DlgProxy.h@{CompareTool2/DlgProxy.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 ﻿}
+\DoxyCodeLine{2 \textcolor{comment}{// DlgProxy.h: 헤더 파일}}
+\DoxyCodeLine{3 \textcolor{comment}{//}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_compare_tool2_dlg}{CCompareTool2Dlg}};}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{comment}{// CCompareTool2DlgAutoProxy 명령 대상}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_compare_tool2_dlg_auto_proxy}{CCompareTool2DlgAutoProxy}} : \textcolor{keyword}{public} CCmdTarget}
+\DoxyCodeLine{13 \{}
+\DoxyCodeLine{14     DECLARE\_DYNCREATE(\mbox{\hyperlink{class_c_compare_tool2_dlg_auto_proxy}{CCompareTool2DlgAutoProxy}})}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16     \mbox{\hyperlink{class_c_compare_tool2_dlg_auto_proxy}{CCompareTool2DlgAutoProxy}}();           \textcolor{comment}{// 동적 만들기에 사용되는 protected 생성자입니다.}}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 \textcolor{comment}{// 특성입니다.}}
+\DoxyCodeLine{19 \textcolor{keyword}{public}:}
+\DoxyCodeLine{20     \mbox{\hyperlink{class_c_compare_tool2_dlg}{CCompareTool2Dlg}}* m\_pDialog;}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 \textcolor{comment}{// 작업입니다.}}
+\DoxyCodeLine{23 \textcolor{keyword}{public}:}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25 \textcolor{comment}{// 재정의입니다.}}
+\DoxyCodeLine{26     \textcolor{keyword}{public}:}
+\DoxyCodeLine{27     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} OnFinalRelease();}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29 \textcolor{comment}{// 구현입니다.}}
+\DoxyCodeLine{30 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{31     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_c_compare_tool2_dlg_auto_proxy}{\string~CCompareTool2DlgAutoProxy}}();}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33     \textcolor{comment}{// 생성된 메시지 맵 함수}}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35     DECLARE\_MESSAGE\_MAP()}
+\DoxyCodeLine{36     DECLARE\_OLECREATE(\mbox{\hyperlink{class_c_compare_tool2_dlg_auto_proxy}{CCompareTool2DlgAutoProxy}})}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38     \textcolor{comment}{// 생성된 OLE 디스패치 맵 함수}}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40     DECLARE\_DISPATCH\_MAP()}
+\DoxyCodeLine{41     DECLARE\_INTERFACE\_MAP()}
+\DoxyCodeLine{42 \};}
+\DoxyCodeLine{43 }
+
+\end{DoxyCode}

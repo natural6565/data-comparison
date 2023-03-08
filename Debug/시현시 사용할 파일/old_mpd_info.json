@@ -1,0 +1,4322 @@
+{
+	"AREA": "EU",
+	"VERSION": "1.0.0",
+	"FILE_INFO": [
+		{
+			"EXTENTION": "mpd",
+			"DIRECTORY": "COMMON/POI",
+			"SUFFIX": ["AROUND","POI_MATCHINFO","SUBUP_MATCHINFO","IDMOFFSET_MATCHINFO","POIFRAME","MPDADD"]
+		},
+		{
+		  "EXTENTION": "mpd",
+		  "DIRECTORY": "COMMON/STREET",
+		  "SUFFIX": ["STREET_MATCHINFO","BUNJI"]		
+		},
+		{
+		  "EXTENTION": "mpd",
+		  "DIRECTORY": "COMMON/SIGNATURE",
+		  "SUFFIX": ["SIGNATURE"]
+		},
+		{
+		  "EXTENTION": "mpd",
+		  "DIRECTORY": "COMMON/MANAGER",
+		  "SUFFIX": ["MANAGER"]
+		},
+		{
+		  "EXTENTION": "mpd",
+		  "DIRECTORY": "COMMON/REGION",
+		  "SUFFIX": ["REGION"]
+		},
+		{
+		  "DIV_FLAG": "REGION_INFO",
+		  "EXTENTION": "sgt",
+		  "DIRECTORY": "SEARCH/SUGGEST",
+		  "SUFFIX": ["SUGGEST_INDEX","SUGGEST_POSTING","SUGGEST_MATCHINFO","SUGGEST_DICTIONARY"]
+		},
+		{
+		  "DIV_FLAG": "REGION_INFO",
+		  "EXTENTION": "scr",
+		  "DIRECTORY": "SEARCH/SPELLCORRECTOR",
+		  "SUFFIX": ["SPELL_INDEX","SPELL_POSTING","SPELL_MATCHINFO","SPELL_DICTIONARY"]
+		},
+		{
+		  "DIV_FLAG": "REGION_INFO",
+		  "EXTENTION": "mpd",
+		  "DIRECTORY":"SEARCH/POI",
+		  "SUFFIX": ["MIDCLASS_POI"]
+		},
+		{
+		  "DIV_FLAG": "REGION_INFO",
+		  "EXTENTION": "mpd",
+		  "DIRECTORY":"SEARCH/STREET",
+		  "SUFFIX": ["MIDCLASS_STREET"]
+		},		
+		{
+		  "DIV_FLAG": "REGION_INFO",
+		  "DIRECTORY": "SEARCH/CITY",
+		  "EXTENTION": "mpd",  
+		  "SUFFIX": ["CITY"]
+		},
+		{
+		  "DIV_FLAG": "REGION_INFO",
+		  "DIRECTORY": "SEARCH/POSTAL",
+		  "EXTENTION": "mpd",  
+		  "SUFFIX": ["POSTAL"]
+		}
+	],
+    "REGION_INFO": [
+		{
+			"REGION_CODE": 1,
+			"ISO": "ALB",
+			"MULTILINGUAL": [
+				{
+					"LANG_CODE": 2,
+					"NAME": "Albania"
+				},
+				{
+					"LANG_CODE": 67,
+					"NAME": "Албания"
+				},
+				{
+					"LANG_CODE": 52,
+					"NAME": "Albanie"
+				},
+				{
+					"LANG_CODE": 47,
+					"NAME": "Albania"
+				},
+				{
+					"LANG_CODE": 6,
+					"NAME": "Albania"
+				},
+				{
+					"LANG_CODE": 20,
+					"NAME": "Albanië"
+				},
+				{
+					"LANG_CODE": 7,
+					"NAME": "Albanien"
+				},
+				{
+					"LANG_CODE": 48,
+					"NAME": "Albanien"
+				},
+				{
+					"LANG_CODE": 19,
+					"NAME": "Albanien"
+				},
+				{
+					"LANG_CODE": 37,
+					"NAME": "Albânia"
+				},
+				{
+					"LANG_CODE": 70,
+					"NAME": "Arnavutluk"
+				},
+				{
+					"LANG_CODE": 17,
+					"NAME": "Albánie"
+				},
+				{
+					"LANG_CODE": 36,
+					"NAME": "Albania"
+				},
+				{
+					"LANG_CODE": 44,
+					"NAME": "Albánsko"
+				},
+				{
+					"LANG_CODE": 27,
+					"NAME": "Albánia"
+				},
+				{
+					"LANG_CODE": 35,
+					"NAME": "Albania"
+				},
+				{
+					"LANG_CODE": 22,
+					"NAME": "Albania"
+				},
+				{
+					"LANG_CODE": 1,
+					"NAME": "알바니아"
+				},
+				{
+					"LANG_CODE": 24,
+					"NAME": "Αλβανία"
+				},
+				{
+					"LANG_CODE": 71,
+					"NAME": "Албанія"
+				},
+				{
+					"LANG_CODE": 45,
+					"NAME": "Albanija"
+				}
+			]
+		},
+		{
+			"REGION_CODE": 2,
+			"ISO": "AND",
+			"MULTILINGUAL": [
+				{
+					"LANG_CODE": 2,
+					"NAME": "Andorra"
+				},
+				{
+					"LANG_CODE": 67,
+					"NAME": "Андорра"
+				},
+				{
+					"LANG_CODE": 52,
+					"NAME": "Andorre"
+				},
+				{
+					"LANG_CODE": 47,
+					"NAME": "Andorra"
+				},
+				{
+					"LANG_CODE": 6,
+					"NAME": "Andorra"
+				},
+				{
+					"LANG_CODE": 20,
+					"NAME": "Andorra"
+				},
+				{
+					"LANG_CODE": 7,
+					"NAME": "Andorra"
+				},
+				{
+					"LANG_CODE": 48,
+					"NAME": "Andorra"
+				},
+				{
+					"LANG_CODE": 19,
+					"NAME": "Andorra"
+				},
+				{
+					"LANG_CODE": 37,
+					"NAME": "Andorra"
+				},
+				{
+					"LANG_CODE": 70,
+					"NAME": "Andorra"
+				},
+				{
+					"LANG_CODE": 17,
+					"NAME": "Andorra"
+				},
+				{
+					"LANG_CODE": 36,
+					"NAME": "Andora"
+				},
+				{
+					"LANG_CODE": 44,
+					"NAME": "Andorra"
+				},
+				{
+					"LANG_CODE": 27,
+					"NAME": "Andorra"
+				},
+				{
+					"LANG_CODE": 35,
+					"NAME": "Andorra"
+				},
+				{
+					"LANG_CODE": 22,
+					"NAME": "Andorra"
+				},
+				{
+					"LANG_CODE": 1,
+					"NAME": "안도라"
+				},
+				{
+					"LANG_CODE": 24,
+					"NAME": "Ανδόρα"
+				},
+				{
+					"LANG_CODE": 71,
+					"NAME": "Андорра"
+				},
+				{
+					"LANG_CODE": 45,
+					"NAME": "Andora"
+				}
+			]
+		},
+		{
+			"REGION_CODE": 3,
+			"ISO": "AUT",
+			"MULTILINGUAL": [
+				{
+					"LANG_CODE": 2,
+					"NAME": "Austria"
+				},
+				{
+					"LANG_CODE": 67,
+					"NAME": "Австрия"
+				},
+				{
+					"LANG_CODE": 52,
+					"NAME": "Autriche"
+				},
+				{
+					"LANG_CODE": 47,
+					"NAME": "Austria"
+				},
+				{
+					"LANG_CODE": 6,
+					"NAME": "Austria"
+				},
+				{
+					"LANG_CODE": 20,
+					"NAME": "Oostenrijk"
+				},
+				{
+					"LANG_CODE": 7,
+					"NAME": "Österreich"
+				},
+				{
+					"LANG_CODE": 48,
+					"NAME": "Österrike"
+				},
+				{
+					"LANG_CODE": 19,
+					"NAME": "Østrig"
+				},
+				{
+					"LANG_CODE": 37,
+					"NAME": "Áustria"
+				},
+				{
+					"LANG_CODE": 70,
+					"NAME": "Avusturya"
+				},
+				{
+					"LANG_CODE": 17,
+					"NAME": "Rakousko"
+				},
+				{
+					"LANG_CODE": 36,
+					"NAME": "Austria"
+				},
+				{
+					"LANG_CODE": 44,
+					"NAME": "Rakúsko"
+				},
+				{
+					"LANG_CODE": 27,
+					"NAME": "Ausztria"
+				},
+				{
+					"LANG_CODE": 35,
+					"NAME": "Østerrike"
+				},
+				{
+					"LANG_CODE": 22,
+					"NAME": "Itävalta"
+				},
+				{
+					"LANG_CODE": 1,
+					"NAME": "오스트리아"
+				},
+				{
+					"LANG_CODE": 24,
+					"NAME": "Αυστρία"
+				},
+				{
+					"LANG_CODE": 71,
+					"NAME": "Австрія"
+				},
+				{
+					"LANG_CODE": 45,
+					"NAME": "Avstrija"
+				}
+			]
+		},
+		{
+			"REGION_CODE": 4,
+			"ISO": "BEL",
+			"MULTILINGUAL": [
+				{
+					"LANG_CODE": 2,
+					"NAME": "Belgium"
+				},
+				{
+					"LANG_CODE": 67,
+					"NAME": "Бельгия"
+				},
+				{
+					"LANG_CODE": 52,
+					"NAME": "Belgique"
+				},
+				{
+					"LANG_CODE": 47,
+					"NAME": "Bélgica"
+				},
+				{
+					"LANG_CODE": 6,
+					"NAME": "Belgio"
+				},
+				{
+					"LANG_CODE": 20,
+					"NAME": "België"
+				},
+				{
+					"LANG_CODE": 7,
+					"NAME": "Belgien"
+				},
+				{
+					"LANG_CODE": 48,
+					"NAME": "Belgien"
+				},
+				{
+					"LANG_CODE": 19,
+					"NAME": "Belgien"
+				},
+				{
+					"LANG_CODE": 37,
+					"NAME": "Bélgica"
+				},
+				{
+					"LANG_CODE": 70,
+					"NAME": "Belçika"
+				},
+				{
+					"LANG_CODE": 17,
+					"NAME": "Belgie"
+				},
+				{
+					"LANG_CODE": 36,
+					"NAME": "Belgia"
+				},
+				{
+					"LANG_CODE": 44,
+					"NAME": "Belgicko"
+				},
+				{
+					"LANG_CODE": 27,
+					"NAME": "Belgium"
+				},
+				{
+					"LANG_CODE": 35,
+					"NAME": "Belgia"
+				},
+				{
+					"LANG_CODE": 22,
+					"NAME": "Belgia"
+				},
+				{
+					"LANG_CODE": 1,
+					"NAME": "벨기에"
+				},
+				{
+					"LANG_CODE": 24,
+					"NAME": "Βέλγιο"
+				},
+				{
+					"LANG_CODE": 71,
+					"NAME": "Бельґія"
+				},
+				{
+					"LANG_CODE": 45,
+					"NAME": "Belgija"
+				}
+			]
+		},
+		{
+			"REGION_CODE": 5,
+			"ISO": "BGR",
+			"MULTILINGUAL": [
+				{
+					"LANG_CODE": 2,
+					"NAME": "Bulgaria"
+				},
+				{
+					"LANG_CODE": 67,
+					"NAME": "Болгария"
+				},
+				{
+					"LANG_CODE": 52,
+					"NAME": "Bulgarie"
+				},
+				{
+					"LANG_CODE": 47,
+					"NAME": "Bulgaria"
+				},
+				{
+					"LANG_CODE": 6,
+					"NAME": "Bulgaria"
+				},
+				{
+					"LANG_CODE": 20,
+					"NAME": "Bulgarije"
+				},
+				{
+					"LANG_CODE": 7,
+					"NAME": "Bulgarien"
+				},
+				{
+					"LANG_CODE": 48,
+					"NAME": "Bulgarien"
+				},
+				{
+					"LANG_CODE": 19,
+					"NAME": "Bulgarien"
+				},
+				{
+					"LANG_CODE": 37,
+					"NAME": "Bulgária"
+				},
+				{
+					"LANG_CODE": 70,
+					"NAME": "Bulgaristan"
+				},
+				{
+					"LANG_CODE": 17,
+					"NAME": "Bulharsko"
+				},
+				{
+					"LANG_CODE": 36,
+					"NAME": "Bułgaria"
+				},
+				{
+					"LANG_CODE": 44,
+					"NAME": "Bulharsko"
+				},
+				{
+					"LANG_CODE": 27,
+					"NAME": "Bulgária"
+				},
+				{
+					"LANG_CODE": 35,
+					"NAME": "Bulgaria"
+				},
+				{
+					"LANG_CODE": 22,
+					"NAME": "Bulgaria"
+				},
+				{
+					"LANG_CODE": 1,
+					"NAME": "불가리아"
+				},
+				{
+					"LANG_CODE": 24,
+					"NAME": "Βουλγαρία"
+				},
+				{
+					"LANG_CODE": 71,
+					"NAME": "Болгарія"
+				},
+				{
+					"LANG_CODE": 45,
+					"NAME": "Bolgarija"
+				}
+			]
+		},
+		{
+			"REGION_CODE": 6,
+			"ISO": "BIH",
+			"MULTILINGUAL": [
+				{
+					"LANG_CODE": 2,
+					"NAME": "Bosnia and Herzegovina"
+				},
+				{
+					"LANG_CODE": 67,
+					"NAME": "Босния и Герцеговина"
+				},
+				{
+					"LANG_CODE": 52,
+					"NAME": "Bosnie-Herzégovine"
+				},
+				{
+					"LANG_CODE": 47,
+					"NAME": "Bosnia y Herzegovina"
+				},
+				{
+					"LANG_CODE": 6,
+					"NAME": "Bosnia ed Erzegovina"
+				},
+				{
+					"LANG_CODE": 20,
+					"NAME": "Bosnië en Herzegovina"
+				},
+				{
+					"LANG_CODE": 7,
+					"NAME": "Bosnien-Herzegowina"
+				},
+				{
+					"LANG_CODE": 48,
+					"NAME": "Bosnien och Hercegovina"
+				},
+				{
+					"LANG_CODE": 19,
+					"NAME": "Bosnien og Hercegovina"
+				},
+				{
+					"LANG_CODE": 37,
+					"NAME": "Bósnia e Herzegovina"
+				},
+				{
+					"LANG_CODE": 70,
+					"NAME": "Bosna Hersek"
+				},
+				{
+					"LANG_CODE": 17,
+					"NAME": "Bosna a Hercegovina"
+				},
+				{
+					"LANG_CODE": 36,
+					"NAME": "Bośnia i Hercegowina"
+				},
+				{
+					"LANG_CODE": 44,
+					"NAME": "Bosna a Hercegovina"
+				},
+				{
+					"LANG_CODE": 27,
+					"NAME": "Bosznia-Hercegovina"
+				},
+				{
+					"LANG_CODE": 35,
+					"NAME": "Bosnia-Hercegovina"
+				},
+				{
+					"LANG_CODE": 22,
+					"NAME": "Bosnia ja Hertsegovina"
+				},
+				{
+					"LANG_CODE": 1,
+					"NAME": "보스니아헤르체고비나"
+				},
+				{
+					"LANG_CODE": 24,
+					"NAME": "Βοσνία-Ερζεγοβίνη"
+				},
+				{
+					"LANG_CODE": 71,
+					"NAME": "Боснія і Герцеґовина"
+				},
+				{
+					"LANG_CODE": 45,
+					"NAME": "Bosna in Hercegovina"
+				}
+			]
+		},
+		{
+			"REGION_CODE": 7,
+			"ISO": "BLR",
+			"MULTILINGUAL": [
+				{
+					"LANG_CODE": 2,
+					"NAME": "Belarus"
+				},
+				{
+					"LANG_CODE": 67,
+					"NAME": "Беларусь"
+				},
+				{
+					"LANG_CODE": 52,
+					"NAME": "Biélorussie"
+				},
+				{
+					"LANG_CODE": 47,
+					"NAME": "Bielorrusia"
+				},
+				{
+					"LANG_CODE": 6,
+					"NAME": "Bielorussia"
+				},
+				{
+					"LANG_CODE": 20,
+					"NAME": "Wit-Rusland"
+				},
+				{
+					"LANG_CODE": 7,
+					"NAME": "Weißrussland"
+				},
+				{
+					"LANG_CODE": 48,
+					"NAME": "Vitryssland"
+				},
+				{
+					"LANG_CODE": 19,
+					"NAME": "Hviderusland"
+				},
+				{
+					"LANG_CODE": 37,
+					"NAME": "Bielorrússia"
+				},
+				{
+					"LANG_CODE": 70,
+					"NAME": "Belarus"
+				},
+				{
+					"LANG_CODE": 17,
+					"NAME": "Bělorusko"
+				},
+				{
+					"LANG_CODE": 36,
+					"NAME": "Białoruś"
+				},
+				{
+					"LANG_CODE": 44,
+					"NAME": "Bielorusko"
+				},
+				{
+					"LANG_CODE": 27,
+					"NAME": "Fehéroroszország"
+				},
+				{
+					"LANG_CODE": 35,
+					"NAME": "Hviterussland"
+				},
+				{
+					"LANG_CODE": 22,
+					"NAME": "Valko-Venäjä"
+				},
+				{
+					"LANG_CODE": 1,
+					"NAME": "벨라루스"
+				},
+				{
+					"LANG_CODE": 24,
+					"NAME": "Λευκορωσία"
+				},
+				{
+					"LANG_CODE": 71,
+					"NAME": "Білорусь"
+				},
+				{
+					"LANG_CODE": 45,
+					"NAME": "Belorusija"
+				}
+			]
+		},
+		{
+			"REGION_CODE": 8,
+			"ISO": "CHE",
+			"MULTILINGUAL": [
+				{
+					"LANG_CODE": 2,
+					"NAME": "Switzerland"
+				},
+				{
+					"LANG_CODE": 67,
+					"NAME": "Швейцария"
+				},
+				{
+					"LANG_CODE": 52,
+					"NAME": "Suisse"
+				},
+				{
+					"LANG_CODE": 47,
+					"NAME": "Suiza"
+				},
+				{
+					"LANG_CODE": 6,
+					"NAME": "Svizzera"
+				},
+				{
+					"LANG_CODE": 20,
+					"NAME": "Zwitserland"
+				},
+				{
+					"LANG_CODE": 7,
+					"NAME": "Schweiz"
+				},
+				{
+					"LANG_CODE": 48,
+					"NAME": "Schweiz"
+				},
+				{
+					"LANG_CODE": 19,
+					"NAME": "Schweiz"
+				},
+				{
+					"LANG_CODE": 37,
+					"NAME": "Suíça"
+				},
+				{
+					"LANG_CODE": 70,
+					"NAME": "İsviçre"
+				},
+				{
+					"LANG_CODE": 17,
+					"NAME": "Švýcarsko"
+				},
+				{
+					"LANG_CODE": 36,
+					"NAME": "Szwajcaria"
+				},
+				{
+					"LANG_CODE": 44,
+					"NAME": "Švajčiarsko"
+				},
+				{
+					"LANG_CODE": 27,
+					"NAME": "Svájc"
+				},
+				{
+					"LANG_CODE": 35,
+					"NAME": "Sveits"
+				},
+				{
+					"LANG_CODE": 22,
+					"NAME": "Sveitsi"
+				},
+				{
+					"LANG_CODE": 1,
+					"NAME": "스위스"
+				},
+				{
+					"LANG_CODE": 24,
+					"NAME": "Ελβετία"
+				},
+				{
+					"LANG_CODE": 71,
+					"NAME": "Швейцарія"
+				},
+				{
+					"LANG_CODE": 45,
+					"NAME": "Švica"
+				}
+			]
+		},
+		{
+			"REGION_CODE": 9,
+			"ISO": "CZE",
+			"MULTILINGUAL": [
+				{
+					"LANG_CODE": 2,
+					"NAME": "Czechia"
+				},
+				{
+					"LANG_CODE": 67,
+					"NAME": "Чехия"
+				},
+				{
+					"LANG_CODE": 52,
+					"NAME": "Tchéquie"
+				},
+				{
+					"LANG_CODE": 47,
+					"NAME": "Chequia"
+				},
+				{
+					"LANG_CODE": 6,
+					"NAME": "Cechia"
+				},
+				{
+					"LANG_CODE": 20,
+					"NAME": "Tsjechië"
+				},
+				{
+					"LANG_CODE": 7,
+					"NAME": "Tschechien"
+				},
+				{
+					"LANG_CODE": 48,
+					"NAME": "Tjeckien"
+				},
+				{
+					"LANG_CODE": 19,
+					"NAME": "Tjekkiet"
+				},
+				{
+					"LANG_CODE": 37,
+					"NAME": "Chéquia"
+				},
+				{
+					"LANG_CODE": 70,
+					"NAME": "Çekya"
+				},
+				{
+					"LANG_CODE": 17,
+					"NAME": "Česko"
+				},
+				{
+					"LANG_CODE": 36,
+					"NAME": "Czechy"
+				},
+				{
+					"LANG_CODE": 44,
+					"NAME": "Česko"
+				},
+				{
+					"LANG_CODE": 27,
+					"NAME": "Csehország"
+				},
+				{
+					"LANG_CODE": 35,
+					"NAME": "Tsjekkia"
+				},
+				{
+					"LANG_CODE": 22,
+					"NAME": "Tšekki"
+				},
+				{
+					"LANG_CODE": 1,
+					"NAME": "체코"
+				},
+				{
+					"LANG_CODE": 24,
+					"NAME": "Τσεχία"
+				},
+				{
+					"LANG_CODE": 71,
+					"NAME": "Чехія"
+				},
+				{
+					"LANG_CODE": 45,
+					"NAME": "Češka"
+				}
+			]
+		},
+		{
+			"REGION_CODE": 10,
+			"ISO": "DEU",
+			"MULTILINGUAL": [
+				{
+					"LANG_CODE": 2,
+					"NAME": "Germany"
+				},
+				{
+					"LANG_CODE": 67,
+					"NAME": "Германия"
+				},
+				{
+					"LANG_CODE": 52,
+					"NAME": "Allemagne"
+				},
+				{
+					"LANG_CODE": 47,
+					"NAME": "Alemania"
+				},
+				{
+					"LANG_CODE": 6,
+					"NAME": "Germania"
+				},
+				{
+					"LANG_CODE": 20,
+					"NAME": "Duitsland"
+				},
+				{
+					"LANG_CODE": 7,
+					"NAME": "Deutschland"
+				},
+				{
+					"LANG_CODE": 48,
+					"NAME": "Tyskland"
+				},
+				{
+					"LANG_CODE": 19,
+					"NAME": "Tyskland"
+				},
+				{
+					"LANG_CODE": 37,
+					"NAME": "Alemanha"
+				},
+				{
+					"LANG_CODE": 70,
+					"NAME": "Almanya"
+				},
+				{
+					"LANG_CODE": 17,
+					"NAME": "Německo"
+				},
+				{
+					"LANG_CODE": 36,
+					"NAME": "Niemcy"
+				},
+				{
+					"LANG_CODE": 44,
+					"NAME": "Nemecko"
+				},
+				{
+					"LANG_CODE": 27,
+					"NAME": "Németország"
+				},
+				{
+					"LANG_CODE": 35,
+					"NAME": "Tyskland"
+				},
+				{
+					"LANG_CODE": 22,
+					"NAME": "Saksa"
+				},
+				{
+					"LANG_CODE": 1,
+					"NAME": "독일"
+				},
+				{
+					"LANG_CODE": 24,
+					"NAME": "Γερμανία"
+				},
+				{
+					"LANG_CODE": 71,
+					"NAME": "Німеччина"
+				},
+				{
+					"LANG_CODE": 45,
+					"NAME": "Nemčija"
+				}
+			]
+		},
+		{
+			"REGION_CODE": 11,
+			"ISO": "DNK",
+			"MULTILINGUAL": [
+				{
+					"LANG_CODE": 2,
+					"NAME": "Denmark"
+				},
+				{
+					"LANG_CODE": 67,
+					"NAME": "Дания"
+				},
+				{
+					"LANG_CODE": 52,
+					"NAME": "Danemark"
+				},
+				{
+					"LANG_CODE": 47,
+					"NAME": "Dinamarca"
+				},
+				{
+					"LANG_CODE": 6,
+					"NAME": "Danimarca"
+				},
+				{
+					"LANG_CODE": 20,
+					"NAME": "Denemarken"
+				},
+				{
+					"LANG_CODE": 7,
+					"NAME": "Dänemark"
+				},
+				{
+					"LANG_CODE": 48,
+					"NAME": "Danmark"
+				},
+				{
+					"LANG_CODE": 19,
+					"NAME": "Danmark"
+				},
+				{
+					"LANG_CODE": 37,
+					"NAME": "Dinamarca"
+				},
+				{
+					"LANG_CODE": 70,
+					"NAME": "Danimarka"
+				},
+				{
+					"LANG_CODE": 17,
+					"NAME": "Dánsko"
+				},
+				{
+					"LANG_CODE": 36,
+					"NAME": "Dania"
+				},
+				{
+					"LANG_CODE": 44,
+					"NAME": "Dánsko"
+				},
+				{
+					"LANG_CODE": 27,
+					"NAME": "Dánia"
+				},
+				{
+					"LANG_CODE": 35,
+					"NAME": "Danmark"
+				},
+				{
+					"LANG_CODE": 22,
+					"NAME": "Tanska"
+				},
+				{
+					"LANG_CODE": 1,
+					"NAME": "덴마크"
+				},
+				{
+					"LANG_CODE": 24,
+					"NAME": "Δανία"
+				},
+				{
+					"LANG_CODE": 71,
+					"NAME": "Данія"
+				},
+				{
+					"LANG_CODE": 45,
+					"NAME": "Danska"
+				}
+			]
+		},
+		{
+			"REGION_CODE": 12,
+			"ISO": "ESP",
+			"MULTILINGUAL": [
+				{
+					"LANG_CODE": 2,
+					"NAME": "Spain"
+				},
+				{
+					"LANG_CODE": 67,
+					"NAME": "Испания"
+				},
+				{
+					"LANG_CODE": 52,
+					"NAME": "Espagne"
+				},
+				{
+					"LANG_CODE": 47,
+					"NAME": "España"
+				},
+				{
+					"LANG_CODE": 6,
+					"NAME": "Spagna"
+				},
+				{
+					"LANG_CODE": 20,
+					"NAME": "Spanje"
+				},
+				{
+					"LANG_CODE": 7,
+					"NAME": "Spanien"
+				},
+				{
+					"LANG_CODE": 48,
+					"NAME": "Spanien"
+				},
+				{
+					"LANG_CODE": 19,
+					"NAME": "Spanien"
+				},
+				{
+					"LANG_CODE": 37,
+					"NAME": "Espanha"
+				},
+				{
+					"LANG_CODE": 70,
+					"NAME": "İspanya"
+				},
+				{
+					"LANG_CODE": 17,
+					"NAME": "Španělsko"
+				},
+				{
+					"LANG_CODE": 36,
+					"NAME": "Hiszpania"
+				},
+				{
+					"LANG_CODE": 44,
+					"NAME": "Španielsko"
+				},
+				{
+					"LANG_CODE": 27,
+					"NAME": "Spanyolország"
+				},
+				{
+					"LANG_CODE": 35,
+					"NAME": "Spania"
+				},
+				{
+					"LANG_CODE": 22,
+					"NAME": "Espanja"
+				},
+				{
+					"LANG_CODE": 1,
+					"NAME": "스페인"
+				},
+				{
+					"LANG_CODE": 24,
+					"NAME": "Ισπανία"
+				},
+				{
+					"LANG_CODE": 71,
+					"NAME": "Іспанія"
+				},
+				{
+					"LANG_CODE": 45,
+					"NAME": "Španija"
+				}
+			]
+		},
+		{
+			"REGION_CODE": 13,
+			"ISO": "EST",
+			"MULTILINGUAL": [
+				{
+					"LANG_CODE": 2,
+					"NAME": "Estonia"
+				},
+				{
+					"LANG_CODE": 67,
+					"NAME": "Эстония"
+				},
+				{
+					"LANG_CODE": 52,
+					"NAME": "Estonie"
+				},
+				{
+					"LANG_CODE": 47,
+					"NAME": "Estonia"
+				},
+				{
+					"LANG_CODE": 6,
+					"NAME": "Estonia"
+				},
+				{
+					"LANG_CODE": 20,
+					"NAME": "Estland"
+				},
+				{
+					"LANG_CODE": 7,
+					"NAME": "Estland"
+				},
+				{
+					"LANG_CODE": 48,
+					"NAME": "Estland"
+				},
+				{
+					"LANG_CODE": 19,
+					"NAME": "Estland"
+				},
+				{
+					"LANG_CODE": 37,
+					"NAME": "Estónia"
+				},
+				{
+					"LANG_CODE": 70,
+					"NAME": "Estonya"
+				},
+				{
+					"LANG_CODE": 17,
+					"NAME": "Estonsko"
+				},
+				{
+					"LANG_CODE": 36,
+					"NAME": "Estonia"
+				},
+				{
+					"LANG_CODE": 44,
+					"NAME": "Estónsko"
+				},
+				{
+					"LANG_CODE": 27,
+					"NAME": "Észtország"
+				},
+				{
+					"LANG_CODE": 35,
+					"NAME": "Estland"
+				},
+				{
+					"LANG_CODE": 22,
+					"NAME": "Viro"
+				},
+				{
+					"LANG_CODE": 1,
+					"NAME": "에스토니아"
+				},
+				{
+					"LANG_CODE": 24,
+					"NAME": "Εσθονία"
+				},
+				{
+					"LANG_CODE": 71,
+					"NAME": "Естонія"
+				},
+				{
+					"LANG_CODE": 45,
+					"NAME": "Estonija"
+				}
+			]
+		},
+		{
+			"REGION_CODE": 14,
+			"ISO": "FIN",
+			"MULTILINGUAL": [
+				{
+					"LANG_CODE": 2,
+					"NAME": "Finland"
+				},
+				{
+					"LANG_CODE": 67,
+					"NAME": "Финляндия"
+				},
+				{
+					"LANG_CODE": 52,
+					"NAME": "Finlande"
+				},
+				{
+					"LANG_CODE": 47,
+					"NAME": "Finlandia"
+				},
+				{
+					"LANG_CODE": 6,
+					"NAME": "Finlandia"
+				},
+				{
+					"LANG_CODE": 20,
+					"NAME": "Finland"
+				},
+				{
+					"LANG_CODE": 7,
+					"NAME": "Finnland"
+				},
+				{
+					"LANG_CODE": 48,
+					"NAME": "Finland"
+				},
+				{
+					"LANG_CODE": 19,
+					"NAME": "Finland"
+				},
+				{
+					"LANG_CODE": 37,
+					"NAME": "Finlândia"
+				},
+				{
+					"LANG_CODE": 70,
+					"NAME": "Finlandiya"
+				},
+				{
+					"LANG_CODE": 17,
+					"NAME": "Finsko"
+				},
+				{
+					"LANG_CODE": 36,
+					"NAME": "Finlandia"
+				},
+				{
+					"LANG_CODE": 44,
+					"NAME": "Fínsko"
+				},
+				{
+					"LANG_CODE": 27,
+					"NAME": "Finnország"
+				},
+				{
+					"LANG_CODE": 35,
+					"NAME": "Finland"
+				},
+				{
+					"LANG_CODE": 22,
+					"NAME": "Suomi"
+				},
+				{
+					"LANG_CODE": 1,
+					"NAME": "핀란드"
+				},
+				{
+					"LANG_CODE": 24,
+					"NAME": "Φινλανδία"
+				},
+				{
+					"LANG_CODE": 71,
+					"NAME": "Фінляндія"
+				},
+				{
+					"LANG_CODE": 45,
+					"NAME": "Finska"
+				}
+			]
+		},
+		{
+			"REGION_CODE": 15,
+			"ISO": "FRA",
+			"MULTILINGUAL": [
+				{
+					"LANG_CODE": 2,
+					"NAME": "France"
+				},
+				{
+					"LANG_CODE": 67,
+					"NAME": "Франция"
+				},
+				{
+					"LANG_CODE": 52,
+					"NAME": "France"
+				},
+				{
+					"LANG_CODE": 47,
+					"NAME": "Francia"
+				},
+				{
+					"LANG_CODE": 6,
+					"NAME": "Francia"
+				},
+				{
+					"LANG_CODE": 20,
+					"NAME": "Frankrijk"
+				},
+				{
+					"LANG_CODE": 7,
+					"NAME": "Frankreich"
+				},
+				{
+					"LANG_CODE": 48,
+					"NAME": "Frankrike"
+				},
+				{
+					"LANG_CODE": 19,
+					"NAME": "Frankrig"
+				},
+				{
+					"LANG_CODE": 37,
+					"NAME": "França"
+				},
+				{
+					"LANG_CODE": 70,
+					"NAME": "Fransa"
+				},
+				{
+					"LANG_CODE": 17,
+					"NAME": "Francie"
+				},
+				{
+					"LANG_CODE": 36,
+					"NAME": "Francja"
+				},
+				{
+					"LANG_CODE": 44,
+					"NAME": "Francúzsko"
+				},
+				{
+					"LANG_CODE": 27,
+					"NAME": "Franciaország"
+				},
+				{
+					"LANG_CODE": 35,
+					"NAME": "Frankrike"
+				},
+				{
+					"LANG_CODE": 22,
+					"NAME": "Ranska"
+				},
+				{
+					"LANG_CODE": 1,
+					"NAME": "프랑스"
+				},
+				{
+					"LANG_CODE": 24,
+					"NAME": "Γαλλία"
+				},
+				{
+					"LANG_CODE": 71,
+					"NAME": "Франція"
+				},
+				{
+					"LANG_CODE": 45,
+					"NAME": "Francija"
+				}
+			]
+		},
+				{
+			"REGION_CODE": 16,
+			"ISO": "GIB",
+			"MULTILINGUAL": [
+				{
+					"LANG_CODE": 2,
+					"NAME": "Gibraltar"
+				},
+				{
+					"LANG_CODE": 67,
+					"NAME": "Гибралтар"
+				},
+				{
+					"LANG_CODE": 52,
+					"NAME": "Gibraltar"
+				},
+				{
+					"LANG_CODE": 47,
+					"NAME": "Gibraltar"
+				},
+				{
+					"LANG_CODE": 6,
+					"NAME": "Gibilterra"
+				},
+				{
+					"LANG_CODE": 20,
+					"NAME": "Gibraltar"
+				},
+				{
+					"LANG_CODE": 7,
+					"NAME": "Gibraltar"
+				},
+				{
+					"LANG_CODE": 48,
+					"NAME": "Gibraltar"
+				},
+				{
+					"LANG_CODE": 19,
+					"NAME": "Gibraltar"
+				},
+				{
+					"LANG_CODE": 37,
+					"NAME": "Gibraltar"
+				},
+				{
+					"LANG_CODE": 70,
+					"NAME": "Cebelitarık"
+				},
+				{
+					"LANG_CODE": 17,
+					"NAME": "Gibraltar"
+				},
+				{
+					"LANG_CODE": 36,
+					"NAME": "Gibraltar"
+				},
+				{
+					"LANG_CODE": 44,
+					"NAME": "Gibraltár"
+				},
+				{
+					"LANG_CODE": 27,
+					"NAME": "Gibraltár"
+				},
+				{
+					"LANG_CODE": 35,
+					"NAME": "Gibraltar"
+				},
+				{
+					"LANG_CODE": 22,
+					"NAME": "Gibraltar"
+				},
+				{
+					"LANG_CODE": 1,
+					"NAME": "지브롤터"
+				},
+				{
+					"LANG_CODE": 24,
+					"NAME": "Γιβραλτάρ"
+				},
+				{
+					"LANG_CODE": 71,
+					"NAME": "Ґібралтар"
+				},
+				{
+					"LANG_CODE": 45,
+					"NAME": "Gibraltar"
+				}
+			]
+		},
+		{
+			"REGION_CODE": 17,
+			"ISO": "GRC",
+			"MULTILINGUAL": [
+				{
+					"LANG_CODE": 2,
+					"NAME": "Greece"
+				},
+				{
+					"LANG_CODE": 67,
+					"NAME": "Греция"
+				},
+				{
+					"LANG_CODE": 52,
+					"NAME": "Grèce"
+				},
+				{
+					"LANG_CODE": 47,
+					"NAME": "Grecia"
+				},
+				{
+					"LANG_CODE": 6,
+					"NAME": "Grecia"
+				},
+				{
+					"LANG_CODE": 20,
+					"NAME": "Griekenland"
+				},
+				{
+					"LANG_CODE": 7,
+					"NAME": "Griechenland"
+				},
+				{
+					"LANG_CODE": 48,
+					"NAME": "Grekland"
+				},
+				{
+					"LANG_CODE": 19,
+					"NAME": "Grækenland"
+				},
+				{
+					"LANG_CODE": 37,
+					"NAME": "Grécia"
+				},
+				{
+					"LANG_CODE": 70,
+					"NAME": "Yunanistan"
+				},
+				{
+					"LANG_CODE": 17,
+					"NAME": "Řecko"
+				},
+				{
+					"LANG_CODE": 36,
+					"NAME": "Grecja"
+				},
+				{
+					"LANG_CODE": 44,
+					"NAME": "Grécko"
+				},
+				{
+					"LANG_CODE": 27,
+					"NAME": "Görögország"
+				},
+				{
+					"LANG_CODE": 35,
+					"NAME": "Hellas"
+				},
+				{
+					"LANG_CODE": 22,
+					"NAME": "Kreikka"
+				},
+				{
+					"LANG_CODE": 1,
+					"NAME": "그리스"
+				},
+				{
+					"LANG_CODE": 24,
+					"NAME": "Ελλάδα"
+				},
+				{
+					"LANG_CODE": 71,
+					"NAME": "Греція"
+				},
+				{
+					"LANG_CODE": 45,
+					"NAME": "Grčija"
+				}
+			]
+		},
+		{
+			"REGION_CODE": 18,
+			"ISO": "HRV",
+			"MULTILINGUAL": [
+				{
+					"LANG_CODE": 2,
+					"NAME": "Croatia"
+				},
+				{
+					"LANG_CODE": 67,
+					"NAME": "Хорватия"
+				},
+				{
+					"LANG_CODE": 52,
+					"NAME": "Croatie"
+				},
+				{
+					"LANG_CODE": 47,
+					"NAME": "Croacia"
+				},
+				{
+					"LANG_CODE": 6,
+					"NAME": "Croazia"
+				},
+				{
+					"LANG_CODE": 20,
+					"NAME": "Kroatië"
+				},
+				{
+					"LANG_CODE": 7,
+					"NAME": "Kroatien"
+				},
+				{
+					"LANG_CODE": 48,
+					"NAME": "Kroatien"
+				},
+				{
+					"LANG_CODE": 19,
+					"NAME": "Kroatien"
+				},
+				{
+					"LANG_CODE": 37,
+					"NAME": "Croácia"
+				},
+				{
+					"LANG_CODE": 70,
+					"NAME": "Hırvatistan"
+				},
+				{
+					"LANG_CODE": 17,
+					"NAME": "Chorvatsko"
+				},
+				{
+					"LANG_CODE": 36,
+					"NAME": "Chorwacja"
+				},
+				{
+					"LANG_CODE": 44,
+					"NAME": "Chorvátsko"
+				},
+				{
+					"LANG_CODE": 27,
+					"NAME": "Horvátország"
+				},
+				{
+					"LANG_CODE": 35,
+					"NAME": "Kroatia"
+				},
+				{
+					"LANG_CODE": 22,
+					"NAME": "Kroatia"
+				},
+				{
+					"LANG_CODE": 1,
+					"NAME": "크로아티아"
+				},
+				{
+					"LANG_CODE": 24,
+					"NAME": "Κροατία"
+				},
+				{
+					"LANG_CODE": 71,
+					"NAME": "Хорватія"
+				},
+				{
+					"LANG_CODE": 45,
+					"NAME": "Hrvaška"
+				}
+			]
+		},
+		{
+			"REGION_CODE": 19,
+			"ISO": "HUN",
+			"MULTILINGUAL": [
+				{
+					"LANG_CODE": 2,
+					"NAME": "Hungary"
+				},
+				{
+					"LANG_CODE": 67,
+					"NAME": "Венгрия"
+				},
+				{
+					"LANG_CODE": 52,
+					"NAME": "Hongrie"
+				},
+				{
+					"LANG_CODE": 47,
+					"NAME": "Hungría"
+				},
+				{
+					"LANG_CODE": 6,
+					"NAME": "Ungheria"
+				},
+				{
+					"LANG_CODE": 20,
+					"NAME": "Hongarije"
+				},
+				{
+					"LANG_CODE": 7,
+					"NAME": "Ungarn"
+				},
+				{
+					"LANG_CODE": 48,
+					"NAME": "Ungern"
+				},
+				{
+					"LANG_CODE": 19,
+					"NAME": "Ungarn"
+				},
+				{
+					"LANG_CODE": 37,
+					"NAME": "Hungria"
+				},
+				{
+					"LANG_CODE": 70,
+					"NAME": "Macaristan"
+				},
+				{
+					"LANG_CODE": 17,
+					"NAME": "Maďarsko"
+				},
+				{
+					"LANG_CODE": 36,
+					"NAME": "Węgry"
+				},
+				{
+					"LANG_CODE": 44,
+					"NAME": "Maďarsko"
+				},
+				{
+					"LANG_CODE": 27,
+					"NAME": "Magyarország"
+				},
+				{
+					"LANG_CODE": 35,
+					"NAME": "Ungarn"
+				},
+				{
+					"LANG_CODE": 22,
+					"NAME": "Unkari"
+				},
+				{
+					"LANG_CODE": 1,
+					"NAME": "헝가리"
+				},
+				{
+					"LANG_CODE": 24,
+					"NAME": "Ουγγαρία"
+				},
+				{
+					"LANG_CODE": 71,
+					"NAME": "Угорщина"
+				},
+				{
+					"LANG_CODE": 45,
+					"NAME": "Madžarska"
+				}
+			]
+		},
+		{
+			"REGION_CODE": 20,
+			"ISO": "IRL",
+			"MULTILINGUAL": [
+				{
+					"LANG_CODE": 2,
+					"NAME": "Ireland"
+				},
+				{
+					"LANG_CODE": 67,
+					"NAME": "Ирландия"
+				},
+				{
+					"LANG_CODE": 52,
+					"NAME": "Irlande"
+				},
+				{
+					"LANG_CODE": 47,
+					"NAME": "Irlanda"
+				},
+				{
+					"LANG_CODE": 6,
+					"NAME": "Irlanda"
+				},
+				{
+					"LANG_CODE": 20,
+					"NAME": "Ierland"
+				},
+				{
+					"LANG_CODE": 7,
+					"NAME": "Irland"
+				},
+				{
+					"LANG_CODE": 48,
+					"NAME": "Irland"
+				},
+				{
+					"LANG_CODE": 19,
+					"NAME": "Irland"
+				},
+				{
+					"LANG_CODE": 37,
+					"NAME": "Irlanda"
+				},
+				{
+					"LANG_CODE": 70,
+					"NAME": "İrlanda"
+				},
+				{
+					"LANG_CODE": 17,
+					"NAME": "Irsko"
+				},
+				{
+					"LANG_CODE": 36,
+					"NAME": "Irlandia"
+				},
+				{
+					"LANG_CODE": 44,
+					"NAME": "Írsko"
+				},
+				{
+					"LANG_CODE": 27,
+					"NAME": "Írország"
+				},
+				{
+					"LANG_CODE": 35,
+					"NAME": "Irland"
+				},
+				{
+					"LANG_CODE": 22,
+					"NAME": "Irlanti"
+				},
+				{
+					"LANG_CODE": 1,
+					"NAME": "아일랜드"
+				},
+				{
+					"LANG_CODE": 24,
+					"NAME": "Ιρλανδία"
+				},
+				{
+					"LANG_CODE": 71,
+					"NAME": "Ірландія"
+				},
+				{
+					"LANG_CODE": 45,
+					"NAME": "Irska"
+				}
+			]
+		},
+		{
+			"REGION_CODE": 21,
+			"ISO": "ISL",
+			"MULTILINGUAL": [
+				{
+					"LANG_CODE": 2,
+					"NAME": "Iceland"
+				},
+				{
+					"LANG_CODE": 67,
+					"NAME": "Исландия"
+				},
+				{
+					"LANG_CODE": 52,
+					"NAME": "Islande"
+				},
+				{
+					"LANG_CODE": 47,
+					"NAME": "Islandia"
+				},
+				{
+					"LANG_CODE": 6,
+					"NAME": "Islanda"
+				},
+				{
+					"LANG_CODE": 20,
+					"NAME": "IJsland"
+				},
+				{
+					"LANG_CODE": 7,
+					"NAME": "Island"
+				},
+				{
+					"LANG_CODE": 48,
+					"NAME": "Island"
+				},
+				{
+					"LANG_CODE": 19,
+					"NAME": "Island"
+				},
+				{
+					"LANG_CODE": 37,
+					"NAME": "Islândia"
+				},
+				{
+					"LANG_CODE": 70,
+					"NAME": "İzlanda"
+				},
+				{
+					"LANG_CODE": 17,
+					"NAME": "Island"
+				},
+				{
+					"LANG_CODE": 36,
+					"NAME": "Islandia"
+				},
+				{
+					"LANG_CODE": 44,
+					"NAME": "Island"
+				},
+				{
+					"LANG_CODE": 27,
+					"NAME": "Izland"
+				},
+				{
+					"LANG_CODE": 35,
+					"NAME": "Island"
+				},
+				{
+					"LANG_CODE": 22,
+					"NAME": "Islanti"
+				},
+				{
+					"LANG_CODE": 1,
+					"NAME": "아이슬란드"
+				},
+				{
+					"LANG_CODE": 24,
+					"NAME": "Ισλανδία"
+				},
+				{
+					"LANG_CODE": 71,
+					"NAME": "Ісландія"
+				},
+				{
+					"LANG_CODE": 45,
+					"NAME": "Islandija"
+				}
+			]
+		},
+		{
+			"REGION_CODE": 22,
+			"ISO": "ITA",
+			"MULTILINGUAL": [
+				{
+					"LANG_CODE": 2,
+					"NAME": "Italy"
+				},
+				{
+					"LANG_CODE": 67,
+					"NAME": "Италия"
+				},
+				{
+					"LANG_CODE": 52,
+					"NAME": "Italie"
+				},
+				{
+					"LANG_CODE": 47,
+					"NAME": "Italia"
+				},
+				{
+					"LANG_CODE": 6,
+					"NAME": "Italia"
+				},
+				{
+					"LANG_CODE": 20,
+					"NAME": "Italië"
+				},
+				{
+					"LANG_CODE": 7,
+					"NAME": "Italien"
+				},
+				{
+					"LANG_CODE": 48,
+					"NAME": "Italien"
+				},
+				{
+					"LANG_CODE": 19,
+					"NAME": "Italien"
+				},
+				{
+					"LANG_CODE": 37,
+					"NAME": "Itália"
+				},
+				{
+					"LANG_CODE": 70,
+					"NAME": "İtalya"
+				},
+				{
+					"LANG_CODE": 17,
+					"NAME": "Itálie"
+				},
+				{
+					"LANG_CODE": 36,
+					"NAME": "Włochy"
+				},
+				{
+					"LANG_CODE": 44,
+					"NAME": "Taliansko"
+				},
+				{
+					"LANG_CODE": 27,
+					"NAME": "Olaszország"
+				},
+				{
+					"LANG_CODE": 35,
+					"NAME": "Italia"
+				},
+				{
+					"LANG_CODE": 22,
+					"NAME": "Italia"
+				},
+				{
+					"LANG_CODE": 1,
+					"NAME": "이탈리아"
+				},
+				{
+					"LANG_CODE": 24,
+					"NAME": "Ιταλία"
+				},
+				{
+					"LANG_CODE": 71,
+					"NAME": "Італія"
+				},
+				{
+					"LANG_CODE": 45,
+					"NAME": "Italija"
+				}
+			]
+		},
+		{
+			"REGION_CODE": 23,
+			"ISO": "LIE",
+			"MULTILINGUAL": [
+				{
+					"LANG_CODE": 2,
+					"NAME": "Liechtenstein"
+				},
+				{
+					"LANG_CODE": 67,
+					"NAME": "Лихтенштейн"
+				},
+				{
+					"LANG_CODE": 52,
+					"NAME": "Liechtenstein"
+				},
+				{
+					"LANG_CODE": 47,
+					"NAME": "Liechtenstein"
+				},
+				{
+					"LANG_CODE": 6,
+					"NAME": "Liechtenstein"
+				},
+				{
+					"LANG_CODE": 20,
+					"NAME": "Liechtenstein"
+				},
+				{
+					"LANG_CODE": 7,
+					"NAME": "Liechtenstein"
+				},
+				{
+					"LANG_CODE": 48,
+					"NAME": "Liechtenstein"
+				},
+				{
+					"LANG_CODE": 19,
+					"NAME": "Liechtenstein"
+				},
+				{
+					"LANG_CODE": 37,
+					"NAME": "Liechtenstein"
+				},
+				{
+					"LANG_CODE": 70,
+					"NAME": "Lihtenştayn"
+				},
+				{
+					"LANG_CODE": 17,
+					"NAME": "Lichtenštejnsko"
+				},
+				{
+					"LANG_CODE": 36,
+					"NAME": "Liechtenstein"
+				},
+				{
+					"LANG_CODE": 44,
+					"NAME": "Lichtenštajnsko"
+				},
+				{
+					"LANG_CODE": 27,
+					"NAME": "Liechtenstein"
+				},
+				{
+					"LANG_CODE": 35,
+					"NAME": "Liechtenstein"
+				},
+				{
+					"LANG_CODE": 22,
+					"NAME": "Liechtenstein"
+				},
+				{
+					"LANG_CODE": 1,
+					"NAME": "리히텐슈타인"
+				},
+				{
+					"LANG_CODE": 24,
+					"NAME": "Λιχτενστάιν"
+				},
+				{
+					"LANG_CODE": 71,
+					"NAME": "Ліхтенштейн"
+				},
+				{
+					"LANG_CODE": 45,
+					"NAME": "Lihtenštajn"
+				}
+			]
+		},
+		{
+			"REGION_CODE": 24,
+			"ISO": "LTU",
+			"MULTILINGUAL": [
+				{
+					"LANG_CODE": 2,
+					"NAME": "Lithuania"
+				},
+				{
+					"LANG_CODE": 67,
+					"NAME": "Литва"
+				},
+				{
+					"LANG_CODE": 52,
+					"NAME": "Lituanie"
+				},
+				{
+					"LANG_CODE": 47,
+					"NAME": "Lituania"
+				},
+				{
+					"LANG_CODE": 6,
+					"NAME": "Lituania"
+				},
+				{
+					"LANG_CODE": 20,
+					"NAME": "Litouwen"
+				},
+				{
+					"LANG_CODE": 7,
+					"NAME": "Litauen"
+				},
+				{
+					"LANG_CODE": 48,
+					"NAME": "Litauen"
+				},
+				{
+					"LANG_CODE": 19,
+					"NAME": "Litauen"
+				},
+				{
+					"LANG_CODE": 37,
+					"NAME": "Lituânia"
+				},
+				{
+					"LANG_CODE": 70,
+					"NAME": "Litvanya"
+				},
+				{
+					"LANG_CODE": 17,
+					"NAME": "Litva"
+				},
+				{
+					"LANG_CODE": 36,
+					"NAME": "Litwa"
+				},
+				{
+					"LANG_CODE": 44,
+					"NAME": "Litva"
+				},
+				{
+					"LANG_CODE": 27,
+					"NAME": "Litvánia"
+				},
+				{
+					"LANG_CODE": 35,
+					"NAME": "Litauen"
+				},
+				{
+					"LANG_CODE": 22,
+					"NAME": "Liettua"
+				},
+				{
+					"LANG_CODE": 1,
+					"NAME": "리투아니아"
+				},
+				{
+					"LANG_CODE": 24,
+					"NAME": "Λιθουανία"
+				},
+				{
+					"LANG_CODE": 71,
+					"NAME": "Литва"
+				},
+				{
+					"LANG_CODE": 45,
+					"NAME": "Litva"
+				}
+			]
+		},
+		{
+			"REGION_CODE": 25,
+			"ISO": "LUX",
+			"MULTILINGUAL": [
+				{
+					"LANG_CODE": 2,
+					"NAME": "Luxembourg"
+				},
+				{
+					"LANG_CODE": 67,
+					"NAME": "Люксембург"
+				},
+				{
+					"LANG_CODE": 52,
+					"NAME": "Luxembourg"
+				},
+				{
+					"LANG_CODE": 47,
+					"NAME": "Luxemburgo"
+				},
+				{
+					"LANG_CODE": 6,
+					"NAME": "Lussemburgo"
+				},
+				{
+					"LANG_CODE": 20,
+					"NAME": "Luxemburg"
+				},
+				{
+					"LANG_CODE": 7,
+					"NAME": "Luxemburg"
+				},
+				{
+					"LANG_CODE": 48,
+					"NAME": "Luxemburg"
+				},
+				{
+					"LANG_CODE": 19,
+					"NAME": "Luxembourg"
+				},
+				{
+					"LANG_CODE": 37,
+					"NAME": "Luxemburgo"
+				},
+				{
+					"LANG_CODE": 70,
+					"NAME": "Lüksemburg"
+				},
+				{
+					"LANG_CODE": 17,
+					"NAME": "Lucembursko"
+				},
+				{
+					"LANG_CODE": 36,
+					"NAME": "Luksemburg"
+				},
+				{
+					"LANG_CODE": 44,
+					"NAME": "Luxembursko"
+				},
+				{
+					"LANG_CODE": 27,
+					"NAME": "Luxemburg"
+				},
+				{
+					"LANG_CODE": 35,
+					"NAME": "Luxembourg"
+				},
+				{
+					"LANG_CODE": 22,
+					"NAME": "Luxemburg"
+				},
+				{
+					"LANG_CODE": 1,
+					"NAME": "룩셈부르크"
+				},
+				{
+					"LANG_CODE": 24,
+					"NAME": "Λουξεμβούργο"
+				},
+				{
+					"LANG_CODE": 71,
+					"NAME": "Люксембурґ"
+				},
+				{
+					"LANG_CODE": 45,
+					"NAME": "Luksemburg"
+				}
+			]
+		},
+		{
+			"REGION_CODE": 26,
+			"ISO": "LVA",
+			"MULTILINGUAL": [
+				{
+					"LANG_CODE": 2,
+					"NAME": "Latvia"
+				},
+				{
+					"LANG_CODE": 67,
+					"NAME": "Латвия"
+				},
+				{
+					"LANG_CODE": 52,
+					"NAME": "Lettonie"
+				},
+				{
+					"LANG_CODE": 47,
+					"NAME": "Letonia"
+				},
+				{
+					"LANG_CODE": 6,
+					"NAME": "Lettonia"
+				},
+				{
+					"LANG_CODE": 20,
+					"NAME": "Letland"
+				},
+				{
+					"LANG_CODE": 7,
+					"NAME": "Lettland"
+				},
+				{
+					"LANG_CODE": 48,
+					"NAME": "Lettland"
+				},
+				{
+					"LANG_CODE": 19,
+					"NAME": "Letland"
+				},
+				{
+					"LANG_CODE": 37,
+					"NAME": "Letónia"
+				},
+				{
+					"LANG_CODE": 70,
+					"NAME": "Letonya"
+				},
+				{
+					"LANG_CODE": 17,
+					"NAME": "Lotyšsko"
+				},
+				{
+					"LANG_CODE": 36,
+					"NAME": "Łotwa"
+				},
+				{
+					"LANG_CODE": 44,
+					"NAME": "Lotyšsko"
+				},
+				{
+					"LANG_CODE": 27,
+					"NAME": "Lettország"
+				},
+				{
+					"LANG_CODE": 35,
+					"NAME": "Latvia"
+				},
+				{
+					"LANG_CODE": 22,
+					"NAME": "Latvia"
+				},
+				{
+					"LANG_CODE": 1,
+					"NAME": "라트비아"
+				},
+				{
+					"LANG_CODE": 24,
+					"NAME": "Λετονία"
+				},
+				{
+					"LANG_CODE": 71,
+					"NAME": "Латвія"
+				},
+				{
+					"LANG_CODE": 45,
+					"NAME": "Latvija"
+				}
+			]
+		},
+		{
+			"REGION_CODE": 27,
+			"ISO": "MCO",
+			"MULTILINGUAL": [
+				{
+					"LANG_CODE": 2,
+					"NAME": "Monaco"
+				},
+				{
+					"LANG_CODE": 67,
+					"NAME": "Монако"
+				},
+				{
+					"LANG_CODE": 52,
+					"NAME": "Monaco"
+				},
+				{
+					"LANG_CODE": 47,
+					"NAME": "Mónaco"
+				},
+				{
+					"LANG_CODE": 6,
+					"NAME": "Monaco"
+				},
+				{
+					"LANG_CODE": 20,
+					"NAME": "Monaco"
+				},
+				{
+					"LANG_CODE": 7,
+					"NAME": "Monaco"
+				},
+				{
+					"LANG_CODE": 48,
+					"NAME": "Monaco"
+				},
+				{
+					"LANG_CODE": 19,
+					"NAME": "Monaco"
+				},
+				{
+					"LANG_CODE": 37,
+					"NAME": "Mónaco"
+				},
+				{
+					"LANG_CODE": 70,
+					"NAME": "Monako"
+				},
+				{
+					"LANG_CODE": 17,
+					"NAME": "Monako"
+				},
+				{
+					"LANG_CODE": 36,
+					"NAME": "Monako"
+				},
+				{
+					"LANG_CODE": 44,
+					"NAME": "Monako"
+				},
+				{
+					"LANG_CODE": 27,
+					"NAME": "Monaco"
+				},
+				{
+					"LANG_CODE": 35,
+					"NAME": "Monaco"
+				},
+				{
+					"LANG_CODE": 22,
+					"NAME": "Monaco"
+				},
+				{
+					"LANG_CODE": 1,
+					"NAME": "모나코"
+				},
+				{
+					"LANG_CODE": 24,
+					"NAME": "Μονακό"
+				},
+				{
+					"LANG_CODE": 71,
+					"NAME": "Монако"
+				},
+				{
+					"LANG_CODE": 45,
+					"NAME": "Monako"
+				}
+			]
+		},
+		{
+			"REGION_CODE": 28,
+			"ISO": "MDA",
+			"MULTILINGUAL": [
+				{
+					"LANG_CODE": 2,
+					"NAME": "Moldova"
+				},
+				{
+					"LANG_CODE": 67,
+					"NAME": "Молдавия"
+				},
+				{
+					"LANG_CODE": 52,
+					"NAME": "Moldavie"
+				},
+				{
+					"LANG_CODE": 47,
+					"NAME": "Moldovia"
+				},
+				{
+					"LANG_CODE": 6,
+					"NAME": "Moldavia"
+				},
+				{
+					"LANG_CODE": 20,
+					"NAME": "Moldavië"
+				},
+				{
+					"LANG_CODE": 7,
+					"NAME": "Moldawien"
+				},
+				{
+					"LANG_CODE": 48,
+					"NAME": "Moldavien"
+				},
+				{
+					"LANG_CODE": 19,
+					"NAME": "Moldova"
+				},
+				{
+					"LANG_CODE": 37,
+					"NAME": "Moldávia"
+				},
+				{
+					"LANG_CODE": 70,
+					"NAME": "Moldova"
+				},
+				{
+					"LANG_CODE": 17,
+					"NAME": "Moldavsko"
+				},
+				{
+					"LANG_CODE": 36,
+					"NAME": "Mołdawia"
+				},
+				{
+					"LANG_CODE": 44,
+					"NAME": "Moldavsko"
+				},
+				{
+					"LANG_CODE": 27,
+					"NAME": "Moldova"
+				},
+				{
+					"LANG_CODE": 35,
+					"NAME": "Moldova"
+				},
+				{
+					"LANG_CODE": 22,
+					"NAME": "Moldova"
+				},
+				{
+					"LANG_CODE": 1,
+					"NAME": "몰도바"
+				},
+				{
+					"LANG_CODE": 24,
+					"NAME": "Μολδαβία"
+				},
+				{
+					"LANG_CODE": 71,
+					"NAME": "Молдова"
+				},
+				{
+					"LANG_CODE": 45,
+					"NAME": "Moldavija"
+				}
+			]
+		},
+		{
+			"REGION_CODE": 29,
+			"ISO": "MKD",
+			"MULTILINGUAL": [
+				{
+					"LANG_CODE": 2,
+					"NAME": "Macedonia (FYR)"
+				},
+				{
+					"LANG_CODE": 67,
+					"NAME": "Македония (FYRM)"
+				},
+				{
+					"LANG_CODE": 52,
+					"NAME": "Macédonie (ARJ)"
+				},
+				{
+					"LANG_CODE": 47,
+					"NAME": "Macedonia (Ex República Yugoslava)"
+				},
+				{
+					"LANG_CODE": 6,
+					"NAME": "Macedonia (Ex Repubblica Jugoslava)"
+				},
+				{
+					"LANG_CODE": 20,
+					"NAME": "Macedonië (VJRM)"
+				},
+				{
+					"LANG_CODE": 7,
+					"NAME": "Mazedonien (EJR)"
+				},
+				{
+					"LANG_CODE": 48,
+					"NAME": "Makedonien (f.d.j.r.M.)"
+				},
+				{
+					"LANG_CODE": 19,
+					"NAME": "Makedonien (Republikken)"
+				},
+				{
+					"LANG_CODE": 37,
+					"NAME": "Macedónia (ARJ)"
+				},
+				{
+					"LANG_CODE": 70,
+					"NAME": "Makedonya Cumhuriyeti"
+				},
+				{
+					"LANG_CODE": 17,
+					"NAME": "Makedonie (BJR)"
+				},
+				{
+					"LANG_CODE": 36,
+					"NAME": "Macedonia (FYR)"
+				},
+				{
+					"LANG_CODE": 44,
+					"NAME": "Macedónsko (BJR)"
+				},
+				{
+					"LANG_CODE": 27,
+					"NAME": "Macedónia (MVJK)"
+				},
+				{
+					"LANG_CODE": 35,
+					"NAME": "Makedonia"
+				},
+				{
+					"LANG_CODE": 22,
+					"NAME": "Makedonia (FYR)"
+				},
+				{
+					"LANG_CODE": 1,
+					"NAME": "마케도니아 (FYR)"
+				},
+				{
+					"LANG_CODE": 24,
+					"NAME": "Βόρεια Μακεδονία"
+				},
+				{
+					"LANG_CODE": 71,
+					"NAME": "Північна Македонія"
+				},
+				{
+					"LANG_CODE": 45,
+					"NAME": "Severna Makedonija"
+				}
+			]
+		},
+		{
+			"REGION_CODE": 30,
+			"ISO": "MNE",
+			"MULTILINGUAL": [
+				{
+					"LANG_CODE": 2,
+					"NAME": "Montenegro"
+				},
+				{
+					"LANG_CODE": 67,
+					"NAME": "Черногория"
+				},
+				{
+					"LANG_CODE": 52,
+					"NAME": "Monténégro"
+				},
+				{
+					"LANG_CODE": 47,
+					"NAME": "Montenegro"
+				},
+				{
+					"LANG_CODE": 6,
+					"NAME": "Montenegro"
+				},
+				{
+					"LANG_CODE": 20,
+					"NAME": "Montenegro"
+				},
+				{
+					"LANG_CODE": 7,
+					"NAME": "Montenegro"
+				},
+				{
+					"LANG_CODE": 48,
+					"NAME": "Montenegro"
+				},
+				{
+					"LANG_CODE": 19,
+					"NAME": "Montenegro"
+				},
+				{
+					"LANG_CODE": 37,
+					"NAME": "Montenegro"
+				},
+				{
+					"LANG_CODE": 70,
+					"NAME": "Karadağ"
+				},
+				{
+					"LANG_CODE": 17,
+					"NAME": "Černá Hora"
+				},
+				{
+					"LANG_CODE": 36,
+					"NAME": "Czarnogóra"
+				},
+				{
+					"LANG_CODE": 44,
+					"NAME": "Čierna Hora"
+				},
+				{
+					"LANG_CODE": 27,
+					"NAME": "Montenegró"
+				},
+				{
+					"LANG_CODE": 35,
+					"NAME": "Montenegro"
+				},
+				{
+					"LANG_CODE": 22,
+					"NAME": "Montenegro"
+				},
+				{
+					"LANG_CODE": 1,
+					"NAME": "몬테네그로"
+				},
+				{
+					"LANG_CODE": 24,
+					"NAME": "Μαυροβούνιο"
+				},
+				{
+					"LANG_CODE": 71,
+					"NAME": "Чорногорія"
+				},
+				{
+					"LANG_CODE": 45,
+					"NAME": "Črna gora"
+				}
+			]
+		},
+		{
+			"REGION_CODE": 31,
+			"ISO": "NLD",
+			"MULTILINGUAL": [
+				{
+					"LANG_CODE": 2,
+					"NAME": "Netherlands"
+				},
+				{
+					"LANG_CODE": 67,
+					"NAME": "Нидерланды"
+				},
+				{
+					"LANG_CODE": 52,
+					"NAME": "Pays-Bas"
+				},
+				{
+					"LANG_CODE": 47,
+					"NAME": "Países Bajos"
+				},
+				{
+					"LANG_CODE": 6,
+					"NAME": "Paesi Bassi"
+				},
+				{
+					"LANG_CODE": 20,
+					"NAME": "Nederland"
+				},
+				{
+					"LANG_CODE": 7,
+					"NAME": "Niederlande"
+				},
+				{
+					"LANG_CODE": 48,
+					"NAME": "Nederländerna"
+				},
+				{
+					"LANG_CODE": 19,
+					"NAME": "Holland"
+				},
+				{
+					"LANG_CODE": 37,
+					"NAME": "Países Baixos"
+				},
+				{
+					"LANG_CODE": 70,
+					"NAME": "Hollanda"
+				},
+				{
+					"LANG_CODE": 17,
+					"NAME": "Nizozemsko"
+				},
+				{
+					"LANG_CODE": 36,
+					"NAME": "Holandia"
+				},
+				{
+					"LANG_CODE": 44,
+					"NAME": "Holandsko"
+				},
+				{
+					"LANG_CODE": 27,
+					"NAME": "Hollandia"
+				},
+				{
+					"LANG_CODE": 35,
+					"NAME": "Nederland"
+				},
+				{
+					"LANG_CODE": 22,
+					"NAME": "Alankomaat"
+				},
+				{
+					"LANG_CODE": 1,
+					"NAME": "네덜란드"
+				},
+				{
+					"LANG_CODE": 24,
+					"NAME": "Κάτω Χώρες"
+				},
+				{
+					"LANG_CODE": 71,
+					"NAME": "Нідерланди"
+				},
+				{
+					"LANG_CODE": 45,
+					"NAME": "Nizozemska"
+				}
+			]
+		},
+		{
+			"REGION_CODE": 32,
+			"ISO": "NOR",
+			"MULTILINGUAL": [
+				{
+					"LANG_CODE": 2,
+					"NAME": "Norway"
+				},
+				{
+					"LANG_CODE": 67,
+					"NAME": "Норвегия"
+				},
+				{
+					"LANG_CODE": 52,
+					"NAME": "Norvège"
+				},
+				{
+					"LANG_CODE": 47,
+					"NAME": "Noruega"
+				},
+				{
+					"LANG_CODE": 6,
+					"NAME": "Norvegia"
+				},
+				{
+					"LANG_CODE": 20,
+					"NAME": "Noorwegen"
+				},
+				{
+					"LANG_CODE": 7,
+					"NAME": "Norwegen"
+				},
+				{
+					"LANG_CODE": 48,
+					"NAME": "Norge"
+				},
+				{
+					"LANG_CODE": 19,
+					"NAME": "Norge"
+				},
+				{
+					"LANG_CODE": 37,
+					"NAME": "Noruega"
+				},
+				{
+					"LANG_CODE": 70,
+					"NAME": "Norveç"
+				},
+				{
+					"LANG_CODE": 17,
+					"NAME": "Norsko"
+				},
+				{
+					"LANG_CODE": 36,
+					"NAME": "Norwegia"
+				},
+				{
+					"LANG_CODE": 44,
+					"NAME": "Nórsko"
+				},
+				{
+					"LANG_CODE": 27,
+					"NAME": "Norvégia"
+				},
+				{
+					"LANG_CODE": 35,
+					"NAME": "Norge"
+				},
+				{
+					"LANG_CODE": 22,
+					"NAME": "Norja"
+				},
+				{
+					"LANG_CODE": 1,
+					"NAME": "노르웨이"
+				},
+				{
+					"LANG_CODE": 24,
+					"NAME": "Νορβηγία"
+				},
+				{
+					"LANG_CODE": 71,
+					"NAME": "Норвеґія"
+				},
+				{
+					"LANG_CODE": 45,
+					"NAME": "Norveška"
+				}
+			]
+		},
+		{
+			"REGION_CODE": 33,
+			"ISO": "POL",
+			"MULTILINGUAL": [
+				{
+					"LANG_CODE": 2,
+					"NAME": "Poland"
+				},
+				{
+					"LANG_CODE": 67,
+					"NAME": "Польша"
+				},
+				{
+					"LANG_CODE": 52,
+					"NAME": "Pologne"
+				},
+				{
+					"LANG_CODE": 47,
+					"NAME": "Polonia"
+				},
+				{
+					"LANG_CODE": 6,
+					"NAME": "Polonia"
+				},
+				{
+					"LANG_CODE": 20,
+					"NAME": "Polen"
+				},
+				{
+					"LANG_CODE": 7,
+					"NAME": "Polen"
+				},
+				{
+					"LANG_CODE": 48,
+					"NAME": "Polen"
+				},
+				{
+					"LANG_CODE": 19,
+					"NAME": "Polen"
+				},
+				{
+					"LANG_CODE": 37,
+					"NAME": "Polónia"
+				},
+				{
+					"LANG_CODE": 70,
+					"NAME": "Polonya"
+				},
+				{
+					"LANG_CODE": 17,
+					"NAME": "Polsko"
+				},
+				{
+					"LANG_CODE": 36,
+					"NAME": "Polska"
+				},
+				{
+					"LANG_CODE": 44,
+					"NAME": "Poľsko"
+				},
+				{
+					"LANG_CODE": 27,
+					"NAME": "Lengyelország"
+				},
+				{
+					"LANG_CODE": 35,
+					"NAME": "Polen"
+				},
+				{
+					"LANG_CODE": 22,
+					"NAME": "Puola"
+				},
+				{
+					"LANG_CODE": 1,
+					"NAME": "폴란드"
+				},
+				{
+					"LANG_CODE": 24,
+					"NAME": "Πολωνία"
+				},
+				{
+					"LANG_CODE": 71,
+					"NAME": "Польща"
+				},
+				{
+					"LANG_CODE": 45,
+					"NAME": "Poljska"
+				}
+			]
+		},
+		{
+			"REGION_CODE": 34,
+			"ISO": "PRT",
+			"MULTILINGUAL": [
+				{
+					"LANG_CODE": 2,
+					"NAME": "Portugal"
+				},
+				{
+					"LANG_CODE": 67,
+					"NAME": "Португалия"
+				},
+				{
+					"LANG_CODE": 52,
+					"NAME": "Portugal"
+				},
+				{
+					"LANG_CODE": 47,
+					"NAME": "Portugal"
+				},
+				{
+					"LANG_CODE": 6,
+					"NAME": "Portogallo"
+				},
+				{
+					"LANG_CODE": 20,
+					"NAME": "Portugal"
+				},
+				{
+					"LANG_CODE": 7,
+					"NAME": "Portugal"
+				},
+				{
+					"LANG_CODE": 48,
+					"NAME": "Portugal"
+				},
+				{
+					"LANG_CODE": 19,
+					"NAME": "Portugal"
+				},
+				{
+					"LANG_CODE": 37,
+					"NAME": "Portugal"
+				},
+				{
+					"LANG_CODE": 70,
+					"NAME": "Portekiz"
+				},
+				{
+					"LANG_CODE": 17,
+					"NAME": "Portugalsko"
+				},
+				{
+					"LANG_CODE": 36,
+					"NAME": "Portugalia"
+				},
+				{
+					"LANG_CODE": 44,
+					"NAME": "Portugalsko"
+				},
+				{
+					"LANG_CODE": 27,
+					"NAME": "Portugália"
+				},
+				{
+					"LANG_CODE": 35,
+					"NAME": "Portugal"
+				},
+				{
+					"LANG_CODE": 22,
+					"NAME": "Portugali"
+				},
+				{
+					"LANG_CODE": 1,
+					"NAME": "포르투갈"
+				},
+				{
+					"LANG_CODE": 24,
+					"NAME": "Πορτογαλία"
+				},
+				{
+					"LANG_CODE": 71,
+					"NAME": "Портуґалія"
+				},
+				{
+					"LANG_CODE": 45,
+					"NAME": "Portugalska"
+				}
+			]
+		},
+		{
+			"REGION_CODE": 35,
+			"ISO": "ROU",
+			"MULTILINGUAL": [
+				{
+					"LANG_CODE": 2,
+					"NAME": "Romania"
+				},
+				{
+					"LANG_CODE": 67,
+					"NAME": "Румыния"
+				},
+				{
+					"LANG_CODE": 52,
+					"NAME": "Roumanie"
+				},
+				{
+					"LANG_CODE": 47,
+					"NAME": "Rumanía"
+				},
+				{
+					"LANG_CODE": 6,
+					"NAME": "Romania"
+				},
+				{
+					"LANG_CODE": 20,
+					"NAME": "Roemenië"
+				},
+				{
+					"LANG_CODE": 7,
+					"NAME": "Rumänien"
+				},
+				{
+					"LANG_CODE": 48,
+					"NAME": "Rumänien"
+				},
+				{
+					"LANG_CODE": 19,
+					"NAME": "Rumænien"
+				},
+				{
+					"LANG_CODE": 37,
+					"NAME": "Roménia"
+				},
+				{
+					"LANG_CODE": 70,
+					"NAME": "Romanya"
+				},
+				{
+					"LANG_CODE": 17,
+					"NAME": "Rumunsko"
+				},
+				{
+					"LANG_CODE": 36,
+					"NAME": "Rumunia"
+				},
+				{
+					"LANG_CODE": 44,
+					"NAME": "Rumunsko"
+				},
+				{
+					"LANG_CODE": 27,
+					"NAME": "Románia"
+				},
+				{
+					"LANG_CODE": 35,
+					"NAME": "Romania"
+				},
+				{
+					"LANG_CODE": 22,
+					"NAME": "Romania"
+				},
+				{
+					"LANG_CODE": 1,
+					"NAME": "루마니아"
+				},
+				{
+					"LANG_CODE": 24,
+					"NAME": "Ρουμανία"
+				},
+				{
+					"LANG_CODE": 71,
+					"NAME": "Румунія"
+				},
+				{
+					"LANG_CODE": 45,
+					"NAME": "Romunija"
+				}
+			]
+		},
+		{
+			"REGION_CODE": 36,
+			"ISO": "RUS",
+			"MULTILINGUAL": [
+				{
+					"LANG_CODE": 2,
+					"NAME": "Russia"
+				},
+				{
+					"LANG_CODE": 67,
+					"NAME": "Россия"
+				},
+				{
+					"LANG_CODE": 52,
+					"NAME": "Russie"
+				},
+				{
+					"LANG_CODE": 47,
+					"NAME": "Rusia"
+				},
+				{
+					"LANG_CODE": 6,
+					"NAME": "Russia"
+				},
+				{
+					"LANG_CODE": 20,
+					"NAME": "Rusland"
+				},
+				{
+					"LANG_CODE": 7,
+					"NAME": "Russland"
+				},
+				{
+					"LANG_CODE": 48,
+					"NAME": "Ryssland"
+				},
+				{
+					"LANG_CODE": 19,
+					"NAME": "Rusland"
+				},
+				{
+					"LANG_CODE": 37,
+					"NAME": "Rússia"
+				},
+				{
+					"LANG_CODE": 70,
+					"NAME": "Rusya"
+				},
+				{
+					"LANG_CODE": 17,
+					"NAME": "Rusko"
+				},
+				{
+					"LANG_CODE": 36,
+					"NAME": "Rosja"
+				},
+				{
+					"LANG_CODE": 44,
+					"NAME": "Rusko"
+				},
+				{
+					"LANG_CODE": 27,
+					"NAME": "Oroszország"
+				},
+				{
+					"LANG_CODE": 35,
+					"NAME": "Russland"
+				},
+				{
+					"LANG_CODE": 22,
+					"NAME": "Venäjä"
+				},
+				{
+					"LANG_CODE": 1,
+					"NAME": "러시아"
+				},
+				{
+					"LANG_CODE": 24,
+					"NAME": "Ρωσία"
+				},
+				{
+					"LANG_CODE": 71,
+					"NAME": "Росія"
+				},
+				{
+					"LANG_CODE": 45,
+					"NAME": "Rusija"
+				}
+			]
+		},
+		{
+			"REGION_CODE": 37,
+			"ISO": "SMR",
+			"MULTILINGUAL": [
+				{
+					"LANG_CODE": 2,
+					"NAME": "San Marino"
+				},
+				{
+					"LANG_CODE": 67,
+					"NAME": "Сан-Марино"
+				},
+				{
+					"LANG_CODE": 52,
+					"NAME": "Saint Marin"
+				},
+				{
+					"LANG_CODE": 47,
+					"NAME": "San Marino"
+				},
+				{
+					"LANG_CODE": 6,
+					"NAME": "San Marino"
+				},
+				{
+					"LANG_CODE": 20,
+					"NAME": "San Marino"
+				},
+				{
+					"LANG_CODE": 7,
+					"NAME": "San Marino"
+				},
+				{
+					"LANG_CODE": 48,
+					"NAME": "San Marino"
+				},
+				{
+					"LANG_CODE": 19,
+					"NAME": "San Marino"
+				},
+				{
+					"LANG_CODE": 37,
+					"NAME": "San Marino"
+				},
+				{
+					"LANG_CODE": 70,
+					"NAME": "San Marino"
+				},
+				{
+					"LANG_CODE": 17,
+					"NAME": "San Marino"
+				},
+				{
+					"LANG_CODE": 36,
+					"NAME": "San Marino"
+				},
+				{
+					"LANG_CODE": 44,
+					"NAME": "San Maríno"
+				},
+				{
+					"LANG_CODE": 27,
+					"NAME": "San Marino"
+				},
+				{
+					"LANG_CODE": 35,
+					"NAME": "San Marino"
+				},
+				{
+					"LANG_CODE": 22,
+					"NAME": "San Marino"
+				},
+				{
+					"LANG_CODE": 1,
+					"NAME": "산마리노"
+				},
+				{
+					"LANG_CODE": 24,
+					"NAME": "Άγιος Μαρίνος"
+				},
+				{
+					"LANG_CODE": 71,
+					"NAME": "Сан-Маріно"
+				},
+				{
+					"LANG_CODE": 45,
+					"NAME": "San Marino"
+				}
+			]
+		},
+		{
+			"REGION_CODE": 38,
+			"ISO": "SRB",
+			"MULTILINGUAL": [
+				{
+					"LANG_CODE": 2,
+					"NAME": "Serbia"
+				},
+				{
+					"LANG_CODE": 67,
+					"NAME": "Сербия"
+				},
+				{
+					"LANG_CODE": 52,
+					"NAME": "Serbie"
+				},
+				{
+					"LANG_CODE": 47,
+					"NAME": "Serbia"
+				},
+				{
+					"LANG_CODE": 6,
+					"NAME": "Serbia"
+				},
+				{
+					"LANG_CODE": 20,
+					"NAME": "Servië"
+				},
+				{
+					"LANG_CODE": 7,
+					"NAME": "Serbien"
+				},
+				{
+					"LANG_CODE": 48,
+					"NAME": "Serbien"
+				},
+				{
+					"LANG_CODE": 19,
+					"NAME": "Serbien"
+				},
+				{
+					"LANG_CODE": 37,
+					"NAME": "Sérvia"
+				},
+				{
+					"LANG_CODE": 70,
+					"NAME": "Sırbistan"
+				},
+				{
+					"LANG_CODE": 17,
+					"NAME": "Srbsko"
+				},
+				{
+					"LANG_CODE": 36,
+					"NAME": "Serbia"
+				},
+				{
+					"LANG_CODE": 44,
+					"NAME": "Srbsko"
+				},
+				{
+					"LANG_CODE": 27,
+					"NAME": "Szerbia"
+				},
+				{
+					"LANG_CODE": 35,
+					"NAME": "Serbia"
+				},
+				{
+					"LANG_CODE": 22,
+					"NAME": "Serbia"
+				},
+				{
+					"LANG_CODE": 1,
+					"NAME": "세르비아"
+				},
+				{
+					"LANG_CODE": 24,
+					"NAME": "Σερβία"
+				},
+				{
+					"LANG_CODE": 71,
+					"NAME": "Сербія"
+				},
+				{
+					"LANG_CODE": 45,
+					"NAME": "Srbija"
+				}
+			]
+		},
+		{
+			"REGION_CODE": 39,
+			"ISO": "SVK",
+			"MULTILINGUAL": [
+				{
+					"LANG_CODE": 2,
+					"NAME": "Slovakia"
+				},
+				{
+					"LANG_CODE": 67,
+					"NAME": "Словакия"
+				},
+				{
+					"LANG_CODE": 52,
+					"NAME": "Slovaquie"
+				},
+				{
+					"LANG_CODE": 47,
+					"NAME": "Eslovaquia"
+				},
+				{
+					"LANG_CODE": 6,
+					"NAME": "Slovacchia"
+				},
+				{
+					"LANG_CODE": 20,
+					"NAME": "Slowakije"
+				},
+				{
+					"LANG_CODE": 7,
+					"NAME": "Slowakei"
+				},
+				{
+					"LANG_CODE": 48,
+					"NAME": "Slovakien"
+				},
+				{
+					"LANG_CODE": 19,
+					"NAME": "Slovakiet"
+				},
+				{
+					"LANG_CODE": 37,
+					"NAME": "Eslováquia"
+				},
+				{
+					"LANG_CODE": 70,
+					"NAME": "Slovakya"
+				},
+				{
+					"LANG_CODE": 17,
+					"NAME": "Slovensko"
+				},
+				{
+					"LANG_CODE": 36,
+					"NAME": "Słowacja"
+				},
+				{
+					"LANG_CODE": 44,
+					"NAME": "Slovensko"
+				},
+				{
+					"LANG_CODE": 27,
+					"NAME": "Szlovákia"
+				},
+				{
+					"LANG_CODE": 35,
+					"NAME": "Slovakia"
+				},
+				{
+					"LANG_CODE": 22,
+					"NAME": "Slovakia"
+				},
+				{
+					"LANG_CODE": 1,
+					"NAME": "슬로바키아"
+				},
+				{
+					"LANG_CODE": 24,
+					"NAME": "Σλοβακία"
+				},
+				{
+					"LANG_CODE": 71,
+					"NAME": "Словаччина"
+				},
+				{
+					"LANG_CODE": 45,
+					"NAME": "Slovaška"
+				}
+			]
+		},
+		{
+			"REGION_CODE": 40,
+			"ISO": "SVN",
+			"MULTILINGUAL": [
+				{
+					"LANG_CODE": 2,
+					"NAME": "Slovenia"
+				},
+				{
+					"LANG_CODE": 67,
+					"NAME": "Словения"
+				},
+				{
+					"LANG_CODE": 52,
+					"NAME": "Slovénie"
+				},
+				{
+					"LANG_CODE": 47,
+					"NAME": "Eslovenia"
+				},
+				{
+					"LANG_CODE": 6,
+					"NAME": "Slovenia"
+				},
+				{
+					"LANG_CODE": 20,
+					"NAME": "Slovenië"
+				},
+				{
+					"LANG_CODE": 7,
+					"NAME": "Slowenien"
+				},
+				{
+					"LANG_CODE": 48,
+					"NAME": "Slovenien"
+				},
+				{
+					"LANG_CODE": 19,
+					"NAME": "Slovenien"
+				},
+				{
+					"LANG_CODE": 37,
+					"NAME": "Eslovénia"
+				},
+				{
+					"LANG_CODE": 70,
+					"NAME": "Slovenya"
+				},
+				{
+					"LANG_CODE": 17,
+					"NAME": "Slovinsko"
+				},
+				{
+					"LANG_CODE": 36,
+					"NAME": "Słowenia"
+				},
+				{
+					"LANG_CODE": 44,
+					"NAME": "Slovinsko"
+				},
+				{
+					"LANG_CODE": 27,
+					"NAME": "Szlovénia"
+				},
+				{
+					"LANG_CODE": 35,
+					"NAME": "Slovenia"
+				},
+				{
+					"LANG_CODE": 22,
+					"NAME": "Slovenia"
+				},
+				{
+					"LANG_CODE": 1,
+					"NAME": "슬로베니아"
+				},
+				{
+					"LANG_CODE": 24,
+					"NAME": "Σλοβενία"
+				},
+				{
+					"LANG_CODE": 71,
+					"NAME": "Словенія"
+				},
+				{
+					"LANG_CODE": 45,
+					"NAME": "Slovenija"
+				}
+			]
+		},
+		{
+			"REGION_CODE": 41,
+			"ISO": "SWE",
+			"MULTILINGUAL": [
+				{
+					"LANG_CODE": 2,
+					"NAME": "Sweden"
+				},
+				{
+					"LANG_CODE": 67,
+					"NAME": "Швеция"
+				},
+				{
+					"LANG_CODE": 52,
+					"NAME": "Suède"
+				},
+				{
+					"LANG_CODE": 47,
+					"NAME": "Suecia"
+				},
+				{
+					"LANG_CODE": 6,
+					"NAME": "Svezia"
+				},
+				{
+					"LANG_CODE": 20,
+					"NAME": "Zweden"
+				},
+				{
+					"LANG_CODE": 7,
+					"NAME": "Schweden"
+				},
+				{
+					"LANG_CODE": 48,
+					"NAME": "Sverige"
+				},
+				{
+					"LANG_CODE": 19,
+					"NAME": "Sverige"
+				},
+				{
+					"LANG_CODE": 37,
+					"NAME": "Suécia"
+				},
+				{
+					"LANG_CODE": 70,
+					"NAME": "İsveç"
+				},
+				{
+					"LANG_CODE": 17,
+					"NAME": "Švédsko"
+				},
+				{
+					"LANG_CODE": 36,
+					"NAME": "Szwecja"
+				},
+				{
+					"LANG_CODE": 44,
+					"NAME": "Švédsko"
+				},
+				{
+					"LANG_CODE": 27,
+					"NAME": "Svédország"
+				},
+				{
+					"LANG_CODE": 35,
+					"NAME": "Sverige"
+				},
+				{
+					"LANG_CODE": 22,
+					"NAME": "Ruotsi"
+				},
+				{
+					"LANG_CODE": 1,
+					"NAME": "스웨덴"
+				},
+				{
+					"LANG_CODE": 24,
+					"NAME": "Σουηδία"
+				},
+				{
+					"LANG_CODE": 71,
+					"NAME": "Швеція"
+				},
+				{
+					"LANG_CODE": 45,
+					"NAME": "Švedska"
+				}
+			]
+		},
+		{
+			"REGION_CODE": 42,
+			"ISO": "TUR",
+			"MULTILINGUAL": [
+				{
+					"LANG_CODE": 2,
+					"NAME": "Turkey"
+				},
+				{
+					"LANG_CODE": 67,
+					"NAME": "Турция"
+				},
+				{
+					"LANG_CODE": 52,
+					"NAME": "Turquie"
+				},
+				{
+					"LANG_CODE": 47,
+					"NAME": "Turquía"
+				},
+				{
+					"LANG_CODE": 6,
+					"NAME": "Turchia"
+				},
+				{
+					"LANG_CODE": 20,
+					"NAME": "Turkije"
+				},
+				{
+					"LANG_CODE": 7,
+					"NAME": "Türkei"
+				},
+				{
+					"LANG_CODE": 48,
+					"NAME": "Turkiet"
+				},
+				{
+					"LANG_CODE": 19,
+					"NAME": "Tyrkiet"
+				},
+				{
+					"LANG_CODE": 37,
+					"NAME": "Turquia"
+				},
+				{
+					"LANG_CODE": 70,
+					"NAME": "Türkiye"
+				},
+				{
+					"LANG_CODE": 17,
+					"NAME": "Turecko"
+				},
+				{
+					"LANG_CODE": 36,
+					"NAME": "Turcja"
+				},
+				{
+					"LANG_CODE": 44,
+					"NAME": "Turecko"
+				},
+				{
+					"LANG_CODE": 27,
+					"NAME": "Törökország"
+				},
+				{
+					"LANG_CODE": 35,
+					"NAME": "Tyrkia"
+				},
+				{
+					"LANG_CODE": 22,
+					"NAME": "Turkki"
+				},
+				{
+					"LANG_CODE": 1,
+					"NAME": "터키"
+				},
+				{
+					"LANG_CODE": 24,
+					"NAME": "Τουρκία"
+				},
+				{
+					"LANG_CODE": 71,
+					"NAME": "Туреччина"
+				},
+				{
+					"LANG_CODE": 45,
+					"NAME": "Turčija"
+				}
+			]
+		},
+		{
+			"REGION_CODE": 43,
+			"ISO": "GBR",
+			"MULTILINGUAL": [
+				{
+					"LANG_CODE": 2,
+					"NAME": "United Kingdom"
+				},
+				{
+					"LANG_CODE": 67,
+					"NAME": "Великобритания"
+				},
+				{
+					"LANG_CODE": 52,
+					"NAME": "Royaume-Uni et Irlande du Nord"
+				},
+				{
+					"LANG_CODE": 47,
+					"NAME": "Reino Unido"
+				},
+				{
+					"LANG_CODE": 6,
+					"NAME": "Regno Unito"
+				},
+				{
+					"LANG_CODE": 20,
+					"NAME": "Verenigd Koninkrijk"
+				},
+				{
+					"LANG_CODE": 7,
+					"NAME": "Großbritannien und Nordirland"
+				},
+				{
+					"LANG_CODE": 48,
+					"NAME": "Storbritannien"
+				},
+				{
+					"LANG_CODE": 19,
+					"NAME": "Storbritannien og Nordirland"
+				},
+				{
+					"LANG_CODE": 37,
+					"NAME": "Reino Unido"
+				},
+				{
+					"LANG_CODE": 70,
+					"NAME": "İngiltere"
+				},
+				{
+					"LANG_CODE": 17,
+					"NAME": "Spojené království"
+				},
+				{
+					"LANG_CODE": 36,
+					"NAME": "Wielka Brytania"
+				},
+				{
+					"LANG_CODE": 44,
+					"NAME": "Spojené kráľovstvo"
+				},
+				{
+					"LANG_CODE": 27,
+					"NAME": "Egyesült Királyság és Észak-Írország"
+				},
+				{
+					"LANG_CODE": 35,
+					"NAME": "Storbritannia"
+				},
+				{
+					"LANG_CODE": 22,
+					"NAME": "Yhdistynyt kuningaskunta"
+				},
+				{
+					"LANG_CODE": 1,
+					"NAME": "영국"
+				},
+				{
+					"LANG_CODE": 24,
+					"NAME": "Ηνωμένο Βασίλειο"
+				},
+				{
+					"LANG_CODE": 71,
+					"NAME": "Сполучене Королівство"
+				},
+				{
+					"LANG_CODE": 45,
+					"NAME": "Združeno kraljestvo"
+				}
+			]
+		},
+		{
+			"REGION_CODE": 44,
+			"ISO": "UKR",
+			"MULTILINGUAL": [
+				{
+					"LANG_CODE": 2,
+					"NAME": "Ukraine"
+				},
+				{
+					"LANG_CODE": 67,
+					"NAME": "Украина"
+				},
+				{
+					"LANG_CODE": 52,
+					"NAME": "Ukraine"
+				},
+				{
+					"LANG_CODE": 47,
+					"NAME": "Ucrania"
+				},
+				{
+					"LANG_CODE": 6,
+					"NAME": "Ucraina"
+				},
+				{
+					"LANG_CODE": 20,
+					"NAME": "Oekraïne"
+				},
+				{
+					"LANG_CODE": 7,
+					"NAME": "Ukraine"
+				},
+				{
+					"LANG_CODE": 48,
+					"NAME": "Ukraina"
+				},
+				{
+					"LANG_CODE": 19,
+					"NAME": "Ukraine"
+				},
+				{
+					"LANG_CODE": 37,
+					"NAME": "Ucrânia"
+				},
+				{
+					"LANG_CODE": 70,
+					"NAME": "Ukrayna"
+				},
+				{
+					"LANG_CODE": 17,
+					"NAME": "Ukrajina"
+				},
+				{
+					"LANG_CODE": 36,
+					"NAME": "Ukraina"
+				},
+				{
+					"LANG_CODE": 44,
+					"NAME": "Ukrajina"
+				},
+				{
+					"LANG_CODE": 27,
+					"NAME": "Ukrajna"
+				},
+				{
+					"LANG_CODE": 35,
+					"NAME": "Ukraina"
+				},
+				{
+					"LANG_CODE": 22,
+					"NAME": "Ukraina"
+				},
+				{
+					"LANG_CODE": 1,
+					"NAME": "우크라이나"
+				},
+				{
+					"LANG_CODE": 24,
+					"NAME": "Ουκρανία"
+				},
+				{
+					"LANG_CODE": 71,
+					"NAME": "Україна"
+				},
+				{
+					"LANG_CODE": 45,
+					"NAME": "Ukrajina"
+				}
+			]
+		},
+		{
+			"REGION_CODE": 45,
+			"ISO": "VAT",
+			"MULTILINGUAL": [
+				{
+					"LANG_CODE": 2,
+					"NAME": "Vatican City"
+				},
+				{
+					"LANG_CODE": 67,
+					"NAME": "Ватикан"
+				},
+				{
+					"LANG_CODE": 52,
+					"NAME": "Cité du Vatican"
+				},
+				{
+					"LANG_CODE": 47,
+					"NAME": "Ciudad del Vaticano"
+				},
+				{
+					"LANG_CODE": 6,
+					"NAME": "Città del Vaticano"
+				},
+				{
+					"LANG_CODE": 20,
+					"NAME": "Vaticaanstad"
+				},
+				{
+					"LANG_CODE": 7,
+					"NAME": "Vatikan"
+				},
+				{
+					"LANG_CODE": 48,
+					"NAME": "Vatikanstaten"
+				},
+				{
+					"LANG_CODE": 19,
+					"NAME": "Vatikanstaten"
+				},
+				{
+					"LANG_CODE": 37,
+					"NAME": "Cidade do Vaticano"
+				},
+				{
+					"LANG_CODE": 70,
+					"NAME": "Vatikan"
+				},
+				{
+					"LANG_CODE": 17,
+					"NAME": "Vatikán"
+				},
+				{
+					"LANG_CODE": 36,
+					"NAME": "Watykan"
+				},
+				{
+					"LANG_CODE": 44,
+					"NAME": "Vatikán"
+				},
+				{
+					"LANG_CODE": 27,
+					"NAME": "Vatikán"
+				},
+				{
+					"LANG_CODE": 35,
+					"NAME": "Vatikanet"
+				},
+				{
+					"LANG_CODE": 22,
+					"NAME": "Vatikaani"
+				},
+				{
+					"LANG_CODE": 1,
+					"NAME": "바티칸시국"
+				},
+				{
+					"LANG_CODE": 24,
+					"NAME": "Βατικανό"
+				},
+				{
+					"LANG_CODE": 71,
+					"NAME": "Ватикан"
+				},
+				{
+					"LANG_CODE": 45,
+					"NAME": "Vatikan"
+				}
+			]
+		},
+		{
+			"REGION_CODE": 46,
+			"ISO": "MLT",
+			"MULTILINGUAL": [
+				{
+					"LANG_CODE": 2,
+					"NAME": "Malta"
+				},
+				{
+					"LANG_CODE": 67,
+					"NAME": "Мальта"
+				},
+				{
+					"LANG_CODE": 52,
+					"NAME": "Malte"
+				},
+				{
+					"LANG_CODE": 47,
+					"NAME": "Malta"
+				},
+				{
+					"LANG_CODE": 6,
+					"NAME": "Malta"
+				},
+				{
+					"LANG_CODE": 20,
+					"NAME": "Malta"
+				},
+				{
+					"LANG_CODE": 7,
+					"NAME": "Malta"
+				},
+				{
+					"LANG_CODE": 48,
+					"NAME": "Malta"
+				},
+				{
+					"LANG_CODE": 19,
+					"NAME": "Malta"
+				},
+				{
+					"LANG_CODE": 37,
+					"NAME": "Malta"
+				},
+				{
+					"LANG_CODE": 70,
+					"NAME": "Malta"
+				},
+				{
+					"LANG_CODE": 17,
+					"NAME": "Maltská republika"
+				},
+				{
+					"LANG_CODE": 36,
+					"NAME": "Malta"
+				},
+				{
+					"LANG_CODE": 44,
+					"NAME": "Maltská republika"
+				},
+				{
+					"LANG_CODE": 27,
+					"NAME": "Málta"
+				},
+				{
+					"LANG_CODE": 35,
+					"NAME": "Malta"
+				},
+				{
+					"LANG_CODE": 22,
+					"NAME": "Malta"
+				},
+				{
+					"LANG_CODE": 1,
+					"NAME": "몰타"
+				},
+				{
+					"LANG_CODE": 24,
+					"NAME": "Μάλτα"
+				},
+				{
+					"LANG_CODE": 71,
+					"NAME": "Мальта"
+				},
+				{
+					"LANG_CODE": 45,
+					"NAME": "Malta"
+				}
+			]
+		},
+		{
+			"REGION_CODE": 47,
+			"ISO": "CYP",
+			"MULTILINGUAL": [
+				{
+					"LANG_CODE": 2,
+					"NAME": "Cyprus"
+				},
+				{
+					"LANG_CODE": 67,
+					"NAME": "Кипр"
+				},
+				{
+					"LANG_CODE": 52,
+					"NAME": "Chypre"
+				},
+				{
+					"LANG_CODE": 47,
+					"NAME": "Chipre"
+				},
+				{
+					"LANG_CODE": 6,
+					"NAME": "Cipro"
+				},
+				{
+					"LANG_CODE": 20,
+					"NAME": "Cyprus"
+				},
+				{
+					"LANG_CODE": 7,
+					"NAME": "Zypern"
+				},
+				{
+					"LANG_CODE": 48,
+					"NAME": "Cypern"
+				},
+				{
+					"LANG_CODE": 19,
+					"NAME": "Cypern"
+				},
+				{
+					"LANG_CODE": 37,
+					"NAME": "Chipre"
+				},
+				{
+					"LANG_CODE": 70,
+					"NAME": "Kıbrıs"
+				},
+				{
+					"LANG_CODE": 17,
+					"NAME": "Kypr"
+				},
+				{
+					"LANG_CODE": 36,
+					"NAME": "Cypr"
+				},
+				{
+					"LANG_CODE": 44,
+					"NAME": "Cyprus"
+				},
+				{
+					"LANG_CODE": 27,
+					"NAME": "Ciprus"
+				},
+				{
+					"LANG_CODE": 35,
+					"NAME": "Kypros"
+				},
+				{
+					"LANG_CODE": 22,
+					"NAME": "Kypros"
+				},
+				{
+					"LANG_CODE": 1,
+					"NAME": "키프로스"
+				},
+				{
+					"LANG_CODE": 24,
+					"NAME": "Κύπρος"
+				},
+				{
+					"LANG_CODE": 71,
+					"NAME": "Кіпр"
+				},
+				{
+					"LANG_CODE": 45,
+					"NAME": "Ciper"
+				}
+			]
+		}
+	],
+
+    "GROUP_REGION_INFO": [
+	   {
+	     "GROUP_SUFFIX": 1,
+		 "GROUP_REGION_CODE": [1,2,3,4,5,6,7,8,9,10]
+	   },
+	   {
+	     "GROUP_SUFFIX": 2,
+		 "GROUP_REGION_CODE": [11,12,13,14,15,16,17,18,19,20]
+	   },
+	   {
+	     "GROUP_SUFFIX": 3,
+		 "GROUP_REGION_CODE": [21,22,23,24,25,26,27,28,29,30]
+	   },
+	   {
+	     "GROUP_SUFFIX": 4,
+		 "GROUP_REGION_CODE": [31,32,33,34,35,36,37,38,39,40]
+	   },
+	   {
+	     "GROUP_SUFFIX": 5,
+		 "GROUP_REGION_CODE": [41,42,43,44,45,46,47]
+	   }
+  ]
+}

@@ -1,0 +1,168 @@
+\hypertarget{_compare_tool2_dlg_8h_source}{}\doxysection{Compare\+Tool2\+Dlg.\+h}
+\label{_compare_tool2_dlg_8h_source}\index{CompareTool2/CompareTool2Dlg.h@{CompareTool2/CompareTool2Dlg.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 ﻿}
+\DoxyCodeLine{2 \textcolor{comment}{// CompareTool2Dlg.h: 헤더 파일}}
+\DoxyCodeLine{3 \textcolor{comment}{//}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}CListBoxFileDrop.h"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}CSortList.h"{}}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_compare_tool2_dlg_auto_proxy}{CCompareTool2DlgAutoProxy}};}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{comment}{// CCompareTool2Dlg 대화 상자}}
+\DoxyCodeLine{15 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_compare_tool2_dlg}{CCompareTool2Dlg}} : \textcolor{keyword}{public} CDialogEx}
+\DoxyCodeLine{16 \{}
+\DoxyCodeLine{17     DECLARE\_DYNAMIC(\mbox{\hyperlink{class_c_compare_tool2_dlg}{CCompareTool2Dlg}});}
+\DoxyCodeLine{18     \textcolor{keyword}{friend} \textcolor{keyword}{class }\mbox{\hyperlink{class_c_compare_tool2_dlg_auto_proxy}{CCompareTool2DlgAutoProxy}};}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 \textcolor{comment}{// 생성입니다.}}
+\DoxyCodeLine{21 \textcolor{keyword}{public}:}
+\DoxyCodeLine{22     \mbox{\hyperlink{class_c_compare_tool2_dlg}{CCompareTool2Dlg}}(CWnd* pParent = \textcolor{keyword}{nullptr});  \textcolor{comment}{// 표준 생성자입니다.}}
+\DoxyCodeLine{23     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_c_compare_tool2_dlg}{\string~CCompareTool2Dlg}}();}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25 \textcolor{comment}{// 대화 상자 데이터입니다.}}
+\DoxyCodeLine{26 \textcolor{preprocessor}{\#ifdef AFX\_DESIGN\_TIME}}
+\DoxyCodeLine{27     \textcolor{keyword}{enum} \{ IDD = IDD\_COMPARETOOL2\_DIALOG \};}
+\DoxyCodeLine{28 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30     \textcolor{keyword}{protected}:}
+\DoxyCodeLine{31     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} DoDataExchange(CDataExchange* pDX);    \textcolor{comment}{// DDX/DDV 지원입니다.}}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34 \textcolor{comment}{// 구현입니다.}}
+\DoxyCodeLine{35 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{36     \mbox{\hyperlink{class_c_compare_tool2_dlg_auto_proxy}{CCompareTool2DlgAutoProxy}}* m\_pAutoProxy;}
+\DoxyCodeLine{37     HICON m\_hIcon;}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39     BOOL CanExit();}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41     \textcolor{comment}{// 생성된 메시지 맵 함수}}
+\DoxyCodeLine{42     \textcolor{keyword}{virtual} BOOL OnInitDialog();}
+\DoxyCodeLine{43     afx\_msg \textcolor{keywordtype}{void} OnSysCommand(UINT nID, LPARAM lParam);}
+\DoxyCodeLine{44     afx\_msg \textcolor{keywordtype}{void} OnPaint();}
+\DoxyCodeLine{45     afx\_msg HCURSOR OnQueryDragIcon();}
+\DoxyCodeLine{46     afx\_msg \textcolor{keywordtype}{void} OnClose();}
+\DoxyCodeLine{47     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} OnOK();}
+\DoxyCodeLine{48     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} OnCancel();}
+\DoxyCodeLine{49     DECLARE\_MESSAGE\_MAP()}
+\DoxyCodeLine{50 \textcolor{keyword}{public}:}
+\DoxyCodeLine{51     \mbox{\hyperlink{class_c_list_box_file_drop}{CListBoxFileDrop}} m\_lbOld;}
+\DoxyCodeLine{52     \mbox{\hyperlink{class_c_list_box_file_drop}{CListBoxFileDrop}} m\_lbNew;}
+\DoxyCodeLine{53     CComboBox m\_cbFormat1;}
+\DoxyCodeLine{54     CComboBox m\_cbFormat2;}
+\DoxyCodeLine{55     afx\_msg \textcolor{keywordtype}{void} OnSelchangeCombo1();}
+\DoxyCodeLine{56     afx\_msg \textcolor{keywordtype}{void} OnSelchangeCombo2();}
+\DoxyCodeLine{57     afx\_msg \textcolor{keywordtype}{void} OnClickedButtonOldPath();}
+\DoxyCodeLine{58     afx\_msg \textcolor{keywordtype}{void} OnClickedButtonNewPath();}
+\DoxyCodeLine{59     \textcolor{keywordtype}{int} m\_nClicked;}
+\DoxyCodeLine{60     \textcolor{keywordtype}{void} SelectDrawPath();}
+\DoxyCodeLine{61     CString m\_strOldPath;}
+\DoxyCodeLine{62     CString m\_strNewPath;}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64     afx\_msg \textcolor{keywordtype}{void} OnClickedButtonDel();}
+\DoxyCodeLine{65     afx\_msg \textcolor{keywordtype}{void} OnClickedButtonCompare();}
+\DoxyCodeLine{66     \mbox{\hyperlink{class_c_sort_list}{CSortList}} m\_lcResult;}
+\DoxyCodeLine{67     \textcolor{keywordtype}{void} FileSearch(CString file\_path, \textcolor{keyword}{const} \textcolor{keywordtype}{char} oldornew[]);}
+\DoxyCodeLine{68     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_compare_tool2_dlg_a460893fdbac71ba3c07cd054f8631c56}{CCompareDrawListView}}(vector<vector<CString>> v1, vector<vector<CString>> v2, \textcolor{keywordtype}{bool} reverse);}
+\DoxyCodeLine{69     afx\_msg \textcolor{keywordtype}{void} OnClickedButtonExcel();}
+\DoxyCodeLine{70     \textcolor{keywordtype}{void} ExportExcel();}
+\DoxyCodeLine{71     CString ConvertByteTo(\textcolor{keywordtype}{double} dTempSize);}
+\DoxyCodeLine{72     \textcolor{keywordtype}{void} GetDbfFile(CString oldPath, CString newPath, vector<int> selectedFieldIndex);}
+\DoxyCodeLine{73     afx\_msg \textcolor{keywordtype}{void} OnClickedButtonFieldCheck();}
+\DoxyCodeLine{74     CCheckListBox m\_check\_list;}
+\DoxyCodeLine{75     CTabCtrl m\_tab;}
+\DoxyCodeLine{76     \mbox{\hyperlink{class_c_sort_list}{CSortList}} m\_lcDbfResult;}
+\DoxyCodeLine{77     afx\_msg \textcolor{keywordtype}{void} OnSelchangeTab1(NMHDR *pNMHDR, LRESULT *pResult);}
+\DoxyCodeLine{78 }
+\DoxyCodeLine{79     \textcolor{comment}{// shpResult 결과창 전체 저장해 두기위한 변수와 함수}}
+\DoxyCodeLine{80     vector<SHPRESULT> shpResults;}
+\DoxyCodeLine{81     \textcolor{keywordtype}{void} ShpResultSaveToGV();}
+\DoxyCodeLine{82     }
+\DoxyCodeLine{83     \textcolor{comment}{// 체크박스 눌렀을 때}}
+\DoxyCodeLine{84     CButton m\_cbNewFile;}
+\DoxyCodeLine{85     CButton m\_cbDeleteFile;}
+\DoxyCodeLine{86     CButton m\_cbChngFile;}
+\DoxyCodeLine{87     afx\_msg \textcolor{keywordtype}{void} OnClickedCheckBox(UINT value);}
+\DoxyCodeLine{88     }
+\DoxyCodeLine{89     afx\_msg \textcolor{keywordtype}{void} OnCustomdrawListResult(NMHDR *pNMHDR, LRESULT *pResult);}
+\DoxyCodeLine{90     afx\_msg \textcolor{keywordtype}{void} OnCustomdrawListDbfResult(NMHDR *pNMHDR, LRESULT *pResult);}
+\DoxyCodeLine{91     CProgressCtrl m\_progressBar;}
+\DoxyCodeLine{92     \mbox{\hyperlink{class_c_sort_list}{CSortList}} m\_lcDbfResult2;}
+\DoxyCodeLine{93     \textcolor{keywordtype}{void} OpenMDB();}
+\DoxyCodeLine{94 \};}
+\DoxyCodeLine{95 }
+\DoxyCodeLine{96 }
+\DoxyCodeLine{97 }
+\DoxyCodeLine{98 \textcolor{comment}{// DBF에 필요한 class 2개}}
+\DoxyCodeLine{99 }
+\DoxyCodeLine{100 \textcolor{keyword}{class }\mbox{\hyperlink{class_field}{Field}} \{}
+\DoxyCodeLine{101 \textcolor{keyword}{public}:}
+\DoxyCodeLine{102     \mbox{\hyperlink{class_field}{Field}}();}
+\DoxyCodeLine{103     \mbox{\hyperlink{class_field}{\string~Field}}();}
+\DoxyCodeLine{104 }
+\DoxyCodeLine{105     \textcolor{comment}{// 기록항의 데이터타입으로 아스키코드값을 enum으로 관리}}
+\DoxyCodeLine{106     \textcolor{comment}{/*}}
+\DoxyCodeLine{107 \textcolor{comment}{    B: binary, a string}}
+\DoxyCodeLine{108 \textcolor{comment}{    C: Character}}
+\DoxyCodeLine{109 \textcolor{comment}{    D: Date}}
+\DoxyCodeLine{110 \textcolor{comment}{    N: Numeric}}
+\DoxyCodeLine{111 \textcolor{comment}{    L: Logical}}
+\DoxyCodeLine{112 \textcolor{comment}{    M: Memo, a string}}
+\DoxyCodeLine{113 \textcolor{comment}{}}
+\DoxyCodeLine{114 \textcolor{comment}{    */}}
+\DoxyCodeLine{115     \textcolor{keyword}{enum} \_eRecordItemDataType \{ B, C, D, G, L, M, N \};}
+\DoxyCodeLine{116 }
+\DoxyCodeLine{117     \textcolor{comment}{// member various}}
+\DoxyCodeLine{118     \textcolor{keywordtype}{char} \_cTitle[11];}
+\DoxyCodeLine{119     \textcolor{keywordtype}{char} \_cDataType;}
+\DoxyCodeLine{120     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} \_ucFieldLength;}
+\DoxyCodeLine{121     \textcolor{keywordtype}{char} \_cFieldContent[100];}
+\DoxyCodeLine{122     vector<bool> compareExist;}
+\DoxyCodeLine{123     vector<char*> \_vField;}
+\DoxyCodeLine{124     \textcolor{comment}{// vector<string> \_vField;}}
+\DoxyCodeLine{125     \textcolor{comment}{// vector<CString> \_vField;}}
+\DoxyCodeLine{126 }
+\DoxyCodeLine{127 \};}
+\DoxyCodeLine{128 }
+\DoxyCodeLine{129 }
+\DoxyCodeLine{130 \textcolor{comment}{// dbf 파일 정보 불러오는 함수 및 저장 변수 클래스}}
+\DoxyCodeLine{131 \textcolor{keyword}{class }\mbox{\hyperlink{class_d_b_f}{DBF}} \{}
+\DoxyCodeLine{132     \textcolor{comment}{/*}}
+\DoxyCodeLine{133 \textcolor{comment}{    *}}
+\DoxyCodeLine{134 \textcolor{comment}{    *@brief DBF 파일을 load / read / save 하기 위한 클래스이다.}}
+\DoxyCodeLine{135 \textcolor{comment}{    *@details 파일의 디테일을 클래스 멤버 변수에 넣어둔다}}
+\DoxyCodeLine{136 \textcolor{comment}{    *@date 2021-\/10-\/27}}
+\DoxyCodeLine{137 \textcolor{comment}{    *}}
+\DoxyCodeLine{138 \textcolor{comment}{    */}}
+\DoxyCodeLine{139 }
+\DoxyCodeLine{140 \textcolor{keyword}{public}:}
+\DoxyCodeLine{141     \mbox{\hyperlink{class_d_b_f}{DBF}}(CString sFilename);}
+\DoxyCodeLine{142     \mbox{\hyperlink{class_d_b_f}{\string~DBF}}();}
+\DoxyCodeLine{143 }
+\DoxyCodeLine{144     \textcolor{comment}{// member various}}
+\DoxyCodeLine{145     \textcolor{keywordtype}{int} \_iRecCount;}
+\DoxyCodeLine{146     \textcolor{keywordtype}{int} \_iFieldCount;}
+\DoxyCodeLine{147     \textcolor{keywordtype}{short} \_BytesOfFileHead;}
+\DoxyCodeLine{148     \textcolor{keywordtype}{short} \_BytesOfEachRecord;}
+\DoxyCodeLine{149 }
+\DoxyCodeLine{150     \mbox{\hyperlink{class_field}{Field}}* \_pField;}
+\DoxyCodeLine{151     CString \_sFilename;}
+\DoxyCodeLine{152     vector<Field*> \_vTable;}
+\DoxyCodeLine{153 }
+\DoxyCodeLine{154     \textcolor{comment}{// member func}}
+\DoxyCodeLine{155     \textcolor{keywordtype}{void} loadFile(CString sFileName);}
+\DoxyCodeLine{156     \textcolor{keywordtype}{void} readFile\_(CString sFileName);}
+\DoxyCodeLine{157 }
+\DoxyCodeLine{158 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{159     \textcolor{keywordtype}{void} readFileHead(ifstream\& inFile);}
+\DoxyCodeLine{160     \textcolor{keywordtype}{void} readFileRecord(ifstream\& inFile);}
+\DoxyCodeLine{161     \textcolor{keywordtype}{bool} isReadFileOK(CString sFilename);}
+\DoxyCodeLine{162 \};}
+
+\end{DoxyCode}

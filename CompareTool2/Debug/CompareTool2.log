@@ -1,0 +1,10 @@
+﻿  CompareTool2Dlg.cpp
+c:\users\owner\source\repos\comparetool_tab_sortlist\comparetool2\comparetool2dlg.cpp(1444): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\owner\source\repos\comparetool_tab_sortlist\comparetool2\comparetool2dlg.cpp(2319): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\owner\source\repos\comparetool_tab_sortlist\comparetool2\comparetool2dlg.cpp(3404): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\owner\source\repos\comparetool_tab_sortlist\comparetool2\comparetool2dlg.cpp(3654): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\owner\source\repos\comparetool_tab_sortlist\comparetool2\comparetool2dlg.cpp(3846): warning C4244: '인수': 'ULONGLONG'에서 'size_t'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\owner\source\repos\comparetool_tab_sortlist\comparetool2\comparetool2dlg.cpp(3849): warning C4244: '인수': 'ULONGLONG'에서 'UINT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\owner\source\repos\comparetool_tab_sortlist\comparetool2\comparetool2dlg.cpp(3852): warning C4244: '인수': 'ULONGLONG'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\owner\source\repos\comparetool_tab_sortlist\comparetool2\comparetool2dlg.cpp(4213): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  CompareTool2.vcxproj -> C:\Users\owner\source\repos\CompareTool_tab_SortList\Debug\CompareTool2.exe
